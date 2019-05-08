@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{27ACFC61-8688-482D-A1F6-F21654EA4BDE}" SchemaVersion="85">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{27ACFC61-8688-482D-A1F6-F21654EA4BDE}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Fire_Shotgun_Player" ID="{35E43546-9745-4491-90E8-29D7AA4D2D48}">
+					<ChildrenList>
+						<Action Name="" ID="{3629EF34-1E49-43FC-B6EF-5109E6D3E44D}" ShortID="50591126">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shotgun_Blast" ID="{CDE91F4C-5FCD-4720-8920-8DC673ACF9D9}" WorkUnitID="{8D65CABB-7643-4775-8C45-3B7F325D73EF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C25F326F-43DD-4907-95B6-0CA90B3A23A3}" ShortID="123857200">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="0.4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shotgun_Pump_In" ID="{436FFF82-62A3-4B7E-BC52-4459FC888DBA}" WorkUnitID="{8D65CABB-7643-4775-8C45-3B7F325D73EF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F0260FD7-2423-46DA-B6CE-DE45E8811736}" ShortID="378364618">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="0.7"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shotgun_Pump_Out" ID="{428E93E5-7DFA-4D5F-B0C1-5CFC6F6A791D}" WorkUnitID="{8D65CABB-7643-4775-8C45-3B7F325D73EF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C5F29284-20A1-43D4-A08E-9719509D61DC}" ShortID="161279367">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="1.1">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{AEAB3339-399B-4332-B9D0-457972CF1D30}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="0.4"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shotgun Shells" ID="{18D00879-1B7D-4628-AD62-8C13C500EC26}" WorkUnitID="{8D65CABB-7643-4775-8C45-3B7F325D73EF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Foot_Player" ID="{CD3220B6-6533-44A7-AB5E-1E76F01B83E5}">
+					<ChildrenList>
+						<Action Name="" ID="{B65AD728-9913-44D5-B763-23812E27946C}" ShortID="133445266">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{881CAE9E-406F-4709-B2FD-31FAE551751C}" WorkUnitID="{8D65CABB-7643-4775-8C45-3B7F325D73EF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="DCP_Music" ID="{619B0572-9D40-4FF1-9CDE-5CAB5D4A7BD5}">
+					<ChildrenList>
+						<Action Name="" ID="{795003AE-BDCF-4945-BB20-84B9BAE89631}" ShortID="877813740">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Heartbeat" ID="{539D17F0-26CB-45C1-96CD-BA1DCB5BA9B9}" WorkUnitID="{8D65CABB-7643-4775-8C45-3B7F325D73EF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
