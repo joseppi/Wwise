@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{BB3F0547-578D-4CCC-9AA0-836AD05AE109}" SchemaVersion="85">
+<WwiseDocument Type="WorkUnit" ID="{BB3F0547-578D-4CCC-9AA0-836AD05AE109}" SchemaVersion="89">
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{BB3F0547-578D-4CCC-9AA0-836AD05AE109}" PersistMode="Standalone">
 			<ChildrenList>
@@ -56,6 +56,34 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Shotgun Shells" ID="{29F2DA92-21F0-4522-AAE3-D1CF657B114C}" WorkUnitID="{24CA6058-8300-4269-9BBA-0ED8E4EFE1BC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Foot_Player" ID="{B566FCA4-05EF-4169-BE73-3DD5DB574E09}">
+					<ChildrenList>
+						<Action Name="" ID="{3E69ED0D-57D3-4348-9192-FE4DCC8DD482}" ShortID="750204183">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{316FA8B7-45CF-48BE-AD70-AEEB2899D490}" WorkUnitID="{24CA6058-8300-4269-9BBA-0ED8E4EFE1BC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="DCP_Music" ID="{75E5780A-DB23-4C68-B75D-CDA236FE0A57}">
+					<ChildrenList>
+						<Action Name="" ID="{D802CD3C-114B-48A4-A6BB-35613C087AED}" ShortID="559444740">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Heartbeat" ID="{F1B03501-92EB-4332-8ECB-5B8D778F775D}" WorkUnitID="{24CA6058-8300-4269-9BBA-0ED8E4EFE1BC}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
