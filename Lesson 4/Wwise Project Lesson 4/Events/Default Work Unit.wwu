@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{27ACFC61-8688-482D-A1F6-F21654EA4BDE}" SchemaVersion="85">
+<WwiseDocument Type="WorkUnit" ID="{27ACFC61-8688-482D-A1F6-F21654EA4BDE}" SchemaVersion="89">
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{27ACFC61-8688-482D-A1F6-F21654EA4BDE}" PersistMode="Standalone">
 			<ChildrenList>
@@ -83,6 +83,20 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Heartbeat" ID="{539D17F0-26CB-45C1-96CD-BA1DCB5BA9B9}" WorkUnitID="{8D65CABB-7643-4775-8C45-3B7F325D73EF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Emmiter_Teleport" ID="{2D80CE27-59F6-4E2B-8316-21C8069613F3}">
+					<ChildrenList>
+						<Action Name="" ID="{0459F2D8-995A-4DAF-832B-0BB424AA73BD}" ShortID="584111124">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Teleport" ID="{9C76A671-0158-47C9-A5A2-F17341288EF1}" WorkUnitID="{8D65CABB-7643-4775-8C45-3B7F325D73EF}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

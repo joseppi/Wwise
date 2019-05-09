@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{F10B222B-2801-430A-B717-538AC6BBF93D}" SchemaVersion="85">
+<WwiseDocument Type="WorkUnit" ID="{F10B222B-2801-430A-B717-538AC6BBF93D}" SchemaVersion="89">
 	<Busses>
 		<WorkUnit Name="Default Work Unit" ID="{F10B222B-2801-430A-B717-538AC6BBF93D}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<PropertyList>
-						<Property Name="DivergenceCenter" Type="int32">
+						<Property Name="CenterPercentage" Type="int32">
 							<ValueList>
 								<Value>100</Value>
 							</ValueList>
