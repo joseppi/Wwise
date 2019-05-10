@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
 	<RootPaths>
-		<ProjectRoot>C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 3\Wwise Project Lesson 3\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 3\Wwise Project Lesson 3\.cache\Windows\</SourceFilesRoot>
+		<ProjectRoot>C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Windows\</SourceFilesRoot>
 		<SoundBanksRoot>C:\Users\josepps14\Documents\GitHub\Wwise\Cube\Cube\soundbanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 3\Wwise Project Lesson 3\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -22,121 +22,126 @@
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3721111614" Name="DCP_Music" ObjectPath="\Events\Default Work Unit\DCP_Music"/>
+				<Event Id="598337033" Name="Emitter_Teleport" ObjectPath="\Events\Default Work Unit\Emitter_Teleport"/>
 				<Event Id="1367775454" Name="Fire_Shotgun_Player" ObjectPath="\Events\Default Work Unit\Fire_Shotgun_Player"/>
 				<Event Id="1894362767" Name="Foot_Player" ObjectPath="\Events\Default Work Unit\Foot_Player"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="47468586" Language="SFX">
+				<File Id="71525550" Language="SFX">
+					<ShortName>Tile\FS_Tile_01.wav</ShortName>
+					<Path>SFX\Tile\FS_Tile_01_90722D8F.wem</Path>
+				</File>
+				<File Id="108752886" Language="SFX">
+					<ShortName>Gravel\FS_Gravel_03.wav</ShortName>
+					<Path>SFX\Gravel\FS_Gravel_03_90722D8F.wem</Path>
+				</File>
+				<File Id="122062642" Language="SFX">
+					<ShortName>Gravel\FS_Gravel_01.wav</ShortName>
+					<Path>SFX\Gravel\FS_Gravel_01_90722D8F.wem</Path>
+				</File>
+				<File Id="201601495" Language="SFX">
+					<ShortName>Shotgun Shells\ShotgunShellsConcrete_1.wav</ShortName>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_1_7A3D16B2.wem</Path>
+				</File>
+				<File Id="314196479" Language="SFX">
+					<ShortName>Shotgun Shells\ShotgunShellsConcrete_1.wav</ShortName>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_1_9950A062.wem</Path>
+				</File>
+				<File Id="333377387" Language="SFX">
+					<ShortName>Teleport.wav</ShortName>
+					<Path>SFX\Teleport_0A288869.wem</Path>
+				</File>
+				<File Id="343737697" Language="SFX">
+					<ShortName>Tile\FS_Tile_02.wav</ShortName>
+					<Path>SFX\Tile\FS_Tile_02_90722D8F.wem</Path>
+				</File>
+				<File Id="412191914" Language="SFX">
+					<ShortName>Gravel\FS_Gravel_02.wav</ShortName>
+					<Path>SFX\Gravel\FS_Gravel_02_90722D8F.wem</Path>
+				</File>
+				<File Id="438362084" Language="SFX">
+					<ShortName>Concrete\FS_Concrete_02.wav</ShortName>
+					<Path>SFX\Concrete\FS_Concrete_02_90722D8F.wem</Path>
+				</File>
+				<File Id="504102903" Language="SFX">
 					<ShortName>Shotgun Shells\ShotgunShellsConcrete_4.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_4_E7B07C90.wem</Path>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_4_CE4571AD.wem</Path>
 				</File>
-				<File Id="49419345" Language="SFX">
-					<ShortName>Footsteps\Concrete\FS_Concrete_03.wav</ShortName>
-					<Path>SFX\Footsteps\Concrete\FS_Concrete_03_CC87FBFB.wem</Path>
+				<File Id="577120568" Language="SFX">
+					<ShortName>Shotgun Shells\ShotgunShellsConcrete_3.wav</ShortName>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_3_83BA665D.wem</Path>
 				</File>
-				<File Id="50975562" Language="SFX">
-					<ShortName>Footsteps\Tile\FS_Tile_03.wav</ShortName>
-					<Path>SFX\Footsteps\Tile\FS_Tile_03_CC87FBFB.wem</Path>
+				<File Id="583225874" Language="SFX">
+					<ShortName>Shotgun Shells\ShotgunShellsConcrete_2.wav</ShortName>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_2_4BD1549C.wem</Path>
 				</File>
-				<File Id="65658870" Language="SFX">
-					<ShortName>Footsteps\Dirt\FS_Dirt_02.wav</ShortName>
-					<Path>SFX\Footsteps\Dirt\FS_Dirt_02_CC87FBFB.wem</Path>
+				<File Id="608480767" Language="SFX">
+					<ShortName>Dirt\FS_Dirt_01.wav</ShortName>
+					<Path>SFX\Dirt\FS_Dirt_01_90722D8F.wem</Path>
 				</File>
-				<File Id="101310036" Language="SFX">
+				<File Id="636862517" Language="SFX">
+					<ShortName>Concrete\FS_Concrete_04.wav</ShortName>
+					<Path>SFX\Concrete\FS_Concrete_04_90722D8F.wem</Path>
+				</File>
+				<File Id="642406979" Language="SFX">
+					<ShortName>Concrete\FS_Concrete_01.wav</ShortName>
+					<Path>SFX\Concrete\FS_Concrete_01_90722D8F.wem</Path>
+				</File>
+				<File Id="688698589" Language="SFX">
+					<ShortName>Shotgun Shells\ShotgunShellsConcrete_3.wav</ShortName>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_3_0B4DFC25.wem</Path>
+				</File>
+				<File Id="690631133" Language="SFX">
+					<ShortName>Shotgun Shells\ShotgunShellsConcrete_4.wav</ShortName>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_4_D6DE3281.wem</Path>
+				</File>
+				<File Id="713286434" Language="SFX">
+					<ShortName>Shotgun_Blast.wav</ShortName>
+					<Path>SFX\Shotgun_Blast_90722D8F.wem</Path>
+				</File>
+				<File Id="720737159" Language="SFX">
+					<ShortName>Shotgun Shells\ShotgunShellsConcrete_2.wav</ShortName>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_2_CA80BD11.wem</Path>
+				</File>
+				<File Id="760380131" Language="SFX">
+					<ShortName>Dirt\FS_Dirt_03.wav</ShortName>
+					<Path>SFX\Dirt\FS_Dirt_03_90722D8F.wem</Path>
+				</File>
+				<File Id="799347568" Language="SFX">
+					<ShortName>Dirt\FS_Dirt_02.wav</ShortName>
+					<Path>SFX\Dirt\FS_Dirt_02_90722D8F.wem</Path>
+				</File>
+				<File Id="866317371" Language="SFX">
+					<ShortName>Gravel\FS_Gravel_04.wav</ShortName>
+					<Path>SFX\Gravel\FS_Gravel_04_90722D8F.wem</Path>
+				</File>
+				<File Id="868657921" Language="SFX">
+					<ShortName>Tile\FS_Tile_03.wav</ShortName>
+					<Path>SFX\Tile\FS_Tile_03_90722D8F.wem</Path>
+				</File>
+				<File Id="886501766" Language="SFX">
+					<ShortName>Shotgun_Pump.wav</ShortName>
+					<Path>SFX\Shotgun_Pump_3D79895D.wem</Path>
+				</File>
+				<File Id="927601829" Language="SFX">
+					<ShortName>Concrete\FS_Concrete_03.wav</ShortName>
+					<Path>SFX\Concrete\FS_Concrete_03_90722D8F.wem</Path>
+				</File>
+				<File Id="968109938" Language="SFX">
+					<ShortName>Tile\FS_Tile_04.wav</ShortName>
+					<Path>SFX\Tile\FS_Tile_04_90722D8F.wem</Path>
+				</File>
+				<File Id="980452861" Language="SFX">
+					<ShortName>Dirt\FS_Dirt_04.wav</ShortName>
+					<Path>SFX\Dirt\FS_Dirt_04_90722D8F.wem</Path>
+				</File>
+				<File Id="1030077981" Language="SFX">
+					<ShortName>Heartbeat.wav</ShortName>
+					<Path>SFX\Heartbeat_CF0CF0BD.wem</Path>
+				</File>
+				<File Id="1042428374" Language="SFX">
 					<ShortName>Shotgun_Pump.wav</ShortName>
 					<Path>SFX\Shotgun_Pump_CC87FBFB.wem</Path>
-				</File>
-				<File Id="133979827" Language="SFX">
-					<ShortName>Footsteps\Dirt\FS_Dirt_04.wav</ShortName>
-					<Path>SFX\Footsteps\Dirt\FS_Dirt_04_CC87FBFB.wem</Path>
-				</File>
-				<File Id="249861116" Language="SFX">
-					<ShortName>Footsteps\Dirt\FS_Dirt_03.wav</ShortName>
-					<Path>SFX\Footsteps\Dirt\FS_Dirt_03_CC87FBFB.wem</Path>
-				</File>
-				<File Id="271400985" Language="SFX">
-					<ShortName>Footsteps\Dirt\FS_Dirt_01.wav</ShortName>
-					<Path>SFX\Footsteps\Dirt\FS_Dirt_01_CC87FBFB.wem</Path>
-				</File>
-				<File Id="279401839" Language="SFX">
-					<ShortName>Shotgun Shells\ShotgunShellsConcrete_2.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_2_9AC09CB2.wem</Path>
-				</File>
-				<File Id="311899020" Language="SFX">
-					<ShortName>Shotgun Shells\ShotgunShellsConcrete_1.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_1_D0D88A22.wem</Path>
-				</File>
-				<File Id="314541287" Language="SFX">
-					<ShortName>Footsteps\Concrete\FS_Concrete_02.wav</ShortName>
-					<Path>SFX\Footsteps\Concrete\FS_Concrete_02_CC87FBFB.wem</Path>
-				</File>
-				<File Id="320516566" Language="SFX">
-					<ShortName>Footsteps\Concrete\FS_Concrete_01.wav</ShortName>
-					<Path>SFX\Footsteps\Concrete\FS_Concrete_01_CC87FBFB.wem</Path>
-				</File>
-				<File Id="328964265" Language="SFX">
-					<ShortName>Shotgun_Pump.wav</ShortName>
-					<Path>SFX\Shotgun_Pump_890A0DB8.wem</Path>
-				</File>
-				<File Id="343841589" Language="SFX">
-					<ShortName>Heartbeat.wav</ShortName>
-					<Path>SFX\Heartbeat_0A288869.wem</Path>
-				</File>
-				<File Id="353454111" Language="SFX">
-					<ShortName>Shotgun Shells\ShotgunShellsConcrete_4.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_4_916BE9BF.wem</Path>
-				</File>
-				<File Id="376868787" Language="SFX">
-					<ShortName>Footsteps\Gravel\FS_Gravel_01.wav</ShortName>
-					<Path>SFX\Footsteps\Gravel\FS_Gravel_01_CC87FBFB.wem</Path>
-				</File>
-				<File Id="528849503" Language="SFX">
-					<ShortName>Shotgun Shells\ShotgunShellsConcrete_3.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_3_557FB9EC.wem</Path>
-				</File>
-				<File Id="530547760" Language="SFX">
-					<ShortName>Footsteps\Gravel\FS_Gravel_03.wav</ShortName>
-					<Path>SFX\Footsteps\Gravel\FS_Gravel_03_CC87FBFB.wem</Path>
-				</File>
-				<File Id="603801576" Language="SFX">
-					<ShortName>Shotgun Shells\ShotgunShellsConcrete_1.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_1_A421BCB4.wem</Path>
-				</File>
-				<File Id="700264716" Language="SFX">
-					<ShortName>Footsteps\Gravel\FS_Gravel_04.wav</ShortName>
-					<Path>SFX\Footsteps\Gravel\FS_Gravel_04_CC87FBFB.wem</Path>
-				</File>
-				<File Id="732649404" Language="SFX">
-					<ShortName>Footsteps\Concrete\FS_Concrete_04.wav</ShortName>
-					<Path>SFX\Footsteps\Concrete\FS_Concrete_04_CC87FBFB.wem</Path>
-				</File>
-				<File Id="795755009" Language="SFX">
-					<ShortName>Footsteps\Gravel\FS_Gravel_02.wav</ShortName>
-					<Path>SFX\Footsteps\Gravel\FS_Gravel_02_CC87FBFB.wem</Path>
-				</File>
-				<File Id="825538588" Language="SFX">
-					<ShortName>Footsteps\Tile\FS_Tile_04.wav</ShortName>
-					<Path>SFX\Footsteps\Tile\FS_Tile_04_CC87FBFB.wem</Path>
-				</File>
-				<File Id="856406436" Language="SFX">
-					<ShortName>Shotgun_Blast.wav</ShortName>
-					<Path>SFX\Shotgun_Blast_CC87FBFB.wem</Path>
-				</File>
-				<File Id="893660405" Language="SFX">
-					<ShortName>Footsteps\Tile\FS_Tile_01.wav</ShortName>
-					<Path>SFX\Footsteps\Tile\FS_Tile_01_CC87FBFB.wem</Path>
-				</File>
-				<File Id="900882877" Language="SFX">
-					<ShortName>Shotgun Shells\ShotgunShellsConcrete_2.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_2_CE493FDB.wem</Path>
-				</File>
-				<File Id="900944804" Language="SFX">
-					<ShortName>Shotgun Shells\ShotgunShellsConcrete_3.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_3_A3C828DC.wem</Path>
-				</File>
-				<File Id="970336453" Language="SFX">
-					<ShortName>Footsteps\Tile\FS_Tile_02.wav</ShortName>
-					<Path>SFX\Footsteps\Tile\FS_Tile_02_CC87FBFB.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

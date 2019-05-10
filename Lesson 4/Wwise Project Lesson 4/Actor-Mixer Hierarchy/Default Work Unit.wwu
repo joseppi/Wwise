@@ -22,62 +22,9 @@
 						<ActiveSource Name="Shotgun_Blast" ID="{DA5E8EDB-DCFB-495E-8095-25F837A95DB2}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Shotgun_Pump_Out" ID="{428E93E5-7DFA-4D5F-B0C1-5CFC6F6A791D}" ShortID="855735229">
-					<PropertyList>
-						<Property Name="Pitch" Type="int32">
-							<ValueList>
-								<Value>200</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="SFX" ID="{20E86B7D-4C9A-4C12-AC86-67903A4CAC2F}" WorkUnitID="{FAF928FC-2A2A-4F7A-8A7C-0010690433A5}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Shotgun_Pump" ID="{72F94C69-2B74-40AF-8404-337FE5D83947}" ShortID="1042428374">
-							<PropertyList>
-								<Property Name="TrimBegin" Type="Real64" Value="6.67709850680523E-02"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>Shotgun_Pump.wav</AudioFile>
-							<ConvertedFileIDList>
-								<File ID="886501766"/>
-							</ConvertedFileIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Shotgun_Pump" ID="{72F94C69-2B74-40AF-8404-337FE5D83947}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Shotgun_Pump_In" ID="{436FFF82-62A3-4B7E-BC52-4459FC888DBA}" ShortID="1072467684">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="SFX" ID="{20E86B7D-4C9A-4C12-AC86-67903A4CAC2F}" WorkUnitID="{FAF928FC-2A2A-4F7A-8A7C-0010690433A5}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Shotgun_Pump" ID="{38EF3204-8E68-470A-8D5B-0757745053B2}" ShortID="886501766">
-							<Language>SFX</Language>
-							<AudioFile>Shotgun_Pump.wav</AudioFile>
-							<ConvertedFileIDList>
-								<File ID="1042428374"/>
-							</ConvertedFileIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Shotgun_Pump" ID="{38EF3204-8E68-470A-8D5B-0757745053B2}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<RandomSequenceContainer Name="Shotgun Shells" ID="{18D00879-1B7D-4628-AD62-8C13C500EC26}" ShortID="786964807">
 					<PropertyList>
+						<Property Name="3DPosition" Type="int16" Value="2"/>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
@@ -604,6 +551,239 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{270D8C4D-9750-4278-A0F4-CE60CE03F8C9}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64" Value="0.401606425702811"/>
+								<Property Name="PanY" Type="Real64" Value="43.8297872340426"/>
+							</PropertyList>
+						</Panner>
+						<Position Name="" ID="{F8B7574A-94D9-421C-9AF3-60EAAD6F260A}">
+							<PropertyList>
+								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="Shotgun Shells_Path" ID="{3FEC295E-9AFB-42E0-86FB-5E688DF09688}">
+									<PropertyList>
+										<Property Name="Duration" Type="int32" Value="3000"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>27.8481</XPos>
+											<YPos>47.13376</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>39.87342</XPos>
+											<YPos>54.77707</YPos>
+											<Flags>0</Flags>
+											<Time>1000</Time>
+										</Point>
+										<Point>
+											<XPos>61.39241</XPos>
+											<YPos>55.41401</YPos>
+											<Flags>0</Flags>
+											<Time>2000</Time>
+										</Point>
+										<Point>
+											<XPos>72.7848101265823</XPos>
+											<YPos>47.1337579617834</YPos>
+											<Flags>0</Flags>
+											<Time>3000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Shotgun Shells_Path_01" ID="{3C8E9682-BC5A-4474-B7A7-066435B56630}">
+									<PropertyList>
+										<Property Name="Duration" Type="int32" Value="3000"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>17.72152</XPos>
+											<YPos>20.38217</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>32.27848</XPos>
+											<YPos>63.69427</YPos>
+											<Flags>0</Flags>
+											<Time>1000</Time>
+										</Point>
+										<Point>
+											<XPos>62.02532</XPos>
+											<YPos>63.69426</YPos>
+											<Flags>0</Flags>
+											<Time>2000</Time>
+										</Point>
+										<Point>
+											<XPos>83.5443</XPos>
+											<YPos>24.20382</YPos>
+											<Flags>0</Flags>
+											<Time>3000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Shotgun Shells_Path_02" ID="{A0709388-AE26-4596-A8B9-E75C38A18A6B}">
+									<PropertyList>
+										<Property Name="Duration" Type="int32" Value="3000"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>12.02532</XPos>
+											<YPos>18.47134</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>18.35443</XPos>
+											<YPos>73.88535</YPos>
+											<Flags>0</Flags>
+											<Time>1000</Time>
+										</Point>
+										<Point>
+											<XPos>47.46836</XPos>
+											<YPos>82.80255</YPos>
+											<Flags>0</Flags>
+											<Time>2000</Time>
+										</Point>
+										<Point>
+											<XPos>60.12658</XPos>
+											<YPos>67.51592</YPos>
+											<Flags>0</Flags>
+											<Time>3000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Shotgun Shells_Path_03" ID="{8566F265-72FA-44CE-9F86-898E9030CEB3}">
+									<PropertyList>
+										<Property Name="Duration" Type="int32" Value="3000"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>5.6962</XPos>
+											<YPos>35.66879</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>29.11393</XPos>
+											<YPos>84.71338</YPos>
+											<Flags>0</Flags>
+											<Time>1000</Time>
+										</Point>
+										<Point>
+											<XPos>71.51899</XPos>
+											<YPos>82.80255</YPos>
+											<Flags>0</Flags>
+											<Time>2000</Time>
+										</Point>
+										<Point>
+											<XPos>96.20253</XPos>
+											<YPos>54.77707</YPos>
+											<Flags>0</Flags>
+											<Time>3000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Shotgun Shells_Path_04" ID="{0E901B08-7B45-4443-9727-4307D0B550B1}">
+									<PropertyList>
+										<Property Name="Duration" Type="int32" Value="3000"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>2.53164</XPos>
+											<YPos>36.30573</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>-15.82278</XPos>
+											<YPos>67.51592</YPos>
+											<Flags>0</Flags>
+											<Time>1000</Time>
+										</Point>
+										<Point>
+											<XPos>-41.77214</XPos>
+											<YPos>67.51592</YPos>
+											<Flags>0</Flags>
+											<Time>2000</Time>
+										</Point>
+										<Point>
+											<XPos>-54.43038</XPos>
+											<YPos>42.03822</YPos>
+											<Flags>0</Flags>
+											<Time>3000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Shotgun Shells_Path_05" ID="{36BE20C8-6C5F-4C86-BA27-AF966EA90E47}">
+									<PropertyList>
+										<Property Name="Duration" Type="int32" Value="3000"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>-6.96203</XPos>
+											<YPos>29.29937</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>-35.44304</XPos>
+											<YPos>63.05732</YPos>
+											<Flags>0</Flags>
+											<Time>1000</Time>
+										</Point>
+										<Point>
+											<XPos>-76.58227</XPos>
+											<YPos>52.2293</YPos>
+											<Flags>0</Flags>
+											<Time>2000</Time>
+										</Point>
+										<Point>
+											<XPos>-98.10127</XPos>
+											<YPos>19.10828</YPos>
+											<Flags>0</Flags>
+											<Time>3000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Shotgun Shells_Path_06" ID="{1A6E0EFF-F2DD-4295-A457-AEB58AB53EC5}">
+									<PropertyList>
+										<Property Name="Duration" Type="int32" Value="3000"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>-12.65823</XPos>
+											<YPos>26.7516</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>-37.34177</XPos>
+											<YPos>49.04458</YPos>
+											<Flags>0</Flags>
+											<Time>1000</Time>
+										</Point>
+										<Point>
+											<XPos>-56.96202</XPos>
+											<YPos>30.57325</YPos>
+											<Flags>0</Flags>
+											<Time>2000</Time>
+										</Point>
+										<Point>
+											<XPos>-59.49367</XPos>
+											<YPos>-2.54777</YPos>
+											<Flags>0</Flags>
+											<Time>3000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
 					<Playlist>
 						<ItemRef Name="Shotgun Shells Head" ID="{209D48F1-24A3-434B-9E4A-D729D43C9CC7}"/>
 						<ItemRef Name="Silence" ID="{7752C10D-3614-4209-834E-221D3DFDB974}"/>
@@ -1189,6 +1369,84 @@
 						<ActiveSource Name="Teleport" ID="{4AA59B25-989E-4023-9152-3582C8200DED}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<ActorMixer Name="Shotgun Pumps" ID="{951C82C8-8D0A-474C-9BEA-FCBB6C02EA11}" ShortID="971906406">
+					<PropertyList>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FAF928FC-2A2A-4F7A-8A7C-0010690433A5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Shotgun_Pump_In" ID="{436FFF82-62A3-4B7E-BC52-4459FC888DBA}" ShortID="1072467684">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="SFX" ID="{20E86B7D-4C9A-4C12-AC86-67903A4CAC2F}" WorkUnitID="{FAF928FC-2A2A-4F7A-8A7C-0010690433A5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shotgun_Pump" ID="{38EF3204-8E68-470A-8D5B-0757745053B2}" ShortID="886501766">
+									<Language>SFX</Language>
+									<AudioFile>Shotgun_Pump.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="1042428374"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shotgun_Pump" ID="{38EF3204-8E68-470A-8D5B-0757745053B2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shotgun_Pump_Out" ID="{428E93E5-7DFA-4D5F-B0C1-5CFC6F6A791D}" ShortID="855735229">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>200</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="SFX" ID="{20E86B7D-4C9A-4C12-AC86-67903A4CAC2F}" WorkUnitID="{FAF928FC-2A2A-4F7A-8A7C-0010690433A5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shotgun_Pump" ID="{72F94C69-2B74-40AF-8404-337FE5D83947}" ShortID="1042428374">
+									<PropertyList>
+										<Property Name="TrimBegin" Type="Real64" Value="6.67709850680523E-02"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Shotgun_Pump.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="886501766"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shotgun_Pump" ID="{72F94C69-2B74-40AF-8404-337FE5D83947}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{ED914228-1A06-4C20-840E-B017FA1FCC49}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64" Value="24.4979919678715"/>
+								<Property Name="PanY" Type="Real64" Value="33.1914893617021"/>
+							</PropertyList>
+						</Panner>
+						<Position Name="" ID="{FB496FF2-6562-40B7-81B8-FD8B24129B36}"/>
+					</PositioningInfo>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

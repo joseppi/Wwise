@@ -88,7 +88,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Emmiter_Teleport" ID="{2D80CE27-59F6-4E2B-8316-21C8069613F3}">
+				<Event Name="Emitter_Teleport" ID="{2D80CE27-59F6-4E2B-8316-21C8069613F3}">
 					<ChildrenList>
 						<Action Name="" ID="{0459F2D8-995A-4DAF-832B-0BB424AA73BD}" ShortID="584111124">
 							<PropertyList>

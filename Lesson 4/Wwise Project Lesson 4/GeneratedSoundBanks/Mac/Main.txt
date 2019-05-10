@@ -1,0 +1,68 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1367775454	Fire_Shotgun_Player			\Default Work Unit\Fire_Shotgun_Player	
+	1894362767	Foot_Player			\Default Work Unit\Foot_Player	
+	3721111614	DCP_Music			\Default Work Unit\DCP_Music	
+	4281299496	Emmiter_Teleport			\Default Work Unit\Emmiter_Teleport	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3865314626	Material			\Default Work Unit\Material	
+
+Switch	ID	Name	Switch Group			Notes
+	803837735	Sand	Material			
+	841620460	Concrete	Material			
+	1216965916	Stone	Material			
+	2058049674	Wood	Material			
+	2185786256	Gravel	Material			
+	2473969246	Metal	Material			
+	2637588553	Tile	Material			
+	2654748154	Water	Material			
+	4248645337	Grass	Material			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	444815956	PlayerLife			\Default Work Unit\PlayerLife	
+
+State	ID	Name	State Group			Notes
+	0	None	PlayerLife			
+	655265632	Alive	PlayerLife			
+	2044049779	Dead	PlayerLife			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	760905679	Dead	PlayerLife	\Actor-Mixer Hierarchy\Default Work Unit\Heartbeat		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	151362964	PlayerHealth			\Default Work Unit\PlayerHealth	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	395225993	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Shotgun Shells\Silence\Wwise Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	71525550	FS_Tile_01	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Tile\FS_Tile_01_CC87FBFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tile\FS_Tile_01		37506
+	108752886	FS_Gravel_03	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Gravel\FS_Gravel_03_CC87FBFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Gravel\FS_Gravel_03		48216
+	122062642	FS_Gravel_01	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Gravel\FS_Gravel_01_CC87FBFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Gravel\FS_Gravel_01		42974
+	201601495	ShotgunShellsConcrete_1	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Shotgun Shells\ShotgunShellsConcrete_1_857AE8AE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shotgun Shells\Shotgun Shells Tail\ShotgunShellsConcrete_1		30734
+	314196479	ShotgunShellsConcrete_1	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Shotgun Shells\ShotgunShellsConcrete_1_B2370EAE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shotgun Shells\Shotgun Shells Head\ShotgunShellsConcrete_1		11284
+	333377387	Teleport	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Teleport_0A288869.wem		\Actor-Mixer Hierarchy\Default Work Unit\Teleport		3675684
+	343737697	FS_Tile_02	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Tile\FS_Tile_02_CC87FBFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tile\FS_Tile_02		53668
+	412191914	FS_Gravel_02	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Gravel\FS_Gravel_02_CC87FBFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Gravel\FS_Gravel_02		34166
+	438362084	FS_Concrete_02	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Concrete\FS_Concrete_02_CC87FBFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\FS_Concrete_02		55016
+	504102903	ShotgunShellsConcrete_4	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Shotgun Shells\ShotgunShellsConcrete_4_BB91C301.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shotgun Shells\Shotgun Shells Tail\ShotgunShellsConcrete_4		113776
+	577120568	ShotgunShellsConcrete_3	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Shotgun Shells\ShotgunShellsConcrete_3_8DD00FD9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shotgun Shells\Shotgun Shells Tail\ShotgunShellsConcrete_3		96560
+	583225874	ShotgunShellsConcrete_2	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Shotgun Shells\ShotgunShellsConcrete_2_525CAFC8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shotgun Shells\Shotgun Shells Tail\ShotgunShellsConcrete_2		98586
+	608480767	FS_Dirt_01	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Dirt\FS_Dirt_01_CC87FBFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt\FS_Dirt_01		43842
+	636862517	FS_Concrete_04	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Concrete\FS_Concrete_04_CC87FBFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\FS_Concrete_04		39188
+	642406979	FS_Concrete_01	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Concrete\FS_Concrete_01_CC87FBFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\FS_Concrete_01		42920
+	688698589	ShotgunShellsConcrete_3	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Shotgun Shells\ShotgunShellsConcrete_3_92160B19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shotgun Shells\Shotgun Shells Head\ShotgunShellsConcrete_3		34866
+	690631133	ShotgunShellsConcrete_4	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Shotgun Shells\ShotgunShellsConcrete_4_050F751D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shotgun Shells\Shotgun Shells Head\ShotgunShellsConcrete_4		17794
+	713286434	Shotgun_Blast	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Shotgun_Blast_CC87FBFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shotgun_Blast		201096
+	720737159	ShotgunShellsConcrete_2	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Shotgun Shells\ShotgunShellsConcrete_2_2FA85AB5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shotgun Shells\Shotgun Shells Head\ShotgunShellsConcrete_2		32406
+	760380131	FS_Dirt_03	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Dirt\FS_Dirt_03_CC87FBFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt\FS_Dirt_03		75860
+	799347568	FS_Dirt_02	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Dirt\FS_Dirt_02_CC87FBFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt\FS_Dirt_02		75860
+	866317371	FS_Gravel_04	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Gravel\FS_Gravel_04_CC87FBFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Gravel\FS_Gravel_04		35218
+	868657921	FS_Tile_03	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Tile\FS_Tile_03_CC87FBFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tile\FS_Tile_03		58540
+	886501766	Shotgun_Pump_Out	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Shotgun_Pump_3D79895D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shotgun Pumps\Shotgun_Pump_Out		16222
+	927601829	FS_Concrete_03	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Concrete\FS_Concrete_03_CC87FBFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\FS_Concrete_03		63486
+	968109938	FS_Tile_04	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Tile\FS_Tile_04_CC87FBFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tile\FS_Tile_04		34794
+	980452861	FS_Dirt_04	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Dirt\FS_Dirt_04_CC87FBFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt\FS_Dirt_04		54340
+	1030077981	Heartbeat	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Heartbeat_0A288869.wem		\Actor-Mixer Hierarchy\Default Work Unit\Heartbeat		2843214
+	1042428374	Shotgun_Pump_In	C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Mac\SFX\Shotgun_Pump_CC87FBFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shotgun Pumps\Shotgun_Pump_In		22112
+
