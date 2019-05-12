@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DB41BCF9-AB6C-4260-9AB7-DE9662E2A58E}" SchemaVersion="80">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{DB41BCF9-AB6C-4260-9AB7-DE9662E2A58E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="SFX" ID="{3E7B8A60-ECC2-4511-8600-4E420EEAAAF8}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_alita_kick_air_strong" ID="{6235AF29-6803-408A-AED8-FA8D34AA1B58}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_alita_punch_air_weak" ID="{03513C85-FEEF-409C-AF56-70EB32735B4A}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_alita_hurt" ID="{A73FFB8E-D9E8-40B5-8ACF-6F269AC28E0E}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_marauder_gunshot" ID="{AD3B9D02-A7AC-4162-92EF-D84052CB2B27}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_marauder_recieve_damage_strong_punch" ID="{B32E32E7-7E8B-41A6-93B7-B026AC3E0A67}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_gui_hover" ID="{75BA1B04-02BA-434C-9C3A-C7FF6C1BEDAA}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_alita_air_efforts_punch_weak" ID="{02702F91-5A78-437E-95CD-C09001136095}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_gui_open_menu" ID="{5A326846-1F08-438C-9BB2-A5759119BF7B}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_gui_skillpoint" ID="{155C494A-3044-43ED-AE23-C16EA6B96C95}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_alita_air_efforts_kick_weak" ID="{881A4DA2-0F2C-4471-B8E7-F4719A9A4ACA}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_alita_kick_air_weak" ID="{BC8521F5-1202-45EF-AAC6-5F0366B3A880}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_marauder_receive_damage_weak" ID="{9B5499E4-FEC8-4668-B2D4-651D4426B84F}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_alita_punch_air_strong" ID="{6DA08CE6-DB59-46FD-A03D-023F2EC39229}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_marauder_detected" ID="{FDD715F3-074B-4762-B336-8BAD42D4EE6C}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_alita_death_grunt" ID="{BB51E42E-6BE8-478A-B349-7C1EF30695B6}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_alita_skill_gun" ID="{A2661B41-2C06-47A1-A6E3-71E81B328348}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_alita_hit" ID="{1E1AB51A-6E4B-488D-AE66-11AEFDD94836}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_alita_air_efforts_kick_strong" ID="{BF525DD2-47B1-48D0-A926-17B8989BA9FB}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_alita_dash" ID="{C0AB94DC-DAFF-4913-895D-3256E7EA81EA}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_alita_skill_punch" ID="{067B0CE0-4A56-4B90-BB42-48C30DC36889}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_gui_dialog" ID="{09E09201-8D3E-4C8C-8472-535742AF3F92}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_alita_air_efforts_punch_strong" ID="{BD32D831-10C3-4CC6-B262-CA8CBB57BBA1}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_marauder_footsteps" ID="{2176E217-2C3B-4CCF-8ACF-6A0602783796}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_mine_explosion" ID="{D2B75180-18D7-4CFF-8202-DCB9951A2F40}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_gui_unlocked" ID="{559E4911-FEB5-4D01-8D71-AE1D0945876F}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_marauder_recieve_damage_strong_kick" ID="{6FAFF5A1-9088-4D5B-9C34-D7C2132DD06C}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_alita_dodge" ID="{A016C048-450D-4D87-A185-858039FF902D}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_alita_skill_axe" ID="{7B2E0FD2-8BAD-4E42-93BA-EC74FDB38277}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_alita_skill_charge" ID="{B0756972-A4EF-4EFF-961F-3F092413552A}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_marauder_death" ID="{F344F664-DE32-4F1B-A183-0E1FD91C0D38}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_alita_air_efforts_skill_punch" ID="{6C111A45-8CF2-4F95-903B-37475ACEAB91}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_alita_footsteps" ID="{8C29A50A-30F3-4FF6-B6A8-00925227A9E0}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="BGM" ID="{63B6B39D-DD82-43D3-87C5-30F3C8232857}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_combat_music" ID="{743A0DE2-6164-486A-AFA4-5363DD2F81BE}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_BGM_Placeholder" ID="{B8971829-1439-4FF6-854A-22936FCC5AFD}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="VO" ID="{C642D5BE-A076-4657-B210-DC5228B236BA}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Enemy_Dialogue" ID="{3EB8522B-AF8B-4A05-B83D-2122FD96F211}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Alita_Dialogue" ID="{11D56476-5CD1-4F9B-8872-4C0942DBDB64}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F5585687-25F5-483E-9A74-37DCCD005D5D}" SchemaVersion="80">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{F5585687-25F5-483E-9A74-37DCCD005D5D}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Volume" ID="{50522D6F-986D-46A2-888F-61B2AE02C8B8}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="75"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Pitch" ID="{26A73E64-0C87-4736-986F-95FF7B5265D3}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Volume_BGM" ID="{CE7D3583-9102-4F8C-BEAD-08521F2E74B3}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Volume_SFX" ID="{664B5F2E-2F82-4C88-B648-1A53515C9E88}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Volume_VO" ID="{F3A04710-3BF8-43B8-8763-1897493D7DA7}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Volume_Master" ID="{47D54334-BA8B-48B2-AA3E-E8F40DC54952}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" SchemaVersion="80">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="SFX" ID="{2027AF20-CF05-49A0-9346-BDE9D0C33F51}" ShortID="679965255">
+					<ChildrenList>
+						<Event Name="Play_alita_footsteps" ID="{8C29A50A-30F3-4FF6-B6A8-00925227A9E0}">
+							<ChildrenList>
+								<Action Name="" ID="{F1FC29E8-29AB-4F67-A38F-B6B75D4076E2}" ShortID="789484520">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{A31F72AB-BE7A-48A5-AC12-1FE87BC325E1}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_gui_dialog" ID="{09E09201-8D3E-4C8C-8472-535742AF3F92}">
+							<ChildrenList>
+								<Action Name="" ID="{10B1980E-581B-4615-BF77-70DD6E2281AA}" ShortID="139327390">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Gui_Dialogs" ID="{8B7B59AE-2799-4C7B-91C1-5B7A52B53A34}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_mine_explosion" ID="{D2B75180-18D7-4CFF-8202-DCB9951A2F40}">
+							<ChildrenList>
+								<Action Name="" ID="{49C56AAB-9F5A-40FD-B3B2-F646DF167CEC}" ShortID="1073165560">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mine_explosion" ID="{81299B2F-25E9-469A-82A0-A2FF872DB217}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_marauder_gunshot" ID="{AD3B9D02-A7AC-4162-92EF-D84052CB2B27}">
+							<ChildrenList>
+								<Action Name="" ID="{4B6B0DE9-D73D-48D2-884F-B76AA208466D}" ShortID="324215620">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="weapon_to_robot" ID="{E99CA631-02D2-4A20-B0C7-00071C8C8B4D}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_alita_dash" ID="{C0AB94DC-DAFF-4913-895D-3256E7EA81EA}">
+							<ChildrenList>
+								<Action Name="" ID="{65F938F2-A5CD-458F-A36D-8D1C401DAF32}" ShortID="358825921">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="dash" ID="{BE8651B4-2B2A-412D-851B-988BDC736158}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_alita_hit" ID="{1E1AB51A-6E4B-488D-AE66-11AEFDD94836}">
+							<ChildrenList>
+								<Action Name="" ID="{2C97CF45-86CE-447F-A762-81A6255F9736}" ShortID="576163484">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="hit" ID="{EFEA199B-99B9-4C7B-80F0-1312F000F13F}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_marauder_footsteps" ID="{2176E217-2C3B-4CCF-8ACF-6A0602783796}">
+							<ChildrenList>
+								<Action Name="" ID="{AD0FC62B-B1FE-43F5-B5E9-091046B50D3A}" ShortID="748704412">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{AFCF9E02-8F85-49F7-91CD-D912C032205D}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_marauder_death" ID="{F344F664-DE32-4F1B-A183-0E1FD91C0D38}">
+							<ChildrenList>
+								<Action Name="" ID="{59770D13-63C4-40D2-9E95-9A33602F0A9E}" ShortID="619489890">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Death" ID="{214CE0DC-56C2-4F5F-A6F1-46B07272D270}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_marauder_detected" ID="{FDD715F3-074B-4762-B336-8BAD42D4EE6C}">
+							<ChildrenList>
+								<Action Name="" ID="{08880A2B-1FEF-4233-B84D-2DB30428561B}" ShortID="152500625">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Probability" Type="Real64" Value="25"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Detected" ID="{44EF1FD3-E2F7-48FB-B48C-49F7719400C2}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_alita_skill_charge" ID="{B0756972-A4EF-4EFF-961F-3F092413552A}">
+							<ChildrenList>
+								<Action Name="" ID="{CBE4FF0B-9F92-4F78-8813-4940AE05CECE}" ShortID="41901384">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Skill_Charge" ID="{3400BFAC-4B62-4FDA-9F12-FC30F06E5AF2}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_alita_skill_gun" ID="{A2661B41-2C06-47A1-A6E3-71E81B328348}">
+							<ChildrenList>
+								<Action Name="" ID="{57664F08-A5DE-4DC9-BA8F-62250F22DF17}" ShortID="663133326">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Skill_Gun" ID="{367AFB15-3A78-403A-AB3E-17673C59E3A5}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_alita_skill_punch" ID="{067B0CE0-4A56-4B90-BB42-48C30DC36889}">
+							<ChildrenList>
+								<Action Name="" ID="{A675F795-D207-430C-8D1C-55998396BC03}" ShortID="26510490">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Skill_Punch" ID="{C347CDFB-FB27-433E-9188-17623064E2FA}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_alita_skill_axe" ID="{7B2E0FD2-8BAD-4E42-93BA-EC74FDB38277}">
+							<ChildrenList>
+								<Action Name="" ID="{0CF1D8C9-A0C4-4EFB-AEE7-F8A505B35DC7}" ShortID="35585477">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Skill_Axe" ID="{6E1C01AB-5050-4089-A247-7CFCC7E3FC7F}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_alita_air_efforts_skill_punch" ID="{6C111A45-8CF2-4F95-903B-37475ACEAB91}">
+							<ChildrenList>
+								<Action Name="" ID="{E73FFA87-3783-4ED1-9F71-2C7349BD5917}" ShortID="716791832">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Probability" Type="Real64" Value="35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="air_efforts_skill_punch" ID="{6C162117-5547-4066-B5F8-626CAC27F262}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_alita_air_efforts_kick_strong" ID="{BF525DD2-47B1-48D0-A926-17B8989BA9FB}">
+							<ChildrenList>
+								<Action Name="" ID="{6529EA09-6345-4286-A0A8-F106023C189F}" ShortID="320145916">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Efforts_Kick_Strong" ID="{1C7DC147-995F-4BC2-8128-450187FE4BA5}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_alita_air_efforts_kick_weak" ID="{881A4DA2-0F2C-4471-B8E7-F4719A9A4ACA}">
+							<ChildrenList>
+								<Action Name="" ID="{6E623BBA-BED6-46BE-B5B8-B677B0E2B47D}" ShortID="135833184">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Probability" Type="Real64" Value="35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="air_efforts_kick_weak" ID="{450CBED7-35AC-48D4-8221-DC07D41841A7}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_alita_air_efforts_punch_weak" ID="{02702F91-5A78-437E-95CD-C09001136095}">
+							<ChildrenList>
+								<Action Name="" ID="{9B370F1A-3F5C-4AB1-9556-DEBD3A8B0F55}" ShortID="123090139">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Probability" Type="Real64" Value="35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="air_efforts_punch_weak" ID="{F436F706-8BE2-414B-95B2-95E618150483}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_alita_air_efforts_punch_strong" ID="{BD32D831-10C3-4CC6-B262-CA8CBB57BBA1}">
+							<ChildrenList>
+								<Action Name="" ID="{6C394AD8-025E-44F3-8E56-431F093EB729}" ShortID="128578548">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Efforts_Punch_Strong" ID="{1BFAAA0D-C32C-4F02-AC1C-8631C5E2B74B}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_alita_death_grunt" ID="{BB51E42E-6BE8-478A-B349-7C1EF30695B6}">
+							<ChildrenList>
+								<Action Name="" ID="{5C774F17-8A7C-4A3A-8EFA-B85C081A0302}" ShortID="28737937">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Death_Grunt" ID="{D1014119-B6D1-4DDE-B25A-2F1604A4B2F8}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_alita_hurt" ID="{A73FFB8E-D9E8-40B5-8ACF-6F269AC28E0E}">
+							<ChildrenList>
+								<Action Name="" ID="{FF64A8C3-FED8-4A9C-9C2F-00A2EF9F6E5A}" ShortID="135185385">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hurt" ID="{9277592E-1FDA-476F-B899-C8B2E468F6DB}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_alita_punch_air_strong" ID="{6DA08CE6-DB59-46FD-A03D-023F2EC39229}">
+							<ChildrenList>
+								<Action Name="" ID="{C63F7BA0-BAF2-45DD-8C9A-CB4C2909BC52}" ShortID="915984219">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="punch_air_strong" ID="{6AE20688-F7B2-4D34-BEBD-54ED9E5CF7C0}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_alita_kick_air_weak" ID="{BC8521F5-1202-45EF-AAC6-5F0366B3A880}">
+							<ChildrenList>
+								<Action Name="" ID="{48E76749-6138-45E0-85E5-A6B28FA288C9}" ShortID="831202589">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="kick_air_weak" ID="{BF097799-BFEC-4912-80C6-B87019D433A3}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_alita_punch_air_weak" ID="{03513C85-FEEF-409C-AF56-70EB32735B4A}">
+							<ChildrenList>
+								<Action Name="" ID="{40870041-2FF2-4131-80C6-0A846FC3BA09}" ShortID="987620502">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="punch_air_weak" ID="{961B6F97-83AE-4AB6-BCC3-5848A0EF4FF3}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_alita_kick_air_strong" ID="{6235AF29-6803-408A-AED8-FA8D34AA1B58}">
+							<ChildrenList>
+								<Action Name="" ID="{01397DF6-1F59-4451-8BCA-C380C577454D}" ShortID="524042598">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="kick_air_strong" ID="{F79865CA-2CD0-4CDB-BE43-4263E4AE5FE1}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_marauder_recieve_damage_strong_punch" ID="{B32E32E7-7E8B-41A6-93B7-B026AC3E0A67}">
+							<ChildrenList>
+								<Action Name="" ID="{4AEF12AA-E56E-400E-93C7-38DC59F58C5A}" ShortID="680159578">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="recieve_damage_strong_punch" ID="{40AB8D5C-4E63-414E-B0D9-AD118C00FA7F}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_marauder_receive_damage_weak" ID="{9B5499E4-FEC8-4668-B2D4-651D4426B84F}">
+							<ChildrenList>
+								<Action Name="" ID="{12135892-9849-4371-889E-C1DA27BE34C8}" ShortID="541018572">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Receive_Damage_Weak" ID="{6E7D0FBB-612D-4607-BF43-933CDB3340CA}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_alita_dodge" ID="{A016C048-450D-4D87-A185-858039FF902D}">
+							<ChildrenList>
+								<Action Name="" ID="{331DBE64-AC02-445C-B868-4F7254AB3BF9}" ShortID="37313924">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="dodge" ID="{D252DA06-C4A4-4BFA-B1FF-DEB647DD1A7C}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_marauder_recieve_damage_strong_kick" ID="{6FAFF5A1-9088-4D5B-9C34-D7C2132DD06C}">
+							<ChildrenList>
+								<Action Name="" ID="{4001C20E-5D14-4749-ACFE-1C986C980554}" ShortID="141320220">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="recieve_damage_strong_kick" ID="{62316684-041B-40DF-B4DA-40AD50EC007C}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_gui_hover" ID="{75BA1B04-02BA-434C-9C3A-C7FF6C1BEDAA}">
+							<ChildrenList>
+								<Action Name="" ID="{5F44F5CA-1E1B-4CAB-9C5A-0632D8928AB9}" ShortID="139892525">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="gui_hover_1" ID="{E9870E78-E82F-4BDA-AA99-0BECC5D91C33}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_gui_open_menu" ID="{5A326846-1F08-438C-9BB2-A5759119BF7B}">
+							<ChildrenList>
+								<Action Name="" ID="{274524D2-012F-4EA8-BF6B-88AF0F2C2230}" ShortID="723359743">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="gui_open_menu" ID="{88539C4C-E7BA-4302-811C-C299C1F0B50C}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_gui_unlocked" ID="{559E4911-FEB5-4D01-8D71-AE1D0945876F}">
+							<ChildrenList>
+								<Action Name="" ID="{45134E4D-E38A-4D60-AAC4-15CBB267DBE3}" ShortID="539528274">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="gui_unlocked" ID="{7EA2D09B-B15C-4274-B103-45C937983563}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_gui_skillpoint" ID="{155C494A-3044-43ED-AE23-C16EA6B96C95}">
+							<ChildrenList>
+								<Action Name="" ID="{484CDEDE-E36D-4320-8DEF-5B84084B590A}" ShortID="663052757">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="gui_skillpoint" ID="{69325D75-0212-412C-A842-46EB76E49283}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="VO" ID="{6EC26FA8-21CF-400C-A985-8DD2DC87D9C5}" ShortID="312859081">
+					<ChildrenList>
+						<Event Name="Play_Enemy_Dialogue" ID="{3EB8522B-AF8B-4A05-B83D-2122FD96F211}">
+							<ChildrenList>
+								<Action Name="" ID="{FC2858E0-65E9-48E4-A3AA-D8615555848F}" ShortID="737789686">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Enemy_Dialogue" ID="{FBA0395F-2B2E-4A94-AF32-9E78AC7D0C69}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Alita_Dialogue" ID="{11D56476-5CD1-4F9B-8872-4C0942DBDB64}">
+							<ChildrenList>
+								<Action Name="" ID="{ACA7E812-38D2-44AF-ADE2-EEA216E0B182}" ShortID="59663579">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Alita_Dialogue" ID="{51553D53-4020-4DD4-ACD9-4F5E6FC0C64C}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="BGM" ID="{DB4783BC-2A51-4818-BCE2-F78A396534B1}" ShortID="290803677">
+					<ChildrenList>
+						<Event Name="Play_BGM_Placeholder" ID="{B8971829-1439-4FF6-854A-22936FCC5AFD}">
+							<ChildrenList>
+								<Action Name="" ID="{DCFF9DCE-3C21-4E19-AB7C-439F096C28FC}" ShortID="270280847">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BG Music Placeholder" ID="{D0410252-82EF-408B-B904-063A23DBB63F}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_combat_music" ID="{743A0DE2-6164-486A-AFA4-5363DD2F81BE}">
+							<ChildrenList>
+								<Action Name="" ID="{936F805A-43BF-4A3E-A732-3A225DE77311}" ShortID="119659520">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="combat_intro" ID="{B1ABF886-155A-4C3D-BEBF-F7AF00BE5DFF}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4516574C-EAE3-4303-B9D0-81A709C4C553}" ShortID="834491384">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="combat_music" ID="{0C5FC0B4-30A2-494B-93EF-0A733D51BC43}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_exploration_music" ID="{03C49118-C987-41E9-BF1A-BA03B07757F8}">
+							<ChildrenList>
+								<Action Name="" ID="{BFAEF2E0-AFBD-467F-A621-2E6CAFAFB3D4}" ShortID="361911557">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeCurve" Type="int16" Value="5"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="exploration_music" ID="{88404ABF-D2C3-4C76-892A-805692BBA485}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_music_tavern" ID="{FCADA08B-C5F3-4A6B-B27E-E33878764714}">
+							<ChildrenList>
+								<Action Name="" ID="{0EE9AB07-D975-44B9-8A51-6E1647ECC5A7}" ShortID="655165690">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="music_tavern" ID="{0089F65F-F7D6-43A5-8977-0CADC71EBD65}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
