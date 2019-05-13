@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{F10B222B-2801-430A-B717-538AC6BBF93D}" SchemaVersion="85">
+<WwiseDocument Type="WorkUnit" ID="{F10B222B-2801-430A-B717-538AC6BBF93D}" SchemaVersion="89">
 	<Busses>
 		<WorkUnit Name="Default Work Unit" ID="{F10B222B-2801-430A-B717-538AC6BBF93D}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<PropertyList>
-						<Property Name="DivergenceCenter" Type="int32">
+						<Property Name="CenterPercentage" Type="int32">
 							<ValueList>
 								<Value>100</Value>
 							</ValueList>
@@ -31,7 +31,7 @@
 					<ChildrenList>
 						<Bus Name="Environmental" ID="{57C6501D-BC56-4FA1-B943-F021ADC84984}">
 							<PropertyList>
-								<Property Name="DivergenceCenter" Type="int32">
+								<Property Name="CenterPercentage" Type="int32">
 									<ValueList>
 										<Value>100</Value>
 									</ValueList>
@@ -40,7 +40,7 @@
 							<ChildrenList>
 								<Bus Name="SFX" ID="{5EE05A0D-716E-417F-BA34-CDF5050D7646}">
 									<PropertyList>
-										<Property Name="DivergenceCenter" Type="int32">
+										<Property Name="CenterPercentage" Type="int32">
 											<ValueList>
 												<Value>100</Value>
 											</ValueList>
@@ -49,7 +49,7 @@
 								</Bus>
 								<AuxBus Name="env_corridor" ID="{F52E4645-9B2E-481F-B6DB-9EE415D680CB}">
 									<PropertyList>
-										<Property Name="DivergenceCenter" Type="int32">
+										<Property Name="CenterPercentage" Type="int32">
 											<ValueList>
 												<Value>100</Value>
 											</ValueList>
@@ -62,6 +62,28 @@
 									</ReferenceList>
 								</AuxBus>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="PlayerLife" ID="{B35C859F-4841-49E0-8B98-85DFAC37BFF5}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Alive" ID="{9C5D7F20-92FC-4387-9BCC-F6F4D27F9B34}"/>
+										<State Name="" ID="{5BBB353B-F27C-41C3-A7D7-36EABA63CFD5}" ShortID="612598543"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Dead" ID="{88957439-75EF-4388-B7D5-C80FBE8EE054}"/>
+										<State Name="" ID="{87C31299-E3CC-4994-9BEA-7CA3020612E8}" ShortID="630990660">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-8"/>
+												<Property Name="Lowpass" Type="int16" Value="65"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<DuckingList>
 								<DuckItem>
 									<BusRef Name="Music" ID="{F56CF22F-61C4-4792-93FF-57193FC3DE62}"/>
@@ -76,7 +98,7 @@
 						</Bus>
 						<Bus Name="Music" ID="{F56CF22F-61C4-4792-93FF-57193FC3DE62}">
 							<PropertyList>
-								<Property Name="DivergenceCenter" Type="int32">
+								<Property Name="CenterPercentage" Type="int32">
 									<ValueList>
 										<Value>100</Value>
 									</ValueList>

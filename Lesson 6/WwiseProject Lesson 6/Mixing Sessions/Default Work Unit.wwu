@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{A71FA2BB-4B59-480B-A3A2-A5D3F2DDC76D}" SchemaVersion="85">
+<WwiseDocument Type="WorkUnit" ID="{A71FA2BB-4B59-480B-A3A2-A5D3F2DDC76D}" SchemaVersion="89">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{A71FA2BB-4B59-480B-A3A2-A5D3F2DDC76D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A71FA2BB-4B59-480B-A3A2-A5D3F2DDC76D}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="Rocket" ID="{7371B89A-1598-4E9E-8300-8ABE6DBA7707}">
+					<ObjectList>
+						<ObjectRef Name="Rocket Launcher" ID="{94D57CED-3FC4-48E2-8954-425E6AC248C5}" WorkUnitID="{8D65CABB-7643-4775-8C45-3B7F325D73EF}"/>
+						<ObjectRef Name="Explode" ID="{CE264F40-DF00-4412-B473-E8385D8F9CAB}" WorkUnitID="{8D65CABB-7643-4775-8C45-3B7F325D73EF}"/>
+						<ObjectRef Name="rlaunch" ID="{D0ABE89E-10AF-469C-8297-728E4F768B36}" WorkUnitID="{8D65CABB-7643-4775-8C45-3B7F325D73EF}"/>
+						<ObjectRef Name="Thrust" ID="{448E5B97-12A4-47EA-9D12-06876BA890CF}" WorkUnitID="{8D65CABB-7643-4775-8C45-3B7F325D73EF}"/>
+						<ObjectRef Name="Environmental" ID="{57C6501D-BC56-4FA1-B943-F021ADC84984}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
+						<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
+					</ObjectList>
+				</MixingSession>
+				<MixingSession Name="Bus Masters" ID="{7CA24175-031B-490A-A29D-44802D3D2BF2}">
+					<ObjectList>
+						<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
+						<ObjectRef Name="Environmental" ID="{57C6501D-BC56-4FA1-B943-F021ADC84984}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
+						<ObjectRef Name="SFX" ID="{5EE05A0D-716E-417F-BA34-CDF5050D7646}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
+						<ObjectRef Name="env_corridor" ID="{F52E4645-9B2E-481F-B6DB-9EE415D680CB}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
+						<ObjectRef Name="Music" ID="{F56CF22F-61C4-4792-93FF-57193FC3DE62}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>
