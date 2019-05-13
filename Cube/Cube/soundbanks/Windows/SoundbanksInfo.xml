@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
 	<RootPaths>
-		<ProjectRoot>C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\josepps14\Documents\GitHub\Wwise\Cube\Cube\soundbanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\Documents\GitHub\Wwise\Lesson 5\WwiseProject Lesson 5\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\GitHub\Wwise\Lesson 5\WwiseProject Lesson 5\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\GitHub\Wwise\Cube\Cube\soundbanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 4\Wwise Project Lesson 4\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Documents\GitHub\Wwise\Lesson 5\cube\soundbanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles/>
+	<StreamedFiles>
+		<File Id="797700993" Language="SFX">
+			<ShortName>cubetrak.wav</ShortName>
+			<Path>SFX\cubetrak_0A288869.wem</Path>
+		</File>
+	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
 		<SoundBank Id="1355168291" Language="SFX">
@@ -21,127 +26,489 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3721111614" Name="DCP_Music" ObjectPath="\Events\Default Work Unit\DCP_Music"/>
-				<Event Id="598337033" Name="Emitter_Teleport" ObjectPath="\Events\Default Work Unit\Emitter_Teleport"/>
-				<Event Id="1367775454" Name="Fire_Shotgun_Player" ObjectPath="\Events\Default Work Unit\Fire_Shotgun_Player"/>
-				<Event Id="1894362767" Name="Foot_Player" ObjectPath="\Events\Default Work Unit\Foot_Player"/>
+				<Event Id="3721111614" Name="DCP_Music" ObjectPath="\Events\Default Work Unit\Main\DCP_Music"/>
+				<Event Id="1563934831" Name="Death_Bauul" ObjectPath="\Events\Default Work Unit\Main\Death\Death_Bauul"/>
+				<Event Id="3102123049" Name="Death_Goblin" ObjectPath="\Events\Default Work Unit\Main\Death\Death_Goblin"/>
+				<Event Id="1714600999" Name="Death_HellPig" ObjectPath="\Events\Default Work Unit\Main\Death\Death_HellPig"/>
+				<Event Id="3010130547" Name="Death_Knight" ObjectPath="\Events\Default Work Unit\Main\Death\Death_Knight"/>
+				<Event Id="4005537029" Name="Death_Ogre" ObjectPath="\Events\Default Work Unit\Main\Death\Death_Ogre"/>
+				<Event Id="3787035475" Name="Death_Player" ObjectPath="\Events\Default Work Unit\Main\Death\Death_Player"/>
+				<Event Id="977466717" Name="Death_Rat" ObjectPath="\Events\Default Work Unit\Main\Death\Death_Rat"/>
+				<Event Id="590006878" Name="Death_Rhino" ObjectPath="\Events\Default Work Unit\Main\Death\Death_Rhino"/>
+				<Event Id="4171831390" Name="Death_Slith" ObjectPath="\Events\Default Work Unit\Main\Death\Death_Slith"/>
+				<Event Id="598337033" Name="Emitter_Teleport" ObjectPath="\Events\Default Work Unit\Main\Emitter_Teleport"/>
+				<Event Id="1363190628" Name="End_Rocket_Monster" ObjectPath="\Events\Default Work Unit\Main\Weapons\End_Rocket_Monster"/>
+				<Event Id="3475891921" Name="End_Rocket_Player" ObjectPath="\Events\Default Work Unit\Main\Weapons\End_Rocket_Player"/>
+				<Event Id="784615425" Name="Fire_Bite_Monster" ObjectPath="\Events\Default Work Unit\Main\Weapons\Fire_Bite_Monster"/>
+				<Event Id="3304704240" Name="Fire_Chaingun_Monster" ObjectPath="\Events\Default Work Unit\Main\Weapons\Fire_Chaingun_Monster"/>
+				<Event Id="4108509389" Name="Fire_Chaingun_Player" ObjectPath="\Events\Default Work Unit\Main\Weapons\Fire_Chaingun_Player"/>
+				<Event Id="157654016" Name="Fire_Fireball_Monster" ObjectPath="\Events\Default Work Unit\Main\Weapons\Fire_Fireball_Monster"/>
+				<Event Id="2725484349" Name="Fire_Fireball_Player" ObjectPath="\Events\Default Work Unit\Main\Weapons\Fire_Fireball_Player"/>
+				<Event Id="2980152002" Name="Fire_Fist_Player" ObjectPath="\Events\Default Work Unit\Main\Weapons\Fire_Fist_Player"/>
+				<Event Id="840179825" Name="Fire_Iceball_Monster" ObjectPath="\Events\Default Work Unit\Main\Weapons\Fire_Iceball_Monster"/>
+				<Event Id="3507362942" Name="Fire_Iceball_Player" ObjectPath="\Events\Default Work Unit\Main\Weapons\Fire_Iceball_Player"/>
+				<Event Id="81429765" Name="Fire_Rifle_Monster" ObjectPath="\Events\Default Work Unit\Main\Weapons\Fire_Rifle_Monster"/>
+				<Event Id="2148509378" Name="Fire_Rifle_Player" ObjectPath="\Events\Default Work Unit\Main\Weapons\Fire_Rifle_Player"/>
+				<Event Id="3156728271" Name="Fire_Rocket_Monster" ObjectPath="\Events\Default Work Unit\Main\Weapons\Fire_Rocket_Monster"/>
+				<Event Id="2642900100" Name="Fire_Rocket_Player" ObjectPath="\Events\Default Work Unit\Main\Weapons\Fire_Rocket_Player"/>
+				<Event Id="4227791953" Name="Fire_Shotgun_Monster" ObjectPath="\Events\Default Work Unit\Main\Weapons\Fire_Shotgun_Monster"/>
+				<Event Id="1367775454" Name="Fire_Shotgun_Player" ObjectPath="\Events\Default Work Unit\Main\Weapons\Fire_Shotgun_Player"/>
+				<Event Id="199291532" Name="Fire_SlimeBall_Monster" ObjectPath="\Events\Default Work Unit\Main\Weapons\Fire_SlimeBall_Monster"/>
+				<Event Id="3245662041" Name="Fire_SlimeBall_Player" ObjectPath="\Events\Default Work Unit\Main\Weapons\Fire_SlimeBall_Player"/>
+				<Event Id="2677919691" Name="Foot_Bauul" ObjectPath="\Events\Default Work Unit\Main\Foot\Foot_Bauul"/>
+				<Event Id="2057306229" Name="Foot_Goblin" ObjectPath="\Events\Default Work Unit\Main\Foot\Foot_Goblin"/>
+				<Event Id="4226354843" Name="Foot_HellPig" ObjectPath="\Events\Default Work Unit\Main\Foot\Foot_HellPig"/>
+				<Event Id="2052767559" Name="Foot_Knight" ObjectPath="\Events\Default Work Unit\Main\Foot\Foot_Knight"/>
+				<Event Id="1532553273" Name="Foot_Ogre" ObjectPath="\Events\Default Work Unit\Main\Foot\Foot_Ogre"/>
+				<Event Id="1894362767" Name="Foot_Player" ObjectPath="\Events\Default Work Unit\Main\Foot\Foot_Player"/>
+				<Event Id="2798325225" Name="Foot_Rat" ObjectPath="\Events\Default Work Unit\Main\Foot\Foot_Rat"/>
+				<Event Id="3826003282" Name="Foot_Rhino" ObjectPath="\Events\Default Work Unit\Main\Foot\Foot_Rhino"/>
+				<Event Id="3877293442" Name="Foot_Slith" ObjectPath="\Events\Default Work Unit\Main\Foot\Foot_Slith"/>
+				<Event Id="856071815" Name="Grunt_Bauul" ObjectPath="\Events\Default Work Unit\Main\Grunt\Grunt_Bauul"/>
+				<Event Id="4013911457" Name="Grunt_Goblin" ObjectPath="\Events\Default Work Unit\Main\Grunt\Grunt_Goblin"/>
+				<Event Id="4053570031" Name="Grunt_HellPig" ObjectPath="\Events\Default Work Unit\Main\Grunt\Grunt_HellPig"/>
+				<Event Id="1636303851" Name="Grunt_Knight" ObjectPath="\Events\Default Work Unit\Main\Grunt\Grunt_Knight"/>
+				<Event Id="2202981293" Name="Grunt_Ogre" ObjectPath="\Events\Default Work Unit\Main\Grunt\Grunt_Ogre"/>
+				<Event Id="3838741285" Name="Grunt_Rat" ObjectPath="\Events\Default Work Unit\Main\Grunt\Grunt_Rat"/>
+				<Event Id="436652326" Name="Grunt_Rhino" ObjectPath="\Events\Default Work Unit\Main\Grunt\Grunt_Rhino"/>
+				<Event Id="401958326" Name="Grunt_Slith" ObjectPath="\Events\Default Work Unit\Main\Grunt\Grunt_Slith"/>
+				<Event Id="1110865203" Name="Hit_Fireball_Monster" ObjectPath="\Events\Default Work Unit\Main\Weapons\Hit_Fireball_Monster"/>
+				<Event Id="3638319432" Name="Hit_Fireball_Player" ObjectPath="\Events\Default Work Unit\Main\Weapons\Hit_Fireball_Player"/>
+				<Event Id="1992030584" Name="Hit_Rocket_Monster" ObjectPath="\Events\Default Work Unit\Main\Weapons\Hit_Rocket_Monster"/>
+				<Event Id="2676121589" Name="Hit_Rocket_Player" ObjectPath="\Events\Default Work Unit\Main\Weapons\Hit_Rocket_Player"/>
+				<Event Id="2017135346" Name="ItemAmmo" ObjectPath="\Events\Default Work Unit\Main\ItemAmmo"/>
+				<Event Id="1258133445" Name="ItemArmour100" ObjectPath="\Events\Default Work Unit\Main\ItemArmour100"/>
+				<Event Id="1174245414" Name="ItemArmour150" ObjectPath="\Events\Default Work Unit\Main\ItemArmour150"/>
+				<Event Id="2677419351" Name="ItemHealth100" ObjectPath="\Events\Default Work Unit\Main\ItemHealth100"/>
+				<Event Id="227445756" Name="ItemHealth200" ObjectPath="\Events\Default Work Unit\Main\ItemHealth200"/>
+				<Event Id="1729244423" Name="ItemPup" ObjectPath="\Events\Default Work Unit\Main\ItemPup"/>
+				<Event Id="1125681085" Name="ItemSpawn" ObjectPath="\Events\Default Work Unit\Main\ItemSpawn"/>
+				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Main\Jump"/>
+				<Event Id="4149105284" Name="JumpPad" ObjectPath="\Events\Default Work Unit\Main\JumpPad"/>
+				<Event Id="1758594367" Name="Map_Loaded" ObjectPath="\Events\Default Work Unit\Main\Map_Loaded"/>
+				<Event Id="16204334" Name="NoAmmo" ObjectPath="\Events\Default Work Unit\Main\NoAmmo"/>
+				<Event Id="1996139369" Name="Pain" ObjectPath="\Events\Default Work Unit\Main\Pain\Pain"/>
+				<Event Id="930941543" Name="Pain_Bauul" ObjectPath="\Events\Default Work Unit\Main\Pain\Pain_Bauul"/>
+				<Event Id="32029953" Name="Pain_Goblin" ObjectPath="\Events\Default Work Unit\Main\Pain\Pain_Goblin"/>
+				<Event Id="4052749775" Name="Pain_HellPig" ObjectPath="\Events\Default Work Unit\Main\Pain\Pain_HellPig"/>
+				<Event Id="1207059019" Name="Pain_Knight" ObjectPath="\Events\Default Work Unit\Main\Pain\Pain_Knight"/>
+				<Event Id="2465710861" Name="Pain_Ogre" ObjectPath="\Events\Default Work Unit\Main\Pain\Pain_Ogre"/>
+				<Event Id="1698673413" Name="Pain_Rat" ObjectPath="\Events\Default Work Unit\Main\Pain\Pain_Rat"/>
+				<Event Id="87064326" Name="Pain_Rhino" ObjectPath="\Events\Default Work Unit\Main\Pain\Pain_Rhino"/>
+				<Event Id="52370326" Name="Pain_Slith" ObjectPath="\Events\Default Work Unit\Main\Pain\Pain_Slith"/>
+				<Event Id="3977213604" Name="PupFire" ObjectPath="\Events\Default Work Unit\Main\PupFire"/>
+				<Event Id="3732061108" Name="PupOut" ObjectPath="\Events\Default Work Unit\Main\PupOut"/>
+				<Event Id="1379053034" Name="Spawn_Player" ObjectPath="\Events\Default Work Unit\Main\Spawn_Player"/>
+				<Event Id="530129416" Name="Teleport" ObjectPath="\Events\Default Work Unit\Main\Teleport"/>
+				<Event Id="2957699042" Name="WeapLoad" ObjectPath="\Events\Default Work Unit\Main\WeapLoad"/>
 			</IncludedEvents>
+			<ReferencedStreamedFiles>
+				<File Id="797700993"/>
+			</ReferencedStreamedFiles>
 			<IncludedMemoryFiles>
-				<File Id="71525550" Language="SFX">
-					<ShortName>Tile\FS_Tile_01.wav</ShortName>
-					<Path>SFX\Tile\FS_Tile_01_90722D8F.wem</Path>
+				<File Id="21615843" Language="SFX">
+					<ShortName>AK_Boing_x.wav</ShortName>
+					<Path>SFX\AK_Boing_x_CC87FBFB.wem</Path>
 				</File>
-				<File Id="108752886" Language="SFX">
-					<ShortName>Gravel\FS_Gravel_03.wav</ShortName>
-					<Path>SFX\Gravel\FS_Gravel_03_90722D8F.wem</Path>
+				<File Id="24580226" Language="SFX">
+					<ShortName>explodemini3.wav</ShortName>
+					<Path>SFX\explodemini3_CC87FBFB.wem</Path>
 				</File>
-				<File Id="122062642" Language="SFX">
-					<ShortName>Gravel\FS_Gravel_01.wav</ShortName>
-					<Path>SFX\Gravel\FS_Gravel_01_90722D8F.wem</Path>
+				<File Id="44767741" Language="SFX">
+					<ShortName>painr_3.wav</ShortName>
+					<Path>SFX\painr_3_CC87FBFB.wem</Path>
+				</File>
+				<File Id="52528460" Language="SFX">
+					<ShortName>acid6.wav</ShortName>
+					<Path>SFX\acid6_CC87FBFB.wem</Path>
+				</File>
+				<File Id="62798402" Language="SFX">
+					<ShortName>deathe.wav</ShortName>
+					<Path>SFX\deathe_CC87FBFB.wem</Path>
+				</File>
+				<File Id="63730319" Language="SFX">
+					<ShortName>rlaunch.wav</ShortName>
+					<Path>SFX\rlaunch_CC87FBFB.wem</Path>
+				</File>
+				<File Id="72800737" Language="SFX">
+					<ShortName>FS_Gravel_02.wav</ShortName>
+					<Path>SFX\FS_Gravel_02_CC87FBFB.wem</Path>
+				</File>
+				<File Id="103738863" Language="SFX">
+					<ShortName>piggrunt2.wav</ShortName>
+					<Path>SFX\piggrunt2_CC87FBFB.wem</Path>
+				</File>
+				<File Id="104322891" Language="SFX">
+					<ShortName>pains.wav</ShortName>
+					<Path>SFX\pains_CC87FBFB.wem</Path>
+				</File>
+				<File Id="141022160" Language="SFX">
+					<ShortName>iceball1.wav</ShortName>
+					<Path>SFX\iceball1_CC87FBFB.wem</Path>
+				</File>
+				<File Id="141265795" Language="SFX">
+					<ShortName>explodemini1.wav</ShortName>
+					<Path>SFX\explodemini1_CC87FBFB.wem</Path>
+				</File>
+				<File Id="150115904" Language="SFX">
+					<ShortName>acid5.wav</ShortName>
+					<Path>SFX\acid5_CC87FBFB.wem</Path>
+				</File>
+				<File Id="158621023" Language="SFX">
+					<ShortName>pain4.wav</ShortName>
+					<Path>SFX\pain4_CC87FBFB.wem</Path>
+				</File>
+				<File Id="162814894" Language="SFX">
+					<ShortName>painr_1.wav</ShortName>
+					<Path>SFX\painr_1_CC87FBFB.wem</Path>
+				</File>
+				<File Id="163870415" Language="SFX">
+					<ShortName>AK_Explode.wav</ShortName>
+					<Path>SFX\AK_Explode_CC87FBFB.wem</Path>
+				</File>
+				<File Id="185060067" Language="SFX">
+					<ShortName>Teleporter.wav</ShortName>
+					<Path>SFX\Teleporter_0A288869.wem</Path>
+				</File>
+				<File Id="187954308" Language="SFX">
+					<ShortName>pain2.wav</ShortName>
+					<Path>SFX\pain2_CC87FBFB.wem</Path>
+				</File>
+				<File Id="197175405" Language="SFX">
+					<ShortName>itemback.wav</ShortName>
+					<Path>SFX\itemback_CC87FBFB.wem</Path>
 				</File>
 				<File Id="201601495" Language="SFX">
 					<ShortName>Shotgun Shells\ShotgunShellsConcrete_1.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_1_7A3D16B2.wem</Path>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_1_857AE8AE.wem</Path>
+				</File>
+				<File Id="226244650" Language="SFX">
+					<ShortName>paind_3.wav</ShortName>
+					<Path>SFX\paind_3_CC87FBFB.wem</Path>
+				</File>
+				<File Id="257781505" Language="SFX">
+					<ShortName>deaths.wav</ShortName>
+					<Path>SFX\deaths_CC87FBFB.wem</Path>
+				</File>
+				<File Id="265968035" Language="SFX">
+					<ShortName>die1.wav</ShortName>
+					<Path>SFX\die1_CC87FBFB.wem</Path>
+				</File>
+				<File Id="268298990" Language="SFX">
+					<ShortName>pain6.wav</ShortName>
+					<Path>SFX\pain6_CC87FBFB.wem</Path>
+				</File>
+				<File Id="304033539" Language="SFX">
+					<ShortName>FS_Dirt_04.wav</ShortName>
+					<Path>SFX\FS_Dirt_04_CC87FBFB.wem</Path>
+				</File>
+				<File Id="313095974" Language="SFX">
+					<ShortName>FS_Concrete_04.wav</ShortName>
+					<Path>SFX\FS_Concrete_04_CC87FBFB.wem</Path>
+				</File>
+				<File Id="313854590" Language="SFX">
+					<ShortName>AK_Punch_04.wav</ShortName>
+					<Path>SFX\AK_Punch_04_CC87FBFB.wem</Path>
 				</File>
 				<File Id="314196479" Language="SFX">
 					<ShortName>Shotgun Shells\ShotgunShellsConcrete_1.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_1_9950A062.wem</Path>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_1_B2370EAE.wem</Path>
 				</File>
-				<File Id="333377387" Language="SFX">
-					<ShortName>Teleport.wav</ShortName>
-					<Path>SFX\Teleport_0A288869.wem</Path>
+				<File Id="331178164" Language="SFX">
+					<ShortName>slimeball_1.wav</ShortName>
+					<Path>SFX\slimeball_1_CC87FBFB.wem</Path>
 				</File>
-				<File Id="343737697" Language="SFX">
-					<ShortName>Tile\FS_Tile_02.wav</ShortName>
-					<Path>SFX\Tile\FS_Tile_02_90722D8F.wem</Path>
+				<File Id="339261539" Language="SFX">
+					<ShortName>painh_1.wav</ShortName>
+					<Path>SFX\painh_1_CC87FBFB.wem</Path>
 				</File>
-				<File Id="412191914" Language="SFX">
-					<ShortName>Gravel\FS_Gravel_02.wav</ShortName>
-					<Path>SFX\Gravel\FS_Gravel_02_90722D8F.wem</Path>
+				<File Id="340146796" Language="SFX">
+					<ShortName>jump_4.wav</ShortName>
+					<Path>SFX\jump_4_CC87FBFB.wem</Path>
 				</File>
-				<File Id="438362084" Language="SFX">
-					<ShortName>Concrete\FS_Concrete_02.wav</ShortName>
-					<Path>SFX\Concrete\FS_Concrete_02_90722D8F.wem</Path>
+				<File Id="351978304" Language="SFX">
+					<ShortName>FS_Tile_03.wav</ShortName>
+					<Path>SFX\FS_Tile_03_CC87FBFB.wem</Path>
+				</File>
+				<File Id="352851121" Language="SFX">
+					<ShortName>outofammo.wav</ShortName>
+					<Path>SFX\outofammo_CC87FBFB.wem</Path>
+				</File>
+				<File Id="371935772" Language="SFX">
+					<ShortName>paino_3.wav</ShortName>
+					<Path>SFX\paino_3_CC87FBFB.wem</Path>
+				</File>
+				<File Id="408104808" Language="SFX">
+					<ShortName>painh_2.wav</ShortName>
+					<Path>SFX\painh_2_CC87FBFB.wem</Path>
+				</File>
+				<File Id="408532875" Language="SFX">
+					<ShortName>itempick.wav</ShortName>
+					<Path>SFX\itempick_CC87FBFB.wem</Path>
+				</File>
+				<File Id="411764063" Language="SFX">
+					<ShortName>pain1.wav</ShortName>
+					<Path>SFX\pain1_CC87FBFB.wem</Path>
+				</File>
+				<File Id="417948999" Language="SFX">
+					<ShortName>FS_Gravel_01.wav</ShortName>
+					<Path>SFX\FS_Gravel_01_CC87FBFB.wem</Path>
+				</File>
+				<File Id="424141051" Language="SFX">
+					<ShortName>painh_3.wav</ShortName>
+					<Path>SFX\painh_3_CC87FBFB.wem</Path>
+				</File>
+				<File Id="426836929" Language="SFX">
+					<ShortName>FS_Dirt_01.wav</ShortName>
+					<Path>SFX\FS_Dirt_01_CC87FBFB.wem</Path>
+				</File>
+				<File Id="469824432" Language="SFX">
+					<ShortName>die2.wav</ShortName>
+					<Path>SFX\die2_CC87FBFB.wem</Path>
 				</File>
 				<File Id="504102903" Language="SFX">
 					<ShortName>Shotgun Shells\ShotgunShellsConcrete_4.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_4_CE4571AD.wem</Path>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_4_BB91C301.wem</Path>
+				</File>
+				<File Id="508407008" Language="SFX">
+					<ShortName>rifle_2.wav</ShortName>
+					<Path>SFX\rifle_2_CC87FBFB.wem</Path>
+				</File>
+				<File Id="522671429" Language="SFX">
+					<ShortName>grunt1.wav</ShortName>
+					<Path>SFX\grunt1_CC87FBFB.wem</Path>
+				</File>
+				<File Id="524366369" Language="SFX">
+					<ShortName>painp_1.wav</ShortName>
+					<Path>SFX\painp_1_CC87FBFB.wem</Path>
+				</File>
+				<File Id="525218887" Language="SFX">
+					<ShortName>paine_2.wav</ShortName>
+					<Path>SFX\paine_2_CC87FBFB.wem</Path>
+				</File>
+				<File Id="560785703" Language="SFX">
+					<ShortName>FS_Gravel_04.wav</ShortName>
+					<Path>SFX\FS_Gravel_04_CC87FBFB.wem</Path>
+				</File>
+				<File Id="561770627" Language="SFX">
+					<ShortName>paind_1.wav</ShortName>
+					<Path>SFX\paind_1_CC87FBFB.wem</Path>
+				</File>
+				<File Id="575800854" Language="SFX">
+					<ShortName>painb_2.wav</ShortName>
+					<Path>SFX\painb_2_CC87FBFB.wem</Path>
 				</File>
 				<File Id="577120568" Language="SFX">
 					<ShortName>Shotgun Shells\ShotgunShellsConcrete_3.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_3_83BA665D.wem</Path>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_3_8DD00FD9.wem</Path>
 				</File>
 				<File Id="583225874" Language="SFX">
 					<ShortName>Shotgun Shells\ShotgunShellsConcrete_2.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_2_4BD1549C.wem</Path>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_2_525CAFC8.wem</Path>
 				</File>
-				<File Id="608480767" Language="SFX">
-					<ShortName>Dirt\FS_Dirt_01.wav</ShortName>
-					<Path>SFX\Dirt\FS_Dirt_01_90722D8F.wem</Path>
+				<File Id="596059532" Language="SFX">
+					<ShortName>cg1.wav</ShortName>
+					<Path>SFX\cg1_CC87FBFB.wem</Path>
 				</File>
-				<File Id="636862517" Language="SFX">
-					<ShortName>Concrete\FS_Concrete_04.wav</ShortName>
-					<Path>SFX\Concrete\FS_Concrete_04_90722D8F.wem</Path>
+				<File Id="609226383" Language="SFX">
+					<ShortName>weapload.wav</ShortName>
+					<Path>SFX\weapload_CC87FBFB.wem</Path>
 				</File>
-				<File Id="642406979" Language="SFX">
-					<ShortName>Concrete\FS_Concrete_01.wav</ShortName>
-					<Path>SFX\Concrete\FS_Concrete_01_90722D8F.wem</Path>
+				<File Id="620009095" Language="SFX">
+					<ShortName>painp_3.wav</ShortName>
+					<Path>SFX\painp_3_CC87FBFB.wem</Path>
+				</File>
+				<File Id="658150210" Language="SFX">
+					<ShortName>FS_Gravel_03.wav</ShortName>
+					<Path>SFX\FS_Gravel_03_CC87FBFB.wem</Path>
+				</File>
+				<File Id="664949112" Language="SFX">
+					<ShortName>FS_Dirt_02.wav</ShortName>
+					<Path>SFX\FS_Dirt_02_CC87FBFB.wem</Path>
+				</File>
+				<File Id="670043076" Language="SFX">
+					<ShortName>AK_Punch_03.wav</ShortName>
+					<Path>SFX\AK_Punch_03_CC87FBFB.wem</Path>
+				</File>
+				<File Id="675351052" Language="SFX">
+					<ShortName>jump_1.wav</ShortName>
+					<Path>SFX\jump_1_CC87FBFB.wem</Path>
 				</File>
 				<File Id="688698589" Language="SFX">
 					<ShortName>Shotgun Shells\ShotgunShellsConcrete_3.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_3_0B4DFC25.wem</Path>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_3_92160B19.wem</Path>
+				</File>
+				<File Id="690582267" Language="SFX">
+					<ShortName>FS_Tile_01.wav</ShortName>
+					<Path>SFX\FS_Tile_01_CC87FBFB.wem</Path>
 				</File>
 				<File Id="690631133" Language="SFX">
 					<ShortName>Shotgun Shells\ShotgunShellsConcrete_4.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_4_D6DE3281.wem</Path>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_4_050F751D.wem</Path>
+				</File>
+				<File Id="709207210" Language="SFX">
+					<ShortName>jump_2.wav</ShortName>
+					<Path>SFX\jump_2_CC87FBFB.wem</Path>
 				</File>
 				<File Id="713286434" Language="SFX">
 					<ShortName>Shotgun_Blast.wav</ShortName>
-					<Path>SFX\Shotgun_Blast_90722D8F.wem</Path>
+					<Path>SFX\Shotgun_Blast_CC87FBFB.wem</Path>
+				</File>
+				<File Id="715743738" Language="SFX">
+					<ShortName>painr_2.wav</ShortName>
+					<Path>SFX\painr_2_CC87FBFB.wem</Path>
 				</File>
 				<File Id="720737159" Language="SFX">
 					<ShortName>Shotgun Shells\ShotgunShellsConcrete_2.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_2_CA80BD11.wem</Path>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_2_2FA85AB5.wem</Path>
 				</File>
-				<File Id="760380131" Language="SFX">
-					<ShortName>Dirt\FS_Dirt_03.wav</ShortName>
-					<Path>SFX\Dirt\FS_Dirt_03_90722D8F.wem</Path>
+				<File Id="725178632" Language="SFX">
+					<ShortName>flaunch.wav</ShortName>
+					<Path>SFX\flaunch_CC87FBFB.wem</Path>
 				</File>
-				<File Id="799347568" Language="SFX">
-					<ShortName>Dirt\FS_Dirt_02.wav</ShortName>
-					<Path>SFX\Dirt\FS_Dirt_02_90722D8F.wem</Path>
+				<File Id="733001230" Language="SFX">
+					<ShortName>deathb.wav</ShortName>
+					<Path>SFX\deathb_CC87FBFB.wem</Path>
 				</File>
-				<File Id="866317371" Language="SFX">
-					<ShortName>Gravel\FS_Gravel_04.wav</ShortName>
-					<Path>SFX\Gravel\FS_Gravel_04_90722D8F.wem</Path>
+				<File Id="733787232" Language="SFX">
+					<ShortName>AK_Punch_05.wav</ShortName>
+					<Path>SFX\AK_Punch_05_CC87FBFB.wem</Path>
 				</File>
-				<File Id="868657921" Language="SFX">
-					<ShortName>Tile\FS_Tile_03.wav</ShortName>
-					<Path>SFX\Tile\FS_Tile_03_90722D8F.wem</Path>
+				<File Id="737964251" Language="SFX">
+					<ShortName>piggrunt1.wav</ShortName>
+					<Path>SFX\piggrunt1_CC87FBFB.wem</Path>
+				</File>
+				<File Id="738953253" Language="SFX">
+					<ShortName>pain3.wav</ShortName>
+					<Path>SFX\pain3_CC87FBFB.wem</Path>
+				</File>
+				<File Id="752760929" Language="SFX">
+					<ShortName>FS_Concrete_01.wav</ShortName>
+					<Path>SFX\FS_Concrete_01_CC87FBFB.wem</Path>
+				</File>
+				<File Id="758758935" Language="SFX">
+					<ShortName>iceball2.wav</ShortName>
+					<Path>SFX\iceball2_CC87FBFB.wem</Path>
+				</File>
+				<File Id="783050661" Language="SFX">
+					<ShortName>deathh.wav</ShortName>
+					<Path>SFX\deathh_CC87FBFB.wem</Path>
+				</File>
+				<File Id="793986943" Language="SFX">
+					<ShortName>FS_Concrete_02.wav</ShortName>
+					<Path>SFX\FS_Concrete_02_CC87FBFB.wem</Path>
+				</File>
+				<File Id="795267782" Language="SFX">
+					<ShortName>grunt2.wav</ShortName>
+					<Path>SFX\grunt2_CC87FBFB.wem</Path>
+				</File>
+				<File Id="803145160" Language="SFX">
+					<ShortName>paind_2.wav</ShortName>
+					<Path>SFX\paind_2_CC87FBFB.wem</Path>
+				</File>
+				<File Id="814007957" Language="SFX">
+					<ShortName>Body Punch A.wav</ShortName>
+					<Path>SFX\Body Punch A_CC87FBFB.wem</Path>
+				</File>
+				<File Id="823352439" Language="SFX">
+					<ShortName>pain5.wav</ShortName>
+					<Path>SFX\pain5_CC87FBFB.wem</Path>
+				</File>
+				<File Id="837524203" Language="SFX">
+					<ShortName>Heartbeat.wav</ShortName>
+					<Path>SFX\Heartbeat_0A288869.wem</Path>
+				</File>
+				<File Id="843381186" Language="SFX">
+					<ShortName>FS_Concrete_03.wav</ShortName>
+					<Path>SFX\FS_Concrete_03_CC87FBFB.wem</Path>
+				</File>
+				<File Id="853768529" Language="SFX">
+					<ShortName>deathd.wav</ShortName>
+					<Path>SFX\deathd_CC87FBFB.wem</Path>
+				</File>
+				<File Id="858495136" Language="SFX">
+					<ShortName>paino_1.wav</ShortName>
+					<Path>SFX\paino_1_CC87FBFB.wem</Path>
+				</File>
+				<File Id="860396919" Language="SFX">
+					<ShortName>painb3.wav</ShortName>
+					<Path>SFX\painb3_CC87FBFB.wem</Path>
+				</File>
+				<File Id="863063982" Language="SFX">
+					<ShortName>jump_3.wav</ShortName>
+					<Path>SFX\jump_3_CC87FBFB.wem</Path>
+				</File>
+				<File Id="863381042" Language="SFX">
+					<ShortName>AK_Punch_01.wav</ShortName>
+					<Path>SFX\AK_Punch_01_CC87FBFB.wem</Path>
+				</File>
+				<File Id="868366677" Language="SFX">
+					<ShortName>AK_Punch_02.wav</ShortName>
+					<Path>SFX\AK_Punch_02_CC87FBFB.wem</Path>
+				</File>
+				<File Id="884261617" Language="SFX">
+					<ShortName>pain7.wav</ShortName>
+					<Path>SFX\pain7_CC87FBFB.wem</Path>
 				</File>
 				<File Id="886501766" Language="SFX">
 					<ShortName>Shotgun_Pump.wav</ShortName>
 					<Path>SFX\Shotgun_Pump_3D79895D.wem</Path>
 				</File>
-				<File Id="927601829" Language="SFX">
-					<ShortName>Concrete\FS_Concrete_03.wav</ShortName>
-					<Path>SFX\Concrete\FS_Concrete_03_90722D8F.wem</Path>
+				<File Id="919142873" Language="SFX">
+					<ShortName>paine_3.wav</ShortName>
+					<Path>SFX\paine_3_CC87FBFB.wem</Path>
 				</File>
-				<File Id="968109938" Language="SFX">
-					<ShortName>Tile\FS_Tile_04.wav</ShortName>
-					<Path>SFX\Tile\FS_Tile_04_90722D8F.wem</Path>
+				<File Id="920964299" Language="SFX">
+					<ShortName>explodemini2.wav</ShortName>
+					<Path>SFX\explodemini2_CC87FBFB.wem</Path>
 				</File>
-				<File Id="980452861" Language="SFX">
-					<ShortName>Dirt\FS_Dirt_04.wav</ShortName>
-					<Path>SFX\Dirt\FS_Dirt_04_90722D8F.wem</Path>
+				<File Id="944893494" Language="SFX">
+					<ShortName>paino_2.wav</ShortName>
+					<Path>SFX\paino_2_CC87FBFB.wem</Path>
 				</File>
-				<File Id="1030077981" Language="SFX">
-					<ShortName>Heartbeat.wav</ShortName>
-					<Path>SFX\Heartbeat_CF0CF0BD.wem</Path>
+				<File Id="952817125" Language="SFX">
+					<ShortName>get_armour.wav</ShortName>
+					<Path>SFX\get_armour_CC87FBFB.wem</Path>
+				</File>
+				<File Id="971767311" Language="SFX">
+					<ShortName>FS_Dirt_03.wav</ShortName>
+					<Path>SFX\FS_Dirt_03_CC87FBFB.wem</Path>
+				</File>
+				<File Id="974467371" Language="SFX">
+					<ShortName>deathr.wav</ShortName>
+					<Path>SFX\deathr_CC87FBFB.wem</Path>
+				</File>
+				<File Id="982893105" Language="SFX">
+					<ShortName>painb.wav</ShortName>
+					<Path>SFX\painb_CC87FBFB.wem</Path>
+				</File>
+				<File Id="990523609" Language="SFX">
+					<ShortName>painp_2.wav</ShortName>
+					<Path>SFX\painp_2_CC87FBFB.wem</Path>
+				</File>
+				<File Id="1018664592" Language="SFX">
+					<ShortName>FS_Tile_02.wav</ShortName>
+					<Path>SFX\FS_Tile_02_CC87FBFB.wem</Path>
+				</File>
+				<File Id="1024935706" Language="SFX">
+					<ShortName>paine_1.wav</ShortName>
+					<Path>SFX\paine_1_CC87FBFB.wem</Path>
+				</File>
+				<File Id="1038750599" Language="SFX">
+					<ShortName>slimeball_2.wav</ShortName>
+					<Path>SFX\slimeball_2_CC87FBFB.wem</Path>
 				</File>
 				<File Id="1042428374" Language="SFX">
 					<ShortName>Shotgun_Pump.wav</ShortName>
 					<Path>SFX\Shotgun_Pump_CC87FBFB.wem</Path>
+				</File>
+				<File Id="1046121736" Language="SFX">
+					<ShortName>AK_Teleport_02.wav</ShortName>
+					<Path>SFX\AK_Teleport_02_CC87FBFB_3ACC453E.wem</Path>
+				</File>
+				<File Id="1063343195" Language="SFX">
+					<ShortName>FS_Tile_04.wav</ShortName>
+					<Path>SFX\FS_Tile_04_CC87FBFB.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
