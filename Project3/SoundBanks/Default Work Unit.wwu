@@ -8,8 +8,10 @@
 						<ObjectRef Name="Play_alita_kick_air_strong" ID="{6235AF29-6803-408A-AED8-FA8D34AA1B58}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_alita_punch_air_weak" ID="{03513C85-FEEF-409C-AF56-70EB32735B4A}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_alita_hurt" ID="{A73FFB8E-D9E8-40B5-8ACF-6F269AC28E0E}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_env_light_buzz" ID="{74387D7E-B819-4108-9CA7-CBFCE1FD8EB6}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_marauder_gunshot" ID="{AD3B9D02-A7AC-4162-92EF-D84052CB2B27}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_marauder_recieve_damage_strong_punch" ID="{B32E32E7-7E8B-41A6-93B7-B026AC3E0A67}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_env_factory" ID="{C4D1A1E8-FB76-4324-8CBD-149E3B4E4B6E}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_gui_hover" ID="{75BA1B04-02BA-434C-9C3A-C7FF6C1BEDAA}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_alita_air_efforts_punch_weak" ID="{02702F91-5A78-437E-95CD-C09001136095}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_gui_open_menu" ID="{5A326846-1F08-438C-9BB2-A5759119BF7B}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
@@ -20,19 +22,25 @@
 						<ObjectRef Name="Play_alita_punch_air_strong" ID="{6DA08CE6-DB59-46FD-A03D-023F2EC39229}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_marauder_detected" ID="{FDD715F3-074B-4762-B336-8BAD42D4EE6C}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_alita_death_grunt" ID="{BB51E42E-6BE8-478A-B349-7C1EF30695B6}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_env_rats_undisturbed" ID="{A1B1B0B2-0B22-4798-AE95-D84A90D1A2F3}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_alita_skill_gun" ID="{A2661B41-2C06-47A1-A6E3-71E81B328348}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_env_rats_event" ID="{A6EF6BFE-B50B-47BC-B5EB-27871FC2BAEB}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_alita_hit" ID="{1E1AB51A-6E4B-488D-AE66-11AEFDD94836}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_alita_air_efforts_kick_strong" ID="{BF525DD2-47B1-48D0-A926-17B8989BA9FB}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_alita_dash" ID="{C0AB94DC-DAFF-4913-895D-3256E7EA81EA}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_env_crickets" ID="{D96780BB-3278-4AA9-9312-21C3E5A9B58C}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_env_club" ID="{0E32B0F2-880A-4B0B-8BC1-0AB7A2BAD1F7}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_alita_skill_punch" ID="{067B0CE0-4A56-4B90-BB42-48C30DC36889}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_gui_dialog" ID="{09E09201-8D3E-4C8C-8472-535742AF3F92}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_alita_air_efforts_punch_strong" ID="{BD32D831-10C3-4CC6-B262-CA8CBB57BBA1}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_marauder_footsteps" ID="{2176E217-2C3B-4CCF-8ACF-6A0602783796}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_env_tavern" ID="{D15366ED-DED9-4CD8-A7B9-64DE6ED19DFD}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_mine_explosion" ID="{D2B75180-18D7-4CFF-8202-DCB9951A2F40}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_gui_unlocked" ID="{559E4911-FEB5-4D01-8D71-AE1D0945876F}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_marauder_recieve_damage_strong_kick" ID="{6FAFF5A1-9088-4D5B-9C34-D7C2132DD06C}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_alita_dodge" ID="{A016C048-450D-4D87-A185-858039FF902D}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_alita_skill_axe" ID="{7B2E0FD2-8BAD-4E42-93BA-EC74FDB38277}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_env_par_electricity" ID="{2A7697E8-AE03-4E47-AFB5-B2B4A6096F97}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_alita_skill_charge" ID="{B0756972-A4EF-4EFF-961F-3F092413552A}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_marauder_death" ID="{F344F664-DE32-4F1B-A183-0E1FD91C0D38}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_alita_air_efforts_skill_punch" ID="{6C111A45-8CF2-4F95-903B-37475ACEAB91}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>

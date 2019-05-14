@@ -5157,6 +5157,816 @@
 						</Sound>
 					</ChildrenList>
 				</ActorMixer>
+				<ActorMixer Name="ENV" ID="{10083CF1-5B08-4A18-BD64-F2AAEEA856B3}" ShortID="708300075">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="att_street_events" ID="{5C472E98-034B-46F9-9B85-846973C1639E}" WorkUnitID="{C83A960A-58D6-4F21-8F97-3166A446ADC4}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Environment" ID="{DE35AEC5-EEE9-4EFA-B103-580A69643B94}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="env_tavern" ID="{64314566-8BA8-434E-B92E-1872736419B4}" ShortID="1027046166">
+							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="att_tavern" ID="{F907B99A-E2F5-45ED-AD37-C57F6D899516}" WorkUnitID="{C83A960A-58D6-4F21-8F97-3166A446ADC4}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="env_ambient_sound" ID="{8DB11C7E-573C-43EF-9886-A3DDB6AEC0E4}" ShortID="931422495">
+									<Language>SFX</Language>
+									<AudioFile>env_ambient_sound.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="env_ambient_sound" ID="{8DB11C7E-573C-43EF-9886-A3DDB6AEC0E4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="env_club" ID="{FAFBB87F-CA2F-45AC-A9BA-FED9068969B9}" ShortID="470786530">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-32</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="att_pub" ID="{0FE62B5E-F795-4806-9722-95E2A012668E}" WorkUnitID="{C83A960A-58D6-4F21-8F97-3166A446ADC4}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="env_club" ID="{C7B4DE62-6E51-4F9D-AED1-7050CAE44B23}" ShortID="17436777">
+									<Language>SFX</Language>
+									<AudioFile>env_club.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="env_club" ID="{C7B4DE62-6E51-4F9D-AED1-7050CAE44B23}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="env_factory" ID="{6E11A792-DFDC-49EF-AF1B-94009FF4F366}" ShortID="62592701">
+							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="att_factory" ID="{534F0AA5-BD5B-49BF-95D8-C8C85F6057DD}" WorkUnitID="{C83A960A-58D6-4F21-8F97-3166A446ADC4}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="env_factory" ID="{87949736-5495-4C4A-9191-92268694BCA6}" ShortID="374849244">
+									<Language>SFX</Language>
+									<AudioFile>env_factory.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="env_factory" ID="{87949736-5495-4C4A-9191-92268694BCA6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="env_mine_explosion" ID="{87BA1BF9-D0A1-4E81-84E8-C7FB71DC0031}" ShortID="635567385">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="env_mine_explosion" ID="{076299BE-DE56-49C7-869D-A546A88E7622}" ShortID="831361594">
+									<Language>SFX</Language>
+									<AudioFile>env_mine_explosion.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="env_mine_explosion" ID="{076299BE-DE56-49C7-869D-A546A88E7622}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="env_neon" ID="{EBA8F821-F9D1-4F13-88A6-1D7F0C8491ED}" ShortID="527902333">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="env_neon" ID="{EF327AB2-2B54-486B-9644-7401033B4497}" ShortID="719894083">
+									<Language>SFX</Language>
+									<AudioFile>env_neon.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="env_neon" ID="{EF327AB2-2B54-486B-9644-7401033B4497}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="env_sliverware" ID="{E1B2A131-90C3-4EA9-870F-62DD7D1249E2}" ShortID="1056861785">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="env_sliverware" ID="{B87BA505-5509-4B3C-8EB1-7FA57DBFE720}" ShortID="397562842">
+									<Language>SFX</Language>
+									<AudioFile>env_sliverware.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="env_sliverware" ID="{B87BA505-5509-4B3C-8EB1-7FA57DBFE720}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="env_crickets" ID="{F5BA42E3-FDFA-4039-AF21-D0A3175F3FA0}" ShortID="708254888">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="env_crickets_1" ID="{45C7ABFF-634F-485D-99C7-9360201D2CEF}" ShortID="743257494">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="env_crickets_1" ID="{865A11A6-DAD2-4A52-BC21-0BA4C29C81AE}" ShortID="685299202">
+											<Language>SFX</Language>
+											<AudioFile>env_crickets_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="env_crickets_1" ID="{865A11A6-DAD2-4A52-BC21-0BA4C29C81AE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="env_crickets_2" ID="{6E7DE697-BD60-405D-A610-C293ECA24710}" ShortID="1021040417">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="env_crickets_2" ID="{771B1500-8449-425A-A919-D93386BDB9BC}" ShortID="445261102">
+											<Language>SFX</Language>
+											<AudioFile>env_crickets_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="env_crickets_2" ID="{771B1500-8449-425A-A919-D93386BDB9BC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="env_rats_undisturbed" ID="{F48A16B5-CD29-490E-BA14-F290D0AF9FA8}" ShortID="587814445">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="env_rat_undisturbed2_1" ID="{534FE9DF-57C9-4C73-8264-71C015DFBB1D}" ShortID="802061105">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="env_rat_undisturbed2_1" ID="{F8DF64E6-0B84-4CD0-8F38-F30FFC31B857}" ShortID="743289972">
+											<Language>SFX</Language>
+											<AudioFile>env_rat_undisturbed2_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="env_rat_undisturbed2_1" ID="{F8DF64E6-0B84-4CD0-8F38-F30FFC31B857}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="env_rat_undisturbed2_2" ID="{210E5F8A-9665-443B-9C41-DCFA470344B2}" ShortID="760183856">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="env_rat_undisturbed2_2" ID="{B904A9FD-EF63-4EB3-B390-E4CFD4EB6AEA}" ShortID="918040545">
+											<Language>SFX</Language>
+											<AudioFile>env_rat_undisturbed2_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="env_rat_undisturbed2_2" ID="{B904A9FD-EF63-4EB3-B390-E4CFD4EB6AEA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="env_rat_undisturbed2_3" ID="{C5DA9508-5A73-404F-B1F6-D345C8EE8091}" ShortID="156048827">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="env_rat_undisturbed2_3" ID="{BB55FFB5-67E7-411F-AF00-08E321F27F96}" ShortID="402253509">
+											<Language>SFX</Language>
+											<AudioFile>env_rat_undisturbed2_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="env_rat_undisturbed2_3" ID="{BB55FFB5-67E7-411F-AF00-08E321F27F96}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="env_rat_undisturbed2_4" ID="{AAC13851-371A-46EB-ACD4-FE1A2448C80E}" ShortID="653627686">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="env_rat_undisturbed2_4" ID="{DEE2DB75-B6B1-4822-85F4-F3F6786E906D}" ShortID="1058461343">
+											<Language>SFX</Language>
+											<AudioFile>env_rat_undisturbed2_4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="env_rat_undisturbed2_4" ID="{DEE2DB75-B6B1-4822-85F4-F3F6786E906D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="env_rat_undisturbed2_5" ID="{B7A2FCC9-A8FD-4721-AAD8-B3837D238381}" ShortID="1040231106">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="env_rat_undisturbed2_5" ID="{585342DE-2A30-4A09-97C5-5D7153DD9D0F}" ShortID="709033365">
+											<Language>SFX</Language>
+											<AudioFile>env_rat_undisturbed2_5.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="env_rat_undisturbed2_5" ID="{585342DE-2A30-4A09-97C5-5D7153DD9D0F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="env_rat_undisturbed2_6" ID="{B3EA86EA-EEA3-46C4-BB6D-C846A72301BD}" ShortID="287225892">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="env_rat_undisturbed2_6" ID="{E198AF43-9526-442B-8263-37E7C5FC5824}" ShortID="964492073">
+											<Language>SFX</Language>
+											<AudioFile>env_rat_undisturbed2_6.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="env_rat_undisturbed2_6" ID="{E198AF43-9526-442B-8263-37E7C5FC5824}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="env_rat_undisturbed2_7" ID="{BAFF3F3E-6BAF-4E3C-B470-774B8F0437E4}" ShortID="174217486">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="env_rat_undisturbed2_7" ID="{0002C87B-BF26-4199-B255-AF9C8C660FAF}" ShortID="452010550">
+											<Language>SFX</Language>
+											<AudioFile>env_rat_undisturbed2_7.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="env_rat_undisturbed2_7" ID="{0002C87B-BF26-4199-B255-AF9C8C660FAF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="env_rat_undisturbed2_8" ID="{E71135FE-F4C0-4F08-A0ED-52C3FF3AD18C}" ShortID="36380203">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="env_rat_undisturbed2_8" ID="{611F3A74-EBCE-45E1-8D95-B59EB2256C33}" ShortID="138276034">
+											<Language>SFX</Language>
+											<AudioFile>env_rat_undisturbed2_8.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="env_rat_undisturbed2_8" ID="{611F3A74-EBCE-45E1-8D95-B59EB2256C33}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<BlendContainer Name="env_rats_event" ID="{F219AA80-DE8C-40FB-A94B-4D174A57128D}" ShortID="691175633">
+							<PropertyList>
+								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="att_street_events" ID="{5C472E98-034B-46F9-9B85-846973C1639E}" WorkUnitID="{C83A960A-58D6-4F21-8F97-3166A446ADC4}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="env_rats_disturbed" ID="{3AB48C7D-7EF1-4D89-96A2-2B1D0449A4BB}" ShortID="422396678">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-39</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="rats_disturbed_1" ID="{666DB3B9-1B48-45F2-9E64-3B5A80FAA594}" ShortID="679913539">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="rats_disturbed_1" ID="{9A968B97-6A98-4DD4-9B3D-71B2BC3E63BC}" ShortID="483534488">
+													<Language>SFX</Language>
+													<AudioFile>rats_disturbed_1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="1040947967"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="rats_disturbed_1" ID="{9A968B97-6A98-4DD4-9B3D-71B2BC3E63BC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="rats_disturbed_2" ID="{B84FABC7-1281-4BE1-A949-AF33923B4FCD}" ShortID="362287532">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="rats_disturbed_2" ID="{E0E5716D-3567-43ED-B693-7E9C75C948FF}" ShortID="679001463">
+													<Language>SFX</Language>
+													<AudioFile>rats_disturbed_2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="823159443"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="rats_disturbed_2" ID="{E0E5716D-3567-43ED-B693-7E9C75C948FF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="rats_disturbed_3" ID="{95E459F5-719C-4213-863B-368925AFB900}" ShortID="852734032">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="rats_disturbed_3" ID="{4388077A-DFFE-4F93-A64A-29E0E85E25D7}" ShortID="887538697">
+													<Language>SFX</Language>
+													<AudioFile>rats_disturbed_3.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="347194608"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="rats_disturbed_3" ID="{4388077A-DFFE-4F93-A64A-29E0E85E25D7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="rats_disturbed_4" ID="{5F04AA76-0144-4E1B-851C-FA2375862D66}" ShortID="722188171">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="rats_disturbed_4" ID="{6F45FADF-0F60-4A12-9CE5-8F08764DD2BC}" ShortID="342784174">
+													<Language>SFX</Language>
+													<AudioFile>rats_disturbed_4.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="517266244"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="rats_disturbed_4" ID="{6F45FADF-0F60-4A12-9CE5-8F08764DD2BC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="rats_disturbed_5" ID="{E349522E-1F1E-4CF1-923F-3C08B5D950AB}" ShortID="25491499">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="rats_disturbed_5" ID="{A934D01E-24F9-42C4-A89F-32F86279D0A3}" ShortID="15899196">
+													<Language>SFX</Language>
+													<AudioFile>rats_disturbed_5.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="594414159"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="rats_disturbed_5" ID="{A934D01E-24F9-42C4-A89F-32F86279D0A3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="rats_disturbed_6" ID="{6AE531CB-D469-4AB7-A0E4-5F1E57D11204}" ShortID="58732017">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="rats_disturbed_6" ID="{64BE8788-C871-4B80-83B4-E8A68FA69437}" ShortID="669627208">
+													<Language>SFX</Language>
+													<AudioFile>rats_disturbed_6.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="rats_disturbed_6" ID="{64BE8788-C871-4B80-83B4-E8A68FA69437}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="rats_disturbed_7" ID="{DA291578-625D-423F-80CA-D17B160DDC8C}" ShortID="964284561">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="rats_disturbed_7" ID="{3020F682-DF00-471B-B72D-1F6EDAA42061}" ShortID="350940361">
+													<Language>SFX</Language>
+													<AudioFile>rats_disturbed_7.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="rats_disturbed_7" ID="{3020F682-DF00-471B-B72D-1F6EDAA42061}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="rats_disturbed_10" ID="{A4BE507C-B99F-4189-A6F8-98A458086E66}" ShortID="38499880">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="rats_disturbed_10" ID="{5AD8CB75-A4A9-4B94-82D7-1365C0B2E6D5}" ShortID="800950485">
+													<Language>SFX</Language>
+													<AudioFile>rats_disturbed_10.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="rats_disturbed_10" ID="{5AD8CB75-A4A9-4B94-82D7-1365C0B2E6D5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="rats_disturbed_9" ID="{35BB9628-530B-4A2D-AE1B-69B9E8F8CA0B}" ShortID="793676403">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="rats_disturbed_9" ID="{183A9374-B1E7-49C0-B91C-D93FA57820C5}" ShortID="332723100">
+													<Language>SFX</Language>
+													<AudioFile>rats_disturbed_9.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="rats_disturbed_9" ID="{183A9374-B1E7-49C0-B91C-D93FA57820C5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="rats_disturbed_8" ID="{247FC21A-E31A-43A4-9D59-3A29936C4FAE}" ShortID="840805189">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="rats_disturbed_8" ID="{7C2E30E0-0F17-40BD-913F-BC3BE516B59F}" ShortID="564092195">
+													<Language>SFX</Language>
+													<AudioFile>rats_disturbed_8.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="rats_disturbed_8" ID="{7C2E30E0-0F17-40BD-913F-BC3BE516B59F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="env_rats_moving" ID="{E1B8BBD1-30A2-4E9E-A21F-F2B4409A0A64}" ShortID="365845282">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-21</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="env_rats_moving" ID="{4470EE32-588B-492D-B39B-A2C75963EC80}" ShortID="499336301">
+											<Language>SFX</Language>
+											<AudioFile>env_rats_moving.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="env_rats_moving" ID="{4470EE32-588B-492D-B39B-A2C75963EC80}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<RandomSequenceContainer Name="env_light_buzz" ID="{CD92E9BF-C4DD-4D89-8397-57A4477DA65A}" ShortID="803435128">
+							<PropertyList>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="env_light_buzzing_1" ID="{1D1F92E1-CCBF-4572-8C2E-2695FBAE6E91}" ShortID="425512881">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="env_light_buzzing" ID="{B081A485-73B3-40D6-A453-2DB3CCC8D584}" ShortID="1058941639">
+											<Language>SFX</Language>
+											<AudioFile>env_light_buzzing.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="env_light_buzzing" ID="{B081A485-73B3-40D6-A453-2DB3CCC8D584}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="env_light_buzzing_2" ID="{02B94F00-0591-4E47-AC26-A2852836C933}" ShortID="900836424">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="env_light_buzzing_2" ID="{0B4F1061-36D0-4F85-BE1F-C3175C8C0CAF}" ShortID="1048349750">
+											<Language>SFX</Language>
+											<AudioFile>env_light_buzzing_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="env_light_buzzing_2" ID="{0B4F1061-36D0-4F85-BE1F-C3175C8C0CAF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="env_light_buzzing_3" ID="{9FBC5C50-45F4-403C-9D50-71FDCC47D496}" ShortID="281426231">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="env_light_buzzing_3" ID="{973A503D-B518-40B9-9AB9-CDF7B111B951}" ShortID="916377494">
+											<Language>SFX</Language>
+											<AudioFile>env_light_buzzing_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="env_light_buzzing_3" ID="{973A503D-B518-40B9-9AB9-CDF7B111B951}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="env_par_electricity" ID="{7DBEC873-7389-4BCC-8FCC-22B3B33C71C1}" ShortID="91449318">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="env_particles_electricity_1" ID="{ED3C3D4B-ECBE-4559-ABE8-D991576D86F2}" ShortID="573446241">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="env_particles_electricity_1" ID="{3B92F835-4118-4EDD-B1C4-407615AC513C}" ShortID="286256635">
+											<Language>SFX</Language>
+											<AudioFile>env_particles_electricity_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="env_particles_electricity_1" ID="{3B92F835-4118-4EDD-B1C4-407615AC513C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="env_particles_electricity_2" ID="{4A7FC014-501D-465C-BC51-6D8A8C8688C1}" ShortID="752769586">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="env_particles_electricity_2" ID="{B411C2F0-88E7-45F3-A06A-F3067B0FAA69}" ShortID="470082299">
+											<Language>SFX</Language>
+											<AudioFile>env_particles_electricity_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="env_particles_electricity_2" ID="{B411C2F0-88E7-45F3-A06A-F3067B0FAA69}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{9C226B5E-DA8C-4D28-B42F-270554E97B32}"/>
+						<Position Name="" ID="{B8A99A3D-8279-4CB6-A0D3-843B24D29122}"/>
+					</PositioningInfo>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

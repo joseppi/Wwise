@@ -457,6 +457,138 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_env_factory" ID="{C4D1A1E8-FB76-4324-8CBD-149E3B4E4B6E}">
+							<ChildrenList>
+								<Action Name="" ID="{1398A0E6-83BC-4FD9-8E7C-7A8E73C77FBF}" ShortID="481882069">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="env_factory" ID="{6E11A792-DFDC-49EF-AF1B-94009FF4F366}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_env_club" ID="{0E32B0F2-880A-4B0B-8BC1-0AB7A2BAD1F7}">
+							<ChildrenList>
+								<Action Name="" ID="{0CCF3EA7-DAC2-4381-AB70-2F43B9528367}" ShortID="59816512">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="env_club" ID="{FAFBB87F-CA2F-45AC-A9BA-FED9068969B9}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_env_crickets" ID="{D96780BB-3278-4AA9-9312-21C3E5A9B58C}">
+							<ChildrenList>
+								<Action Name="" ID="{4D2EB3B8-B431-4226-8CB3-441025B1D969}" ShortID="255755609">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="env_crickets" ID="{F5BA42E3-FDFA-4039-AF21-D0A3175F3FA0}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_env_light_buzz" ID="{74387D7E-B819-4108-9CA7-CBFCE1FD8EB6}">
+							<ChildrenList>
+								<Action Name="" ID="{67411A4C-7FB0-40F9-BAE4-82DE5DD220F6}" ShortID="839461325">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="env_light_buzz" ID="{CD92E9BF-C4DD-4D89-8397-57A4477DA65A}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_env_tavern" ID="{D15366ED-DED9-4CD8-A7B9-64DE6ED19DFD}">
+							<ChildrenList>
+								<Action Name="" ID="{BF99DE7C-630A-4420-824F-7852597CBA0D}" ShortID="116796967">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="env_tavern" ID="{64314566-8BA8-434E-B92E-1872736419B4}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{CFF44724-4900-4299-8268-4753E68E2FC2}" ShortID="62865112">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="env_sliverware" ID="{E1B2A131-90C3-4EA9-870F-62DD7D1249E2}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9A007B84-BFF7-4C54-AFFE-0E07C15987BA}" ShortID="501966557">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="env_neon" ID="{EBA8F821-F9D1-4F13-88A6-1D7F0C8491ED}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_env_rats_undisturbed" ID="{A1B1B0B2-0B22-4798-AE95-D84A90D1A2F3}">
+							<ChildrenList>
+								<Action Name="" ID="{D661E96E-E2B2-4AA4-9EB3-26D54D5AEFF3}" ShortID="360447931">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="env_rats_undisturbed" ID="{F48A16B5-CD29-490E-BA14-F290D0AF9FA8}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_env_rats_event" ID="{A6EF6BFE-B50B-47BC-B5EB-27871FC2BAEB}">
+							<ChildrenList>
+								<Action Name="" ID="{5A97F37D-7354-4A8C-9A06-90CD8EAE7E75}" ShortID="662432075">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="env_rats_event" ID="{F219AA80-DE8C-40FB-A94B-4D174A57128D}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_env_par_electricity" ID="{2A7697E8-AE03-4E47-AFB5-B2B4A6096F97}">
+							<ChildrenList>
+								<Action Name="" ID="{D9FA40F2-A8D7-46D8-9054-6085C2916E3C}" ShortID="2762224">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="env_par_electricity" ID="{7DBEC873-7389-4BCC-8FCC-22B3B33C71C1}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="VO" ID="{6EC26FA8-21CF-400C-A985-8DD2DC87D9C5}" ShortID="312859081">
