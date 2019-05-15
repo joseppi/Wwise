@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
 	<RootPaths>
-		<ProjectRoot>D:\Documents\GitHub\Wwise\Lesson 5\WwiseProject Lesson 5\</ProjectRoot>
-		<SourceFilesRoot>D:\Documents\GitHub\Wwise\Lesson 5\WwiseProject Lesson 5\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Documents\GitHub\Wwise\Cube\Cube\soundbanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 7\WwiseProject Lesson 7\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 7\WwiseProject Lesson 7\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\josepps14\Documents\GitHub\Wwise\Cube\Cube\soundbanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Documents\GitHub\Wwise\Lesson 5\cube\soundbanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\josepps14\Documents\GitHub\Wwise\Lesson 7\cube\soundbanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
@@ -21,12 +21,98 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
+		<SoundBank Id="2981918260" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\DCP_the_core</ObjectPath>
+			<ShortName>DCP_the_core</ShortName>
+			<Path>DCP_the_core.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2245995848" Name="DCP_Enter01" ObjectPath="\Events\Default Work Unit\Maps\DCP_the_core\DCP_Enter01"/>
+				<Event Id="2245995851" Name="DCP_Enter02" ObjectPath="\Events\Default Work Unit\Maps\DCP_the_core\DCP_Enter02"/>
+				<Event Id="2245995850" Name="DCP_Enter03" ObjectPath="\Events\Default Work Unit\Maps\DCP_the_core\DCP_Enter03"/>
+				<Event Id="2245995853" Name="DCP_Enter04" ObjectPath="\Events\Default Work Unit\Maps\DCP_the_core\DCP_Enter04"/>
+				<Event Id="2245995852" Name="DCP_Enter05" ObjectPath="\Events\Default Work Unit\Maps\DCP_the_core\DCP_Enter05"/>
+				<Event Id="2245995855" Name="DCP_Enter06" ObjectPath="\Events\Default Work Unit\Maps\DCP_the_core\DCP_Enter06"/>
+				<Event Id="2245995854" Name="DCP_Enter07" ObjectPath="\Events\Default Work Unit\Maps\DCP_the_core\DCP_Enter07"/>
+				<Event Id="2245995841" Name="DCP_Enter08" ObjectPath="\Events\Default Work Unit\Maps\DCP_the_core\DCP_Enter08"/>
+				<Event Id="2245995840" Name="DCP_Enter09" ObjectPath="\Events\Default Work Unit\Maps\DCP_the_core\DCP_Enter09"/>
+				<Event Id="2229218262" Name="DCP_Enter10" ObjectPath="\Events\Default Work Unit\Maps\DCP_the_core\DCP_Enter10"/>
+				<Event Id="2229218263" Name="DCP_Enter11" ObjectPath="\Events\Default Work Unit\Maps\DCP_the_core\DCP_Enter11"/>
+				<Event Id="2229218260" Name="DCP_Enter12" ObjectPath="\Events\Default Work Unit\Maps\DCP_the_core\DCP_Enter12"/>
+				<Event Id="3721111614" Name="DCP_Music" ObjectPath="\Events\Default Work Unit\Maps\DCP_the_core\DCP_Music"/>
+				<Event Id="2829720188" Name="DCP_Signal01" ObjectPath="\Events\Default Work Unit\Maps\DCP_the_core\DCP_Signal01"/>
+				<Event Id="2829720191" Name="DCP_Signal02" ObjectPath="\Events\Default Work Unit\Maps\DCP_the_core\DCP_Signal02"/>
+			</IncludedEvents>
+			<ReferencedStreamedFiles>
+				<File Id="797700993"/>
+			</ReferencedStreamedFiles>
+			<IncludedMemoryFiles>
+				<File Id="55290557" Language="SFX">
+					<ShortName>enter10.wav</ShortName>
+					<Path>SFX\enter10_CC87FBFB.wem</Path>
+				</File>
+				<File Id="187024402" Language="SFX">
+					<ShortName>signal01.wav</ShortName>
+					<Path>SFX\signal01_CC87FBFB.wem</Path>
+				</File>
+				<File Id="209784911" Language="SFX">
+					<ShortName>enter12.wav</ShortName>
+					<Path>SFX\enter12_CC87FBFB.wem</Path>
+				</File>
+				<File Id="245661189" Language="SFX">
+					<ShortName>enter01.wav</ShortName>
+					<Path>SFX\enter01_CC87FBFB.wem</Path>
+				</File>
+				<File Id="396065929" Language="SFX">
+					<ShortName>enter02.wav</ShortName>
+					<Path>SFX\enter02_CC87FBFB.wem</Path>
+				</File>
+				<File Id="405744097" Language="SFX">
+					<ShortName>enter07.wav</ShortName>
+					<Path>SFX\enter07_CC87FBFB.wem</Path>
+				</File>
+				<File Id="504552545" Language="SFX">
+					<ShortName>enter04.wav</ShortName>
+					<Path>SFX\enter04_CC87FBFB.wem</Path>
+				</File>
+				<File Id="579081663" Language="SFX">
+					<ShortName>enter03.wav</ShortName>
+					<Path>SFX\enter03_CC87FBFB.wem</Path>
+				</File>
+				<File Id="603800779" Language="SFX">
+					<ShortName>signal02.wav</ShortName>
+					<Path>SFX\signal02_CC87FBFB.wem</Path>
+				</File>
+				<File Id="651618676" Language="SFX">
+					<ShortName>enter11.wav</ShortName>
+					<Path>SFX\enter11_CC87FBFB.wem</Path>
+				</File>
+				<File Id="705228804" Language="SFX">
+					<ShortName>enter05.wav</ShortName>
+					<Path>SFX\enter05_CC87FBFB.wem</Path>
+				</File>
+				<File Id="819733394" Language="SFX">
+					<ShortName>enter09.wav</ShortName>
+					<Path>SFX\enter09_CC87FBFB.wem</Path>
+				</File>
+				<File Id="837524203" Language="SFX">
+					<ShortName>Heartbeat.wav</ShortName>
+					<Path>SFX\Heartbeat_0A288869.wem</Path>
+				</File>
+				<File Id="882747087" Language="SFX">
+					<ShortName>enter06.wav</ShortName>
+					<Path>SFX\enter06_CC87FBFB.wem</Path>
+				</File>
+				<File Id="965577559" Language="SFX">
+					<ShortName>enter08.wav</ShortName>
+					<Path>SFX\enter08_CC87FBFB.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="3161908922" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3721111614" Name="DCP_Music" ObjectPath="\Events\Default Work Unit\Main\DCP_Music"/>
 				<Event Id="1563934831" Name="Death_Bauul" ObjectPath="\Events\Default Work Unit\Main\Death\Death_Bauul"/>
 				<Event Id="3102123049" Name="Death_Goblin" ObjectPath="\Events\Default Work Unit\Main\Death\Death_Goblin"/>
 				<Event Id="1714600999" Name="Death_HellPig" ObjectPath="\Events\Default Work Unit\Main\Death\Death_HellPig"/>
@@ -85,6 +171,7 @@
 				<Event Id="1125681085" Name="ItemSpawn" ObjectPath="\Events\Default Work Unit\Main\ItemSpawn"/>
 				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Main\Jump"/>
 				<Event Id="4149105284" Name="JumpPad" ObjectPath="\Events\Default Work Unit\Main\JumpPad"/>
+				<Event Id="674522502" Name="Land" ObjectPath="\Events\Default Work Unit\Main\Land"/>
 				<Event Id="1758594367" Name="Map_Loaded" ObjectPath="\Events\Default Work Unit\Main\Map_Loaded"/>
 				<Event Id="16204334" Name="NoAmmo" ObjectPath="\Events\Default Work Unit\Main\NoAmmo"/>
 				<Event Id="1996139369" Name="Pain" ObjectPath="\Events\Default Work Unit\Main\Pain\Pain"/>
@@ -98,13 +185,15 @@
 				<Event Id="52370326" Name="Pain_Slith" ObjectPath="\Events\Default Work Unit\Main\Pain\Pain_Slith"/>
 				<Event Id="3977213604" Name="PupFire" ObjectPath="\Events\Default Work Unit\Main\PupFire"/>
 				<Event Id="3732061108" Name="PupOut" ObjectPath="\Events\Default Work Unit\Main\PupOut"/>
+				<Event Id="157639802" Name="Rumble" ObjectPath="\Events\Default Work Unit\Main\Rumble"/>
 				<Event Id="1379053034" Name="Spawn_Player" ObjectPath="\Events\Default Work Unit\Main\Spawn_Player"/>
+				<Event Id="160686570" Name="SplashIn_Monster" ObjectPath="\Events\Default Work Unit\Main\SplashIn_Monster"/>
+				<Event Id="3954482959" Name="SplashIn_Player" ObjectPath="\Events\Default Work Unit\Main\SplashIn_Player"/>
+				<Event Id="3999919399" Name="SplashOut_Monster" ObjectPath="\Events\Default Work Unit\Main\SplashOut_Monster"/>
+				<Event Id="3877942876" Name="SplashOut_Player" ObjectPath="\Events\Default Work Unit\Main\SplashOut_Player"/>
 				<Event Id="530129416" Name="Teleport" ObjectPath="\Events\Default Work Unit\Main\Teleport"/>
 				<Event Id="2957699042" Name="WeapLoad" ObjectPath="\Events\Default Work Unit\Main\WeapLoad"/>
 			</IncludedEvents>
-			<ReferencedStreamedFiles>
-				<File Id="797700993"/>
-			</ReferencedStreamedFiles>
 			<IncludedMemoryFiles>
 				<File Id="21615843" Language="SFX">
 					<ShortName>AK_Boing_x.wav</ShortName>
@@ -112,7 +201,11 @@
 				</File>
 				<File Id="24580226" Language="SFX">
 					<ShortName>explodemini3.wav</ShortName>
-					<Path>SFX\explodemini3_CC87FBFB.wem</Path>
+					<Path>SFX\explodemini3_4F2DCF8F.wem</Path>
+				</File>
+				<File Id="37028884" Language="SFX">
+					<ShortName>splash2.wav</ShortName>
+					<Path>SFX\splash2_CC87FBFB.wem</Path>
 				</File>
 				<File Id="44767741" Language="SFX">
 					<ShortName>painr_3.wav</ShortName>
@@ -128,7 +221,7 @@
 				</File>
 				<File Id="63730319" Language="SFX">
 					<ShortName>rlaunch.wav</ShortName>
-					<Path>SFX\rlaunch_CC87FBFB.wem</Path>
+					<Path>SFX\rlaunch_4F2DCF8F.wem</Path>
 				</File>
 				<File Id="72800737" Language="SFX">
 					<ShortName>FS_Gravel_02.wav</ShortName>
@@ -144,11 +237,11 @@
 				</File>
 				<File Id="141022160" Language="SFX">
 					<ShortName>iceball1.wav</ShortName>
-					<Path>SFX\iceball1_CC87FBFB.wem</Path>
+					<Path>SFX\iceball1_4F2DCF8F.wem</Path>
 				</File>
 				<File Id="141265795" Language="SFX">
 					<ShortName>explodemini1.wav</ShortName>
-					<Path>SFX\explodemini1_CC87FBFB.wem</Path>
+					<Path>SFX\explodemini1_4F2DCF8F.wem</Path>
 				</File>
 				<File Id="150115904" Language="SFX">
 					<ShortName>acid5.wav</ShortName>
@@ -164,11 +257,7 @@
 				</File>
 				<File Id="163870415" Language="SFX">
 					<ShortName>AK_Explode.wav</ShortName>
-					<Path>SFX\AK_Explode_CC87FBFB.wem</Path>
-				</File>
-				<File Id="185060067" Language="SFX">
-					<ShortName>Teleporter.wav</ShortName>
-					<Path>SFX\Teleporter_0A288869.wem</Path>
+					<Path>SFX\AK_Explode_4F2DCF8F.wem</Path>
 				</File>
 				<File Id="187954308" Language="SFX">
 					<ShortName>pain2.wav</ShortName>
@@ -180,7 +269,7 @@
 				</File>
 				<File Id="201601495" Language="SFX">
 					<ShortName>Shotgun Shells\ShotgunShellsConcrete_1.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_1_857AE8AE.wem</Path>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_1_38F8B8B2.wem</Path>
 				</File>
 				<File Id="226244650" Language="SFX">
 					<ShortName>paind_3.wav</ShortName>
@@ -194,9 +283,9 @@
 					<ShortName>die1.wav</ShortName>
 					<Path>SFX\die1_CC87FBFB.wem</Path>
 				</File>
-				<File Id="268298990" Language="SFX">
-					<ShortName>pain6.wav</ShortName>
-					<Path>SFX\pain6_CC87FBFB.wem</Path>
+				<File Id="298386193" Language="SFX">
+					<ShortName>rumble.wav</ShortName>
+					<Path>SFX\rumble_CC87FBFB.wem</Path>
 				</File>
 				<File Id="304033539" Language="SFX">
 					<ShortName>FS_Dirt_04.wav</ShortName>
@@ -208,23 +297,23 @@
 				</File>
 				<File Id="313854590" Language="SFX">
 					<ShortName>AK_Punch_04.wav</ShortName>
-					<Path>SFX\AK_Punch_04_CC87FBFB.wem</Path>
+					<Path>SFX\AK_Punch_04_4F2DCF8F.wem</Path>
 				</File>
 				<File Id="314196479" Language="SFX">
 					<ShortName>Shotgun Shells\ShotgunShellsConcrete_1.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_1_B2370EAE.wem</Path>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_1_580C4262.wem</Path>
 				</File>
 				<File Id="331178164" Language="SFX">
 					<ShortName>slimeball_1.wav</ShortName>
-					<Path>SFX\slimeball_1_CC87FBFB.wem</Path>
+					<Path>SFX\slimeball_1_4F2DCF8F.wem</Path>
+				</File>
+				<File Id="332383553" Language="SFX">
+					<ShortName>splash1.wav</ShortName>
+					<Path>SFX\splash1_CC87FBFB.wem</Path>
 				</File>
 				<File Id="339261539" Language="SFX">
 					<ShortName>painh_1.wav</ShortName>
 					<Path>SFX\painh_1_CC87FBFB.wem</Path>
-				</File>
-				<File Id="340146796" Language="SFX">
-					<ShortName>jump_4.wav</ShortName>
-					<Path>SFX\jump_4_CC87FBFB.wem</Path>
 				</File>
 				<File Id="351978304" Language="SFX">
 					<ShortName>FS_Tile_03.wav</ShortName>
@@ -232,7 +321,7 @@
 				</File>
 				<File Id="352851121" Language="SFX">
 					<ShortName>outofammo.wav</ShortName>
-					<Path>SFX\outofammo_CC87FBFB.wem</Path>
+					<Path>SFX\outofammo_4F2DCF8F.wem</Path>
 				</File>
 				<File Id="371935772" Language="SFX">
 					<ShortName>paino_3.wav</ShortName>
@@ -250,6 +339,10 @@
 					<ShortName>pain1.wav</ShortName>
 					<Path>SFX\pain1_CC87FBFB.wem</Path>
 				</File>
+				<File Id="413548419" Language="SFX">
+					<ShortName>Emitter_Teleport.wav</ShortName>
+					<Path>SFX\Emitter_Teleport_0A288869.wem</Path>
+				</File>
 				<File Id="417948999" Language="SFX">
 					<ShortName>FS_Gravel_01.wav</ShortName>
 					<Path>SFX\FS_Gravel_01_CC87FBFB.wem</Path>
@@ -266,13 +359,17 @@
 					<ShortName>die2.wav</ShortName>
 					<Path>SFX\die2_CC87FBFB.wem</Path>
 				</File>
+				<File Id="503509662" Language="SFX">
+					<ShortName>explode3.wav</ShortName>
+					<Path>SFX\explode3_4F2DCF8F.wem</Path>
+				</File>
 				<File Id="504102903" Language="SFX">
 					<ShortName>Shotgun Shells\ShotgunShellsConcrete_4.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_4_BB91C301.wem</Path>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_4_8D0113AD.wem</Path>
 				</File>
 				<File Id="508407008" Language="SFX">
 					<ShortName>rifle_2.wav</ShortName>
-					<Path>SFX\rifle_2_CC87FBFB.wem</Path>
+					<Path>SFX\rifle_2_4F2DCF8F.wem</Path>
 				</File>
 				<File Id="522671429" Language="SFX">
 					<ShortName>grunt1.wav</ShortName>
@@ -300,19 +397,19 @@
 				</File>
 				<File Id="577120568" Language="SFX">
 					<ShortName>Shotgun Shells\ShotgunShellsConcrete_3.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_3_8DD00FD9.wem</Path>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_3_4276085D.wem</Path>
 				</File>
 				<File Id="583225874" Language="SFX">
 					<ShortName>Shotgun Shells\ShotgunShellsConcrete_2.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_2_525CAFC8.wem</Path>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_2_0A8CF69C.wem</Path>
 				</File>
 				<File Id="596059532" Language="SFX">
 					<ShortName>cg1.wav</ShortName>
-					<Path>SFX\cg1_CC87FBFB.wem</Path>
+					<Path>SFX\cg1_4F2DCF8F.wem</Path>
 				</File>
 				<File Id="609226383" Language="SFX">
 					<ShortName>weapload.wav</ShortName>
-					<Path>SFX\weapload_CC87FBFB.wem</Path>
+					<Path>SFX\weapload_4F2DCF8F.wem</Path>
 				</File>
 				<File Id="620009095" Language="SFX">
 					<ShortName>painp_3.wav</ShortName>
@@ -322,13 +419,17 @@
 					<ShortName>FS_Gravel_03.wav</ShortName>
 					<Path>SFX\FS_Gravel_03_CC87FBFB.wem</Path>
 				</File>
+				<File Id="661668266" Language="SFX">
+					<ShortName>explode2.wav</ShortName>
+					<Path>SFX\explode2_4F2DCF8F.wem</Path>
+				</File>
 				<File Id="664949112" Language="SFX">
 					<ShortName>FS_Dirt_02.wav</ShortName>
 					<Path>SFX\FS_Dirt_02_CC87FBFB.wem</Path>
 				</File>
 				<File Id="670043076" Language="SFX">
 					<ShortName>AK_Punch_03.wav</ShortName>
-					<Path>SFX\AK_Punch_03_CC87FBFB.wem</Path>
+					<Path>SFX\AK_Punch_03_4F2DCF8F.wem</Path>
 				</File>
 				<File Id="675351052" Language="SFX">
 					<ShortName>jump_1.wav</ShortName>
@@ -336,7 +437,7 @@
 				</File>
 				<File Id="688698589" Language="SFX">
 					<ShortName>Shotgun Shells\ShotgunShellsConcrete_3.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_3_92160B19.wem</Path>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_3_CA099E25.wem</Path>
 				</File>
 				<File Id="690582267" Language="SFX">
 					<ShortName>FS_Tile_01.wav</ShortName>
@@ -344,7 +445,7 @@
 				</File>
 				<File Id="690631133" Language="SFX">
 					<ShortName>Shotgun Shells\ShotgunShellsConcrete_4.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_4_050F751D.wem</Path>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_4_9599D481.wem</Path>
 				</File>
 				<File Id="709207210" Language="SFX">
 					<ShortName>jump_2.wav</ShortName>
@@ -352,7 +453,7 @@
 				</File>
 				<File Id="713286434" Language="SFX">
 					<ShortName>Shotgun_Blast.wav</ShortName>
-					<Path>SFX\Shotgun_Blast_CC87FBFB.wem</Path>
+					<Path>SFX\Shotgun_Blast_4F2DCF8F.wem</Path>
 				</File>
 				<File Id="715743738" Language="SFX">
 					<ShortName>painr_2.wav</ShortName>
@@ -360,11 +461,11 @@
 				</File>
 				<File Id="720737159" Language="SFX">
 					<ShortName>Shotgun Shells\ShotgunShellsConcrete_2.wav</ShortName>
-					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_2_2FA85AB5.wem</Path>
+					<Path>SFX\Shotgun Shells\ShotgunShellsConcrete_2_893C5F11.wem</Path>
 				</File>
 				<File Id="725178632" Language="SFX">
 					<ShortName>flaunch.wav</ShortName>
-					<Path>SFX\flaunch_CC87FBFB.wem</Path>
+					<Path>SFX\flaunch_4F2DCF8F.wem</Path>
 				</File>
 				<File Id="733001230" Language="SFX">
 					<ShortName>deathb.wav</ShortName>
@@ -372,7 +473,7 @@
 				</File>
 				<File Id="733787232" Language="SFX">
 					<ShortName>AK_Punch_05.wav</ShortName>
-					<Path>SFX\AK_Punch_05_CC87FBFB.wem</Path>
+					<Path>SFX\AK_Punch_05_4F2DCF8F.wem</Path>
 				</File>
 				<File Id="737964251" Language="SFX">
 					<ShortName>piggrunt1.wav</ShortName>
@@ -388,7 +489,7 @@
 				</File>
 				<File Id="758758935" Language="SFX">
 					<ShortName>iceball2.wav</ShortName>
-					<Path>SFX\iceball2_CC87FBFB.wem</Path>
+					<Path>SFX\iceball2_4F2DCF8F.wem</Path>
 				</File>
 				<File Id="783050661" Language="SFX">
 					<ShortName>deathh.wav</ShortName>
@@ -414,10 +515,6 @@
 					<ShortName>pain5.wav</ShortName>
 					<Path>SFX\pain5_CC87FBFB.wem</Path>
 				</File>
-				<File Id="837524203" Language="SFX">
-					<ShortName>Heartbeat.wav</ShortName>
-					<Path>SFX\Heartbeat_0A288869.wem</Path>
-				</File>
 				<File Id="843381186" Language="SFX">
 					<ShortName>FS_Concrete_03.wav</ShortName>
 					<Path>SFX\FS_Concrete_03_CC87FBFB.wem</Path>
@@ -440,19 +537,15 @@
 				</File>
 				<File Id="863381042" Language="SFX">
 					<ShortName>AK_Punch_01.wav</ShortName>
-					<Path>SFX\AK_Punch_01_CC87FBFB.wem</Path>
+					<Path>SFX\AK_Punch_01_4F2DCF8F.wem</Path>
 				</File>
 				<File Id="868366677" Language="SFX">
 					<ShortName>AK_Punch_02.wav</ShortName>
-					<Path>SFX\AK_Punch_02_CC87FBFB.wem</Path>
-				</File>
-				<File Id="884261617" Language="SFX">
-					<ShortName>pain7.wav</ShortName>
-					<Path>SFX\pain7_CC87FBFB.wem</Path>
+					<Path>SFX\AK_Punch_02_4F2DCF8F.wem</Path>
 				</File>
 				<File Id="886501766" Language="SFX">
 					<ShortName>Shotgun_Pump.wav</ShortName>
-					<Path>SFX\Shotgun_Pump_3D79895D.wem</Path>
+					<Path>SFX\Shotgun_Pump_4DCD75D1.wem</Path>
 				</File>
 				<File Id="919142873" Language="SFX">
 					<ShortName>paine_3.wav</ShortName>
@@ -460,7 +553,7 @@
 				</File>
 				<File Id="920964299" Language="SFX">
 					<ShortName>explodemini2.wav</ShortName>
-					<Path>SFX\explodemini2_CC87FBFB.wem</Path>
+					<Path>SFX\explodemini2_4F2DCF8F.wem</Path>
 				</File>
 				<File Id="944893494" Language="SFX">
 					<ShortName>paino_2.wav</ShortName>
@@ -496,15 +589,19 @@
 				</File>
 				<File Id="1038750599" Language="SFX">
 					<ShortName>slimeball_2.wav</ShortName>
-					<Path>SFX\slimeball_2_CC87FBFB.wem</Path>
+					<Path>SFX\slimeball_2_4F2DCF8F.wem</Path>
+				</File>
+				<File Id="1039211944" Language="SFX">
+					<ShortName>land.wav</ShortName>
+					<Path>SFX\land_CC87FBFB.wem</Path>
 				</File>
 				<File Id="1042428374" Language="SFX">
 					<ShortName>Shotgun_Pump.wav</ShortName>
-					<Path>SFX\Shotgun_Pump_CC87FBFB.wem</Path>
+					<Path>SFX\Shotgun_Pump_4F2DCF8F.wem</Path>
 				</File>
 				<File Id="1046121736" Language="SFX">
 					<ShortName>AK_Teleport_02.wav</ShortName>
-					<Path>SFX\AK_Teleport_02_CC87FBFB_3ACC453E.wem</Path>
+					<Path>SFX\AK_Teleport_02_CC87FBFB.wem</Path>
 				</File>
 				<File Id="1063343195" Language="SFX">
 					<ShortName>FS_Tile_04.wav</ShortName>

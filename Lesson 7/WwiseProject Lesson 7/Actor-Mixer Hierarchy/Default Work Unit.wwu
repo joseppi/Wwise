@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{8D65CABB-7643-4775-8C45-3B7F325D73EF}" SchemaVersion="85">
+<WwiseDocument Type="WorkUnit" ID="{8D65CABB-7643-4775-8C45-3B7F325D73EF}" SchemaVersion="89">
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{8D65CABB-7643-4775-8C45-3B7F325D73EF}" PersistMode="Standalone">
 			<ChildrenList>
 				<Sound Name="Cube Main Theme" ID="{0292C951-8D78-4555-926F-43A2E95FE7A6}" ShortID="3">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="IsStreamingEnabled" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 						<Property Name="MakeUpGain" Type="Real64">
 							<ValueList>
 								<Value>-18</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Priority" Type="int16">
+							<ValueList>
+								<Value>80</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -35,15 +45,27 @@
 				</Sound>
 				<ActorMixer Name="Weapons" ID="{DF6F6E36-7845-4686-93BE-FCA2E63C7988}" ShortID="784310261">
 					<PropertyList>
-						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>25</Value>
+							</ValueList>
+						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<ObjectRef Name="Main Attenuation" ID="{CB118EF0-7984-49E5-A075-7431C2392256}" WorkUnitID="{23276E4C-2FE8-487E-8901-9951885E0682}"/>
 						</Reference>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FAF928FC-2A2A-4F7A-8A7C-0010690433A5}"/>
+							<ObjectRef Name="SFX" ID="{5075F37E-430E-4132-B477-7CCE65E783A3}" WorkUnitID="{FAF928FC-2A2A-4F7A-8A7C-0010690433A5}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="SFX" ID="{151C0E6C-362D-488B-86D0-E49251035307}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
@@ -60,7 +82,7 @@ The Audio Content contained in this file is the property of Alexander Brandon.  
 our sole right with regard to this Audio Content is to listen to the Audio Content as part of this project.  
 This Audio Content cannot be used or modified for a commercial purpose nor for public demonstration.</Comment>
 							<PropertyList>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -81,8 +103,8 @@ The Audio Content contained in this file is the property of Alexander Brandon.  
 our sole right with regard to this Audio Content is to listen to the Audio Content as part of this project.  
 This Audio Content cannot be used or modified for a commercial purpose nor for public demonstration.</Comment>
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-2</Value>
@@ -130,6 +152,7 @@ The Audio Content contained in this file is the property of Alexander Brandon.  
 our sole right with regard to this Audio Content is to listen to the Audio Content as part of this project.  
 This Audio Content cannot be used or modified for a commercial purpose nor for public demonstration.</Comment>
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -137,7 +160,6 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 												<Value>-1210</Value>
 											</ValueList>
 										</Property>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-8</Value>
@@ -193,7 +215,7 @@ The Audio Content contained in this file is the property of Alexander Brandon.  
 our sole right with regard to this Audio Content is to listen to the Audio Content as part of this project.  
 This Audio Content cannot be used or modified for a commercial purpose nor for public demonstration.</Comment>
 											<PropertyList>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -289,6 +311,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 						</ActorMixer>
 						<Sound Name="CG1" ID="{315F8025-47E2-47F0-AA3E-8C5021C911F6}" ShortID="354714502">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -302,7 +325,6 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-6</Value>
@@ -399,8 +421,8 @@ The Audio Content contained in this file is the property of Alexander Brandon.  
 our sole right with regard to this Audio Content is to listen to the Audio Content as part of this project.  
 This Audio Content cannot be used or modified for a commercial purpose nor for public demonstration.</Comment>
 							<PropertyList>
-								<Property Name="EnablePanner" Type="bool" Value="True"/>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-6</Value>
@@ -471,8 +493,8 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 							<ChildrenList>
 								<Sound Name="Punch_01" ID="{CF81140A-0618-4F8E-AFB0-BE6BA21E7D42}" ShortID="22158317">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
@@ -510,8 +532,8 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 								</Sound>
 								<Sound Name="Punch_02" ID="{2E8839D0-9700-4958-951D-D422FEB083E5}" ShortID="706079065">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
@@ -542,8 +564,8 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 								</Sound>
 								<Sound Name="Punch_03" ID="{6475B326-9889-4178-9867-44AF1F7CEB5D}" ShortID="227360696">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
@@ -574,8 +596,8 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 								</Sound>
 								<Sound Name="Punch_04" ID="{405DB2EB-F3BD-4D3E-B861-DB60D9789DE2}" ShortID="86752957">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
@@ -606,8 +628,8 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 								</Sound>
 								<Sound Name="Punch_05" ID="{61F3CEB7-E8B9-456D-AE71-3AE845E2CFC2}" ShortID="132992307">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
@@ -747,7 +769,7 @@ The Audio Content contained in this file is the property of Alexander Brandon.  
 our sole right with regard to this Audio Content is to listen to the Audio Content as part of this project.  
 This Audio Content cannot be used or modified for a commercial purpose nor for public demonstration.</Comment>
 							<PropertyList>
-								<Property Name="EnablePanner" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-2</Value>
@@ -1077,10 +1099,10 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Shotgun Shells" ID="{8D3413A4-1EF1-4DFC-AE71-244A32EB0BC1}" ShortID="783703556">
 							<PropertyList>
-								<Property Name="3DPositionSource" Type="int16" Value="0"/>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
@@ -1764,9 +1786,9 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 						</Sound>
 						<ActorMixer Name="Shotgun Pumps" ID="{200DDF49-4C18-41D9-B74D-EDBF0BCE23E7}" ShortID="616088354">
 							<PropertyList>
-								<Property Name="EnablePanner" Type="bool" Value="True"/>
 								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1779,7 +1801,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 							<ChildrenList>
 								<Sound Name="Shotgun_Pump_In" ID="{AC19A8F1-BCF6-4CC3-A3B7-5ADEC1C3E283}" ShortID="135804972">
 									<PropertyList>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1808,12 +1830,12 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 								</Sound>
 								<Sound Name="Shotgun_Pump_Out" ID="{5B1DD931-A378-4124-9461-166134CA14E0}" ShortID="497247021">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
 												<Value>200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1865,7 +1887,7 @@ The Audio Content contained in this file is the property of Alexander Brandon.  
 our sole right with regard to this Audio Content is to listen to the Audio Content as part of this project.  
 This Audio Content cannot be used or modified for a commercial purpose nor for public demonstration.</Comment>
 					<PropertyList>
-						<Property Name="EnablePanner" Type="bool" Value="True"/>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -1878,7 +1900,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
-						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ModifierList>
@@ -1914,8 +1936,8 @@ The Audio Content contained in this file is the property of Alexander Brandon.  
 our sole right with regard to this Audio Content is to listen to the Audio Content as part of this project.  
 This Audio Content cannot be used or modified for a commercial purpose nor for public demonstration.</Comment>
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -1938,8 +1960,8 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 						</Sound>
 						<Sound Name="PigGrunt1" ID="{DDF2AD68-EE7B-46C2-A393-41E8623A5EFD}" ShortID="115">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -1967,8 +1989,8 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 						</Sound>
 						<Sound Name="PigGrunt2" ID="{0BCD58A4-5D87-44CE-AF3F-58F8C8C70304}" ShortID="113">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -2004,8 +2026,8 @@ The Audio Content contained in this file is the property of Alexander Brandon.  
 our sole right with regard to this Audio Content is to listen to the Audio Content as part of this project.  
 This Audio Content cannot be used or modified for a commercial purpose nor for public demonstration.</Comment>
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -2036,8 +2058,8 @@ The Audio Content contained in this file is the property of Alexander Brandon.  
 our sole right with regard to this Audio Content is to listen to the Audio Content as part of this project.  
 This Audio Content cannot be used or modified for a commercial purpose nor for public demonstration.</Comment>
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -2068,8 +2090,8 @@ The Audio Content contained in this file is the property of Alexander Brandon.  
 our sole right with regard to this Audio Content is to listen to the Audio Content as part of this project.  
 This Audio Content cannot be used or modified for a commercial purpose nor for public demonstration.</Comment>
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -2092,6 +2114,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 						</Sound>
 						<RandomSequenceContainer Name="Grunt" ID="{923FB8F9-890E-44D0-AD05-1C905020F514}" ShortID="100">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -2106,7 +2129,6 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -2125,7 +2147,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 							<ChildrenList>
 								<Sound Name="Grunt1" ID="{6D3B7854-03C8-4202-BE1D-D9A3F2DCBA22}" ShortID="98">
 									<PropertyList>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -2150,7 +2172,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 								</Sound>
 								<Sound Name="Grunt2" ID="{EED847BC-BDFB-4494-9E4D-D59D6E0CE3EA}" ShortID="99">
 									<PropertyList>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -3037,7 +3059,7 @@ The Audio Content contained in this file is the property of Alexander Brandon.  
 our sole right with regard to this Audio Content is to listen to the Audio Content as part of this project.  
 This Audio Content cannot be used or modified for a commercial purpose nor for public demonstration.</Comment>
 					<PropertyList>
-						<Property Name="EnablePanner" Type="bool" Value="True"/>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -3324,7 +3346,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 				</ActorMixer>
 				<ActorMixer Name="Map Items" ID="{A8063FDD-56FE-42C5-ADF0-01D6AFC97159}" ShortID="465031063">
 					<PropertyList>
-						<Property Name="EnablePanner" Type="bool" Value="True"/>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -3431,7 +3453,6 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 				</ActorMixer>
 				<ActorMixer Name="Main Character" ID="{6E8E049A-78F8-4D35-88DE-0908B0612696}" ShortID="123">
 					<PropertyList>
-						<Property Name="EnablePanner" Type="bool" Value="True"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -3444,6 +3465,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>
@@ -3473,6 +3495,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 					<ChildrenList>
 						<SwitchContainer Name="Footsteps" ID="{586A2ECC-C3FE-4B8A-9C97-0F3B825CDFA2}" ShortID="76">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -3486,7 +3509,6 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-5</Value>
@@ -3532,7 +3554,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 							<ChildrenList>
 								<RandomSequenceContainer Name="Dirt" ID="{280703A8-DE18-41EF-B886-1C3F1586F0E7}" ShortID="60">
 									<PropertyList>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -3548,7 +3570,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 									<ChildrenList>
 										<Sound Name="FS_Dirt_01" ID="{FB751A70-5A71-48B7-9CC2-801C723A35D4}" ShortID="56">
 											<PropertyList>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3573,7 +3595,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 										</Sound>
 										<Sound Name="FS_Dirt_02" ID="{CF987B58-338A-4D11-8005-02BCDB3F0FA4}" ShortID="57">
 											<PropertyList>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3598,7 +3620,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 										</Sound>
 										<Sound Name="FS_Dirt_03" ID="{56C8749D-C290-43D4-9DEF-DE2F4936A24F}" ShortID="58">
 											<PropertyList>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3623,7 +3645,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 										</Sound>
 										<Sound Name="FS_Dirt_04" ID="{21A93AF3-CD27-4BFB-B79D-6B7B69FDC13C}" ShortID="59">
 											<PropertyList>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3650,7 +3672,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Concrete" ID="{6F5832F0-1BEA-43A0-ADF7-7DA1EB15CA30}" ShortID="65">
 									<PropertyList>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -3666,7 +3688,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 									<ChildrenList>
 										<Sound Name="FS_Concrete_01" ID="{71E25E32-3165-435F-B275-8A0B741DB1D9}" ShortID="61">
 											<PropertyList>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3691,7 +3713,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 										</Sound>
 										<Sound Name="FS_Concrete_02" ID="{B6CB56B2-F569-4525-BB7E-51D8D00EF02D}" ShortID="62">
 											<PropertyList>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3716,7 +3738,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 										</Sound>
 										<Sound Name="FS_Concrete_03" ID="{B2BCAEA3-361C-44E8-AAD1-2D0325D36AFA}" ShortID="63">
 											<PropertyList>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3741,7 +3763,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 										</Sound>
 										<Sound Name="FS_Concrete_04" ID="{D6CDE017-ACB7-4BAB-B10F-05BBA8406F62}" ShortID="64">
 											<PropertyList>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3768,7 +3790,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Gravel" ID="{D3E4B98B-A44A-496D-986D-A3C32ABD6C13}" ShortID="70">
 									<PropertyList>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -3784,7 +3806,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 									<ChildrenList>
 										<Sound Name="FS_Gravel_01" ID="{1AC5981B-D380-40E4-9A44-61239723F610}" ShortID="66">
 											<PropertyList>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3809,7 +3831,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 										</Sound>
 										<Sound Name="FS_Gravel_02" ID="{742D098C-D4A4-462D-84A0-338113C5B50A}" ShortID="67">
 											<PropertyList>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3834,7 +3856,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 										</Sound>
 										<Sound Name="FS_Gravel_03" ID="{57088873-1338-4F80-8822-4D7A1FF89D2A}" ShortID="68">
 											<PropertyList>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3859,7 +3881,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 										</Sound>
 										<Sound Name="FS_Gravel_04" ID="{A0871EFA-8380-4E29-8F39-59FE8E1A6D39}" ShortID="69">
 											<PropertyList>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3886,7 +3908,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Tile" ID="{854950FE-0A47-44D9-88EC-B0B445F6B8A6}" ShortID="75">
 									<PropertyList>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -3902,7 +3924,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 									<ChildrenList>
 										<Sound Name="FS_Tile_01" ID="{72D7F816-D9CD-4AE3-8DE9-83972EC3875C}" ShortID="71">
 											<PropertyList>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3927,7 +3949,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 										</Sound>
 										<Sound Name="FS_Tile_02" ID="{6B62AF3C-235A-4B28-A998-2A57B11681AE}" ShortID="72">
 											<PropertyList>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3952,7 +3974,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 										</Sound>
 										<Sound Name="FS_Tile_03" ID="{860A5B73-71E9-4BEC-A383-166000B3E648}" ShortID="73">
 											<PropertyList>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3977,7 +3999,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 										</Sound>
 										<Sound Name="FS_Tile_04" ID="{4C08BB46-069A-4328-ADE3-F3A0DB878852}" ShortID="74">
 											<PropertyList>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="Weight" Type="Real64">
 													<ValueList>
 														<Value>12</Value>
@@ -4091,6 +4113,7 @@ The Audio Content contained in this file is the property of Alexander Brandon.  
 our sole right with regard to this Audio Content is to listen to the Audio Content as part of this project.  
 This Audio Content cannot be used or modified for a commercial purpose nor for public demonstration.</Comment>
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -4103,7 +4126,6 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -4127,7 +4149,7 @@ The Audio Content contained in this file is the property of Alexander Brandon.  
 our sole right with regard to this Audio Content is to listen to the Audio Content as part of this project.  
 This Audio Content cannot be used or modified for a commercial purpose nor for public demonstration.</Comment>
 									<PropertyList>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -4160,7 +4182,7 @@ The Audio Content contained in this file is the property of Alexander Brandon.  
 our sole right with regard to this Audio Content is to listen to the Audio Content as part of this project.  
 This Audio Content cannot be used or modified for a commercial purpose nor for public demonstration.</Comment>
 									<PropertyList>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -4187,6 +4209,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Pain" ID="{43397481-8324-41C6-8098-4481D132BFF0}" ShortID="111">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="BypassEffect0" Type="bool">
 									<ValueList>
 										<Value>True</Value>
@@ -4205,7 +4228,6 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -4230,7 +4252,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 							<ChildrenList>
 								<Sound Name="Pain1" ID="{C6BE04BB-6E6D-4161-A181-1AD8E9206C2E}" ShortID="105">
 									<PropertyList>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -4255,7 +4277,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 								</Sound>
 								<Sound Name="Pain2" ID="{E92A51A0-5B50-4606-A73D-09A189391753}" ShortID="106">
 									<PropertyList>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -4280,7 +4302,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 								</Sound>
 								<Sound Name="Pain3" ID="{7F0D2DEF-8BF7-4FE3-A210-0D0672FB6B88}" ShortID="107">
 									<PropertyList>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -4305,7 +4327,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 								</Sound>
 								<Sound Name="Pain4" ID="{AC29F273-8A63-46DC-B565-A696D6A7F2A8}" ShortID="108">
 									<PropertyList>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -4330,7 +4352,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 								</Sound>
 								<Sound Name="Pain5" ID="{5AE48A2F-EB6F-413F-A470-DA1123891543}" ShortID="109">
 									<PropertyList>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -4355,7 +4377,12 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 								</Sound>
 								<Sound Name="Pain6" ID="{CC8C9226-DF49-4C7F-948D-472B58FD9C3B}" ShortID="110">
 									<PropertyList>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -4379,6 +4406,13 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="pain7" ID="{F150C021-037F-46D3-A926-66CC2C801342}" ShortID="670637585">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FAF928FC-2A2A-4F7A-8A7C-0010690433A5}"/>
@@ -4447,6 +4481,7 @@ The Audio Content contained in this file is the property of Alexander Brandon.  
 our sole right with regard to this Audio Content is to listen to the Audio Content as part of this project.  
 This Audio Content cannot be used or modified for a commercial purpose nor for public demonstration.</Comment>
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
@@ -4464,7 +4499,6 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
@@ -4543,6 +4577,13 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="jump_4" ID="{9332D496-C6F9-4A9B-AFE4-C9DDF609025C}" ShortID="238179141">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FAF928FC-2A2A-4F7A-8A7C-0010690433A5}"/>
@@ -4672,7 +4713,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 				</ActorMixer>
 				<ActorMixer Name="Items" ID="{A415F83F-2A02-4420-8032-B3916657F14F}" ShortID="55">
 					<PropertyList>
-						<Property Name="EnablePanner" Type="bool" Value="True"/>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -4686,8 +4727,8 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 					<ChildrenList>
 						<Sound Name="Acid5" ID="{5CD68228-1B3F-4F7F-AB5D-899017527096}" ShortID="50">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-7</Value>
@@ -4717,7 +4758,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 						</Sound>
 						<Sound Name="Acid6" ID="{AB7C0126-9CC4-499B-8505-B378594A6DF9}" ShortID="52">
 							<PropertyList>
-								<Property Name="EnablePanner" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-6</Value>
@@ -4763,10 +4804,10 @@ The Audio Content contained in this file is the property of Alexander Brandon.  
 our sole right with regard to this Audio Content is to listen to the Audio Content as part of this project.  
 This Audio Content cannot be used or modified for a commercial purpose nor for public demonstration.</Comment>
 							<PropertyList>
-								<Property Name="EnablePanner" Type="bool" Value="True"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-3</Value>
@@ -4813,8 +4854,8 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 						</Sound>
 						<Sound Name="Itempick" ID="{06FAF0EA-B606-4FD0-9274-444C206948AB}" ShortID="54">
 							<PropertyList>
-								<Property Name="EnablePanner" Type="bool" Value="True"/>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-3</Value>
@@ -4852,11 +4893,11 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 						</Sound>
 						<Sound Name="Rumble" ID="{1C5D1A4D-CEB6-4DF5-B023-B46C1FD1D9DF}" ShortID="92">
 							<PropertyList>
-								<Property Name="EnablePanner" Type="bool" Value="True"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -4899,9 +4940,9 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 						</Sound>
 						<Sound Name="Teleport" ID="{7E422F5C-D4D8-4B3F-B2CE-8E11467AC08C}" ShortID="97">
 							<PropertyList>
-								<Property Name="EnablePanner" Type="bool" Value="True"/>
 								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -4947,8 +4988,8 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 						</Sound>
 						<Sound Name="Boing_X" ID="{EE540392-75D5-45F2-B677-637096B61013}" ShortID="89">
 							<PropertyList>
-								<Property Name="EnablePanner" Type="bool" Value="True"/>
 								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -4991,7 +5032,7 @@ The Audio Content contained in this file is the property of Alexander Brandon.  
 our sole right with regard to this Audio Content is to listen to the Audio Content as part of this project.  
 This Audio Content cannot be used or modified for a commercial purpose nor for public demonstration.</Comment>
 							<PropertyList>
-								<Property Name="EnablePanner" Type="bool" Value="True"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Lowpass" Type="int16">
 									<ModifierList>
 										<ModifierInfo>
@@ -5016,7 +5057,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -5052,9 +5093,9 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 						</Sound>
 						<ActorMixer Name="Splashes" ID="{FCA6EE75-E393-4503-8EF8-B7445BF0518B}" ShortID="722581745">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-3</Value>
@@ -5087,7 +5128,6 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 							<ChildrenList>
 								<Sound Name="Splash1" ID="{61AA1263-2ED7-41E4-96A9-6B730D67B834}" ShortID="121">
 									<PropertyList>
-										<Property Name="EnablePanner" Type="bool" Value="True"/>
 										<Property Name="Lowpass" Type="int16">
 											<ModifierList>
 												<ModifierInfo>
@@ -5113,6 +5153,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -5158,7 +5199,6 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 								</Sound>
 								<Sound Name="Splash2" ID="{BFEEC005-334E-4119-BD36-A71DC1429398}" ShortID="101">
 									<PropertyList>
-										<Property Name="EnablePanner" Type="bool" Value="True"/>
 										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
@@ -5172,6 +5212,7 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -5219,8 +5260,8 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 						</ActorMixer>
 						<Sound Name="get_armour" ID="{FABA47BC-88FF-43D3-8330-65EB4EDA7010}" ShortID="1010642449">
 							<PropertyList>
-								<Property Name="EnablePanner" Type="bool" Value="True"/>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -5259,9 +5300,9 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 						</Sound>
 						<ActorMixer Name="Emitters" ID="{BDACCF06-D3D0-44F2-9C9A-7F82E85DB8FE}" ShortID="460474554">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -5277,9 +5318,9 @@ This Audio Content cannot be used or modified for a commercial purpose nor for p
 							<ChildrenList>
 								<Sound Name="Emitter_Teleport" ID="{D66CB284-CED0-48AF-B3D7-CD505EF6CE33}" ShortID="503901852">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
