@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationCache Version="1" SchemaVersion="80">
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1403000615" DateHigh="30739076"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Attenuations\Default Work Unit.wwu" DateLow="1405485301" DateHigh="30739076"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Audio Devices\Default Work Unit.wwu" DateLow="1041434029" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Control Surface Sessions\Default Work Unit.wwu" DateLow="1041614007" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Conversion Settings\Default Work Unit.wwu" DateLow="3023920858" DateHigh="30731419"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1041853784" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1041873778" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Effects\Default Work Unit.wwu" DateLow="1041883774" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Effects\Factory Effects.wwu" DateLow="1041983713" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Events\Default Work Unit.wwu" DateLow="2211507725" DateHigh="30739058"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Game Parameters\Default Work Unit.wwu" DateLow="3132131941" DateHigh="30731876"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1042563380" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1152594352" DateHigh="30738049"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Mixing Sessions\Default Work Unit.wwu" DateLow="1042843221" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Modulators\Default Work Unit.wwu" DateLow="1042853230" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Presets\Default Work Unit.wwu" DateLow="1045061952" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Project3.Pi.wsettings" DateLow="1416865415" DateHigh="30739076"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Project3.wproj" DateLow="1045361781" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Queries\Default Work Unit.wwu" DateLow="1045381766" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Queries\Factory Queries.wwu" DateLow="1045551670" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\SoundBanks\Default Work Unit.wwu" DateLow="2211567699" DateHigh="30739058"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1045681595" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\States\Default Work Unit.wwu" DateLow="1045691590" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Switches\Default Work Unit.wwu" DateLow="3956804658" DateHigh="30737476"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Triggers\Default Work Unit.wwu" DateLow="1045721570" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\Project3\Virtual Acoustics\Default Work Unit.wwu" DateLow="1045741561" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1403000615" DateHigh="30739076"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Attenuations\Default Work Unit.wwu" DateLow="1405485301" DateHigh="30739076"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Audio Devices\Default Work Unit.wwu" DateLow="1041434029" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Control Surface Sessions\Default Work Unit.wwu" DateLow="1041614007" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Conversion Settings\Default Work Unit.wwu" DateLow="3023920858" DateHigh="30731419"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1041853784" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1041873778" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Effects\Default Work Unit.wwu" DateLow="1041883774" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Effects\Factory Effects.wwu" DateLow="1041983713" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Events\Default Work Unit.wwu" DateLow="2211507725" DateHigh="30739058"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Game Parameters\Default Work Unit.wwu" DateLow="3132131941" DateHigh="30731876"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1042563380" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1152594352" DateHigh="30738049"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Mixing Sessions\Default Work Unit.wwu" DateLow="1042843221" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Modulators\Default Work Unit.wwu" DateLow="1042853230" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Presets\Default Work Unit.wwu" DateLow="1045061952" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Project3.Pi.wsettings" DateLow="3767987815" DateHigh="30739087"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Project3.wproj" DateLow="1045361781" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Queries\Default Work Unit.wwu" DateLow="1045381766" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Queries\Factory Queries.wwu" DateLow="1045551670" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\SoundBanks\Default Work Unit.wwu" DateLow="2211567699" DateHigh="30739058"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1045681595" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\States\Default Work Unit.wwu" DateLow="1045691590" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Switches\Default Work Unit.wwu" DateLow="3956804658" DateHigh="30737476"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Triggers\Default Work Unit.wwu" DateLow="1045721570" DateHigh="30723776"/>
+	<ValidationCacheItem File="D:\Documents\GitHub\Wwise\WwiseProject3\Virtual Acoustics\Default Work Unit.wwu" DateLow="1045741561" DateHigh="30723776"/>
+</ValidationCache>
