@@ -130,6 +130,17 @@
 											</RTPCList>
 										</Property>
 									</PropertyList>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="Music" ID="{6D19388D-0C2B-4690-BFCD-79A2E51206C0}"/>
+											<DuckingParam>
+												<Volume>-18</Volume>
+												<FadeInTime>1</FadeInTime>
+												<FadeOutTime>1</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
 								</Bus>
 								<AuxBus Name="reverb" ID="{F0CFCA82-EB7E-4848-863B-4ED7FBAED6BA}">
 									<ReferenceList>

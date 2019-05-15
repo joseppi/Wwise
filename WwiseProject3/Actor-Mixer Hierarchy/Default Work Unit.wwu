@@ -5,9 +5,6 @@
 			<ChildrenList>
 				<ActorMixer Name="BGM" ID="{FCB5CC5E-581A-4F29-A7D3-6D7742D507E7}" ShortID="615031030">
 					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
-						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Music" ID="{6D19388D-0C2B-4690-BFCD-79A2E51206C0}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
 						</Reference>
@@ -404,9 +401,62 @@
 				</ActorMixer>
 				<ActorMixer Name="SFX" ID="{130C4648-751A-4CB2-8B89-0D48D6180650}" ShortID="878307818">
 					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{AA3FD843-68B5-4EFB-A0DF-2F4F70E1B4BD}" ShortID="819609031">
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{EF27DE87-86B0-4D1E-89C5-6569D51D8A00}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
 						</Reference>
@@ -500,6 +550,20 @@
 						<RandomSequenceContainer Name="Punch" ID="{036996C4-7AC8-47E4-8E4C-7726A1BB8B12}" ShortID="234585494">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-500</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{FE48577E-FC34-45C1-96A0-575758BA1C39}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="500"/>
+													<Property Name="Min" Type="Real64" Value="-500"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
 									<RTPCList>
 										<RTPC Name="" ID="{0842453F-8F8C-4274-9292-5858C13A5DC6}" ShortID="128694962">
 											<ReferenceList>
@@ -778,6 +842,7 @@
 							<ChildrenList>
 								<SwitchContainer Name="Footsteps" ID="{A31F72AB-BE7A-48A5-AC12-1FE87BC325E1}" ShortID="883270395">
 									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<RTPCList>
 												<RTPC Name="" ID="{88063E18-14D0-42C8-BFE7-7D1BC46BB295}" ShortID="105367002">
@@ -840,7 +905,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{587CC139-3BC0-441D-86D0-63A667D40D4F}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+											<ObjectRef Name="Environment" ID="{DE35AEC5-EEE9-4EFA-B103-580A69643B94}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2163,6 +2228,7 @@
 								</SwitchContainer>
 								<Sound Name="dash" ID="{BE8651B4-2B2A-412D-851B-988BDC736158}" ShortID="204575272">
 									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<RTPCList>
 												<RTPC Name="" ID="{63A38EE9-4414-4A95-900D-06ADC8F9C48E}" ShortID="1005273582">
@@ -2225,7 +2291,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+											<ObjectRef Name="Environment" ID="{DE35AEC5-EEE9-4EFA-B103-580A69643B94}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2792,6 +2858,7 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Skill_Punch" ID="{C347CDFB-FB27-433E-9188-17623064E2FA}" ShortID="754041667">
 									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<RTPCList>
 												<RTPC Name="" ID="{3A5D7163-57D9-4E2A-9E16-56C2574D072A}" ShortID="822600848">
@@ -2854,7 +2921,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+											<ObjectRef Name="Environment" ID="{DE35AEC5-EEE9-4EFA-B103-580A69643B94}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3016,6 +3083,7 @@
 								</RandomSequenceContainer>
 								<Sound Name="Skill_Axe" ID="{6E1C01AB-5050-4089-A247-7CFCC7E3FC7F}" ShortID="806995601">
 									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<RTPCList>
 												<RTPC Name="" ID="{A84DB619-EE59-4E80-ABFE-2E29089A6E4A}" ShortID="745467592">
@@ -3078,7 +3146,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+											<ObjectRef Name="Environment" ID="{DE35AEC5-EEE9-4EFA-B103-580A69643B94}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3247,6 +3315,7 @@
 								</Sound>
 								<Sound Name="air_efforts_kick_weak" ID="{450CBED7-35AC-48D4-8221-DC07D41841A7}" ShortID="1069823120">
 									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<RTPCList>
 												<RTPC Name="" ID="{42DCF79D-521C-4536-8991-50E1B592786E}" ShortID="323219738">
@@ -3309,7 +3378,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+											<ObjectRef Name="Environment" ID="{DE35AEC5-EEE9-4EFA-B103-580A69643B94}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3793,6 +3862,7 @@
 								</RandomSequenceContainer>
 								<Sound Name="kick_air_strong" ID="{F79865CA-2CD0-4CDB-BE43-4263E4AE5FE1}" ShortID="657674773">
 									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<RTPCList>
 												<RTPC Name="" ID="{3633257E-84C8-4EF1-9AF1-7A7FC73431D7}" ShortID="931913481">
@@ -3855,7 +3925,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+											<ObjectRef Name="Environment" ID="{DE35AEC5-EEE9-4EFA-B103-580A69643B94}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -4113,6 +4183,11 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Footsteps" ID="{AFCF9E02-8F85-49F7-91CD-D912C032205D}" ShortID="705079415">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<RTPCList>
 												<RTPC Name="" ID="{4BF42F14-05CF-41A0-931E-745B217BD898}" ShortID="828373209">
@@ -4259,9 +4334,20 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Death" ID="{214CE0DC-56C2-4F5F-A6F1-46B07272D270}" ShortID="1012173754">
+								<RandomSequenceContainer Name="marauder_death" ID="{214CE0DC-56C2-4F5F-A6F1-46B07272D270}" ShortID="1012173754">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E53CA634-B26E-489D-8D2C-7F25D0D6CBD9}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="240"/>
+															<Property Name="Min" Type="Real64" Value="-240"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 											<RTPCList>
 												<RTPC Name="" ID="{C9FE6859-648B-4B8B-9C54-C3DC2CDC8F28}" ShortID="1025243103">
 													<ReferenceList>
@@ -4426,7 +4512,7 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Detected" ID="{44EF1FD3-E2F7-48FB-B48C-49F7719400C2}" ShortID="1016584437">
+								<RandomSequenceContainer Name="marauder_detected" ID="{44EF1FD3-E2F7-48FB-B48C-49F7719400C2}" ShortID="1016584437">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
 											<RTPCList>
@@ -4572,9 +4658,20 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<Sound Name="recieve_damage_strong_kick" ID="{62316684-041B-40DF-B4DA-40AD50EC007C}" ShortID="903945758">
+								<Sound Name="marauder_damage_strong_kick" ID="{62316684-041B-40DF-B4DA-40AD50EC007C}" ShortID="903945758">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D3D3CA5D-CE89-413B-9CD1-EA6C8BF2EA23}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="240"/>
+															<Property Name="Min" Type="Real64" Value="-240"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 											<RTPCList>
 												<RTPC Name="" ID="{8C3EA628-3846-4C0E-8304-96C7ECAA17A6}" ShortID="953067086">
 													<ReferenceList>
@@ -4649,9 +4746,20 @@
 										<ActiveSource Name="recieve_damage_strong_kick" ID="{C200FC90-AFF0-49BF-93DF-A86DC0D00E6D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="recieve_damage_strong_punch" ID="{40AB8D5C-4E63-414E-B0D9-AD118C00FA7F}" ShortID="1073105841">
+								<Sound Name="marauder_damage_strong_punch" ID="{40AB8D5C-4E63-414E-B0D9-AD118C00FA7F}" ShortID="1073105841">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7A680E48-47CF-46C6-A9C1-71783C6176C0}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="480"/>
+															<Property Name="Min" Type="Real64" Value="-480"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 											<RTPCList>
 												<RTPC Name="" ID="{A13A8973-0F8B-4DCB-9F5E-7D389D48379C}" ShortID="751739717">
 													<ReferenceList>
@@ -4726,9 +4834,20 @@
 										<ActiveSource Name="recieve_damage_strong_punch" ID="{240E54F4-978A-4953-B4A2-F6D6BFBE90FD}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<RandomSequenceContainer Name="Receive_Damage_Weak" ID="{6E7D0FBB-612D-4607-BF43-933CDB3340CA}" ShortID="426643895">
+								<RandomSequenceContainer Name="marauder_damage_weak" ID="{6E7D0FBB-612D-4607-BF43-933CDB3340CA}" ShortID="426643895">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7ADD58F1-9A62-43AB-A946-AF3EF73E2E69}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="240"/>
+															<Property Name="Min" Type="Real64" Value="-240"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 											<RTPCList>
 												<RTPC Name="" ID="{616F326A-ED2E-4DAE-A387-C30484BC118E}" ShortID="392313802">
 													<ReferenceList>
@@ -4840,6 +4959,251 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="marauder_footsteps" ID="{7841BA32-2F7F-4882-B7CE-FB3F97DCB9CF}" ShortID="666566894">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1500</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{68A37C82-5D7B-4662-8993-1FE0CD20621F}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="120"/>
+															<Property Name="Min" Type="Real64" Value="-120"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Environment" ID="{DE35AEC5-EEE9-4EFA-B103-580A69643B94}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="marauder_footstep_1" ID="{841CB052-3739-4CA7-A3AD-383EF08C35AE}" ShortID="404438302">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="marauder_footstep_1" ID="{41314058-5915-4088-8401-BCB24E50E985}" ShortID="846649273">
+													<Language>SFX</Language>
+													<AudioFile>marauder_footstep_1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="marauder_footstep_1" ID="{41314058-5915-4088-8401-BCB24E50E985}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="marauder_footstep_2" ID="{41364BF6-1A01-49F9-8E00-928EBB919970}" ShortID="1044034684">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="marauder_footstep_2" ID="{F5898EF7-BA53-4483-B089-F9EDD501755C}" ShortID="316234699">
+													<Language>SFX</Language>
+													<AudioFile>marauder_footstep_2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="marauder_footstep_2" ID="{F5898EF7-BA53-4483-B089-F9EDD501755C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="marauder_footstep_3" ID="{AC39EDE9-E991-477F-BEB9-9EE7C68F267C}" ShortID="879256904">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="marauder_footstep_3" ID="{3134CE15-D591-4AC6-AE26-138356616C13}" ShortID="668696990">
+													<Language>SFX</Language>
+													<AudioFile>marauder_footstep_3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="marauder_footstep_3" ID="{3134CE15-D591-4AC6-AE26-138356616C13}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="marauder_footstep_4" ID="{6EAECD2B-3AA0-4C32-8F4A-8CF96CAAC8FE}" ShortID="639192439">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="marauder_footstep_4" ID="{E63292FF-51EF-40E0-B705-AF1E3EE71272}" ShortID="803353887">
+													<Language>SFX</Language>
+													<AudioFile>marauder_footstep_4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="marauder_footstep_4" ID="{E63292FF-51EF-40E0-B705-AF1E3EE71272}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="marauder_footstep_5" ID="{85199D81-191F-452C-A5F3-4B40B011B5FF}" ShortID="649300050">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="marauder_footstep_5" ID="{AA6C64E4-3FFA-4E14-9CA2-723ADFDB1771}" ShortID="834912864">
+													<Language>SFX</Language>
+													<AudioFile>marauder_footstep_5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="marauder_footstep_5" ID="{AA6C64E4-3FFA-4E14-9CA2-723ADFDB1771}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="marauder_footstep_6" ID="{5A685496-DC46-4F6F-9DCA-E0E03A6B80CB}" ShortID="56859830">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="marauder_footstep_6" ID="{57877856-6DB9-4B85-BA4A-6591908E9B38}" ShortID="527453733">
+													<Language>SFX</Language>
+													<AudioFile>marauder_footstep_6.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="marauder_footstep_6" ID="{57877856-6DB9-4B85-BA4A-6591908E9B38}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="marauder_footstep_7" ID="{8CDFB688-B8B3-458E-94BF-3C44FCB4FB27}" ShortID="283899376">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="marauder_footstep_7" ID="{9D8EA9D2-4A1B-4BC0-A438-90FB5D2953AF}" ShortID="824188848">
+													<Language>SFX</Language>
+													<AudioFile>marauder_footstep_7.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="marauder_footstep_7" ID="{9D8EA9D2-4A1B-4BC0-A438-90FB5D2953AF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="marauder_footstep_8" ID="{D7876915-C2D2-45D2-B63E-F146D90B0EB1}" ShortID="141838269">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="marauder_footstep_8" ID="{CD132964-A355-466F-A8D7-4FF9B6230F95}" ShortID="411008888">
+													<Language>SFX</Language>
+													<AudioFile>marauder_footstep_8.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="marauder_footstep_8" ID="{CD132964-A355-466F-A8D7-4FF9B6230F95}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="marauder_footstep_9" ID="{ED5D6895-DEC8-4D7B-8748-666C7C4EAD30}" ShortID="450255209">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="marauder_footstep_9" ID="{1E743BEA-FFB9-4F7C-8E0D-427D4BC68F82}" ShortID="553643144">
+													<Language>SFX</Language>
+													<AudioFile>marauder_footstep_9.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="marauder_footstep_9" ID="{1E743BEA-FFB9-4F7C-8E0D-427D4BC68F82}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="marauder_takle" ID="{87238491-9DEB-4DF4-B662-1AF28517280C}" ShortID="11266052">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{6D04823F-5D8C-4AE2-9BA8-8A35F115ADC6}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="240"/>
+															<Property Name="Min" Type="Real64" Value="-240"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="marauder_takle" ID="{4E056594-7FE0-4FA3-B5EF-659BE5C4B5F3}" ShortID="470903673">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.98748837425595"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.19522763206845"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>marauder_takle.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="marauder_takle" ID="{4E056594-7FE0-4FA3-B5EF-659BE5C4B5F3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="GUI" ID="{D0B4CC55-075E-44A4-B8D9-D68DD7E29F9C}" ShortID="626802653">

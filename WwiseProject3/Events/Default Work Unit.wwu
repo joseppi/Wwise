@@ -91,13 +91,13 @@
 						</Event>
 						<Event Name="Play_marauder_footsteps" ID="{2176E217-2C3B-4CCF-8ACF-6A0602783796}">
 							<ChildrenList>
-								<Action Name="" ID="{AD0FC62B-B1FE-43F5-B5E9-091046B50D3A}" ShortID="748704412">
+								<Action Name="" ID="{02CB373C-E720-440C-BBC8-A2DC21E32C32}" ShortID="695017581">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Footsteps" ID="{AFCF9E02-8F85-49F7-91CD-D912C032205D}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+											<ObjectRef Name="marauder_footsteps" ID="{7841BA32-2F7F-4882-B7CE-FB3F97DCB9CF}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -111,7 +111,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Death" ID="{214CE0DC-56C2-4F5F-A6F1-46B07272D270}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+											<ObjectRef Name="marauder_death" ID="{214CE0DC-56C2-4F5F-A6F1-46B07272D270}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -126,7 +126,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Detected" ID="{44EF1FD3-E2F7-48FB-B48C-49F7719400C2}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+											<ObjectRef Name="marauder_detected" ID="{44EF1FD3-E2F7-48FB-B48C-49F7719400C2}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -353,7 +353,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="recieve_damage_strong_punch" ID="{40AB8D5C-4E63-414E-B0D9-AD118C00FA7F}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+											<ObjectRef Name="marauder_damage_strong_punch" ID="{40AB8D5C-4E63-414E-B0D9-AD118C00FA7F}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -367,7 +367,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Receive_Damage_Weak" ID="{6E7D0FBB-612D-4607-BF43-933CDB3340CA}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+											<ObjectRef Name="marauder_damage_weak" ID="{6E7D0FBB-612D-4607-BF43-933CDB3340CA}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -395,7 +395,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="recieve_damage_strong_kick" ID="{62316684-041B-40DF-B4DA-40AD50EC007C}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+											<ObjectRef Name="marauder_damage_strong_kick" ID="{62316684-041B-40DF-B4DA-40AD50EC007C}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -696,6 +696,20 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_marauder_takle" ID="{1A3CF31F-A68A-4678-B63F-F453476640F4}">
+					<ChildrenList>
+						<Action Name="" ID="{9B0A8F15-D650-4BD0-B575-BA442CA33B9D}" ShortID="238503659">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="marauder_takle" ID="{87238491-9DEB-4DF4-B662-1AF28517280C}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
