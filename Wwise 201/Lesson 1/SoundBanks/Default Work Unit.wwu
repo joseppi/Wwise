@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{9D443419-4C0F-4177-9A8C-5AE9164B1D27}" SchemaVersion="85">
+<WwiseDocument Type="WorkUnit" ID="{9D443419-4C0F-4177-9A8C-5AE9164B1D27}" SchemaVersion="89">
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{9D443419-4C0F-4177-9A8C-5AE9164B1D27}" PersistMode="Standalone">
 			<ChildrenList>
@@ -130,6 +130,13 @@
 						<ObjectRef Name="DCP_Signal01" ID="{0AA6C6BA-85F7-4D99-90EF-C45F30C0196F}" WorkUnitID="{27ACFC61-8688-482D-A1F6-F21654EA4BDE}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="DCP_Enter12" ID="{1009821C-B1D3-4F27-86FA-AD3594BE80F2}" WorkUnitID="{27ACFC61-8688-482D-A1F6-F21654EA4BDE}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="DCP_Enter09" ID="{4E652613-1E27-4F7D-94F8-123EFB92EF06}" WorkUnitID="{27ACFC61-8688-482D-A1F6-F21654EA4BDE}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Music" ID="{561F390F-A669-4463-BD2D-04C924C919D9}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Music" ID="{705A3A53-6142-45A7-BB0C-035DF5152884}" WorkUnitID="{0188411A-4B86-48F4-A93E-A590B451D9AF}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
