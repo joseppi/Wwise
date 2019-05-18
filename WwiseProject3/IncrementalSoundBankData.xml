@@ -3,12 +3,12 @@
 	<Platform GUID="{B45E3EC8-EB62-4C55-B5E6-599317BCD1FA}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="BGM" Hash="1327225043" Timestamp="132020631024522600"/>
+				<File Name="BGM" Hash="1229282390" Timestamp="132025903279075843"/>
 				<File Name="Character" Hash="3489545937" Timestamp="131985091807140255"/>
 				<File Name="Combat" Hash="599961103" Timestamp="131955998746750980"/>
 				<File Name="Init" Hash="1901868597" Timestamp="132024198711151375"/>
 				<File Name="Punch" Hash="1680762432" Timestamp="131955963627862399"/>
-				<File Name="SFX" Hash="2325451992" Timestamp="132024211032636775"/>
+				<File Name="SFX" Hash="1615425534" Timestamp="132025907665798240"/>
 				<File Name="VO" Hash="4175280325" Timestamp="132020627534408478"/>
 			</Language>
 		</Banks>
@@ -20,7 +20,7 @@
 				<File Name="VO" Hash="1970747292" Timestamp="132020627534588414"/>
 			</Language>
 			<Language ID="-1">
-				<File Name="" Hash="264385619" Timestamp="132024211032776727"/>
+				<File Name="" Hash="1415764844" Timestamp="132025907665918070"/>
 			</Language>
 		</XMLInfo>
 		<JSONInfo>
@@ -31,7 +31,7 @@
 				<File Name="VO" Hash="2732131451" Timestamp="132020627534788350"/>
 			</Language>
 			<Language ID="-1">
-				<File Name="" Hash="2901572521" Timestamp="132024211032826732"/>
+				<File Name="" Hash="12324534" Timestamp="132025907665958058"/>
 			</Language>
 		</JSONInfo>
 	</Platform>

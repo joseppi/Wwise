@@ -312,6 +312,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="exploration_music" ID="{7CE45B08-E286-491F-AB2F-77D8B3767849}" ShortID="125744780">
+									<PropertyList>
+										<Property Name="TrimEnd" Type="Real64" Value="60.0378557118859"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>exploration_music.wav</AudioFile>
 								</AudioFileSource>
@@ -872,6 +875,9 @@
 											</RTPCList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-17</Value>
+											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{E294E6CD-D6E3-4392-A1FC-F323DA71E067}" ShortID="1027524928">
 													<ReferenceList>
@@ -5545,11 +5551,12 @@
 					<ChildrenList>
 						<Sound Name="env_tavern" ID="{64314566-8BA8-434E-B92E-1872736419B4}" ShortID="1027046166">
 							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>6</Value>
+										<Value>-8</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -5581,13 +5588,13 @@
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-26</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="att_pub" ID="{0FE62B5E-F795-4806-9722-95E2A012668E}" WorkUnitID="{C83A960A-58D6-4F21-8F97-3166A446ADC4}"/>
+									<ObjectRef Name="att_club" ID="{5EB5188C-4572-44CE-BBE1-CF683B74AB4E}" WorkUnitID="{C83A960A-58D6-4F21-8F97-3166A446ADC4}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
@@ -5608,8 +5615,14 @@
 						</Sound>
 						<Sound Name="env_factory" ID="{6E11A792-DFDC-49EF-AF1B-94009FF4F366}" ShortID="62592701">
 							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-22</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -5633,6 +5646,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="env_mine_explosion" ID="{87BA1BF9-D0A1-4E81-84E8-C7FB71DC0031}" ShortID="635567385">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
@@ -5705,13 +5725,33 @@
 						</Sound>
 						<RandomSequenceContainer Name="env_crickets" ID="{F5BA42E3-FDFA-4039-AF21-D0A3175F3FA0}" ShortID="708254888">
 							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B363D859-99D7-464E-A06F-C3140DFEE299}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="120"/>
+													<Property Name="Min" Type="Real64" Value="-120"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>15</Value>
+										<Value>-10</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="att_crickets" ID="{7273D2B8-3213-4134-938D-2A4B70CB915A}" WorkUnitID="{C83A960A-58D6-4F21-8F97-3166A446ADC4}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
 								</Reference>
@@ -5721,6 +5761,14 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="env_crickets_1" ID="{45C7ABFF-634F-485D-99C7-9360201D2CEF}" ShortID="743257494">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
@@ -5740,6 +5788,14 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="env_crickets_2" ID="{6E7DE697-BD60-405D-A610-C293ECA24710}" ShortID="1021040417">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
@@ -5768,7 +5824,7 @@
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>11</Value>
+										<Value>10</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -5941,7 +5997,7 @@
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>12</Value>
+										<Value>9</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -5967,7 +6023,7 @@
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-39</Value>
+												<Value>-17</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -6220,7 +6276,7 @@
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>20</Value>
+										<Value>4</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -6318,6 +6374,20 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="env_par_electricity" ID="{7DBEC873-7389-4BCC-8FCC-22B3B33C71C1}" ShortID="91449318">
 							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{89544625-315B-4052-AC3E-C6DDDE9C1AF2}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="240"/>
+													<Property Name="Min" Type="Real64" Value="-240"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-2</Value>
@@ -6334,6 +6404,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="env_particles_electricity_1" ID="{ED3C3D4B-ECBE-4559-ABE8-D991576D86F2}" ShortID="573446241">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>

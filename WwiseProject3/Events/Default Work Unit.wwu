@@ -345,7 +345,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_marauder_recieve_damage_strong_punch" ID="{B32E32E7-7E8B-41A6-93B7-B026AC3E0A67}">
+						<Event Name="Play_marauder_damage_strong_punch" ID="{B32E32E7-7E8B-41A6-93B7-B026AC3E0A67}">
 							<ChildrenList>
 								<Action Name="" ID="{4AEF12AA-E56E-400E-93C7-38DC59F58C5A}" ShortID="680159578">
 									<PropertyList>
@@ -359,7 +359,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_marauder_receive_damage_weak" ID="{9B5499E4-FEC8-4668-B2D4-651D4426B84F}">
+						<Event Name="Play_marauder_damage_weak" ID="{9B5499E4-FEC8-4668-B2D4-651D4426B84F}">
 							<ChildrenList>
 								<Action Name="" ID="{12135892-9849-4371-889E-C1DA27BE34C8}" ShortID="541018572">
 									<PropertyList>
@@ -387,7 +387,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_marauder_recieve_damage_strong_kick" ID="{6FAFF5A1-9088-4D5B-9C34-D7C2132DD06C}">
+						<Event Name="Play_marauder_damage_strong_kick" ID="{6FAFF5A1-9088-4D5B-9C34-D7C2132DD06C}">
 							<ChildrenList>
 								<Action Name="" ID="{4001C20E-5D14-4749-ACFE-1C986C980554}" ShortID="141320220">
 									<PropertyList>
@@ -589,6 +589,34 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_marauder_takle" ID="{1A3CF31F-A68A-4678-B63F-F453476640F4}">
+							<ChildrenList>
+								<Action Name="" ID="{9B0A8F15-D650-4BD0-B575-BA442CA33B9D}" ShortID="238503659">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="marauder_takle" ID="{87238491-9DEB-4DF4-B662-1AF28517280C}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_env_mine_explosion" ID="{14F3E50C-AC8E-4C4B-A171-F47804134275}">
+							<ChildrenList>
+								<Action Name="" ID="{43CE155B-D1E0-461C-A457-3F1210157570}" ShortID="17764103">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="env_mine_explosion" ID="{87BA1BF9-D0A1-4E81-84E8-C7FB71DC0031}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="VO" ID="{6EC26FA8-21CF-400C-A985-8DD2DC87D9C5}" ShortID="312859081">
@@ -625,20 +653,6 @@
 				</Folder>
 				<Folder Name="BGM" ID="{DB4783BC-2A51-4818-BCE2-F78A396534B1}" ShortID="290803677">
 					<ChildrenList>
-						<Event Name="Play_BGM_Placeholder" ID="{B8971829-1439-4FF6-854A-22936FCC5AFD}">
-							<ChildrenList>
-								<Action Name="" ID="{DCFF9DCE-3C21-4E19-AB7C-439F096C28FC}" ShortID="270280847">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="BG Music Placeholder" ID="{D0410252-82EF-408B-B904-063A23DBB63F}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_combat_music" ID="{743A0DE2-6164-486A-AFA4-5363DD2F81BE}">
 							<ChildrenList>
 								<Action Name="" ID="{936F805A-43BF-4A3E-A732-3A225DE77311}" ShortID="119659520">
@@ -696,20 +710,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_marauder_takle" ID="{1A3CF31F-A68A-4678-B63F-F453476640F4}">
-					<ChildrenList>
-						<Action Name="" ID="{9B0A8F15-D650-4BD0-B575-BA442CA33B9D}" ShortID="238503659">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="marauder_takle" ID="{87238491-9DEB-4DF4-B662-1AF28517280C}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
