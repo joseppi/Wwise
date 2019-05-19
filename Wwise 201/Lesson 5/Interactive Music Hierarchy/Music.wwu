@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{25784DDF-F959-48B4-A3A6-D457CF13E563}" SchemaVersion="85">
+<WwiseDocument Type="WorkUnit" ID="{25784DDF-F959-48B4-A3A6-D457CF13E563}" SchemaVersion="89">
 	<InteractiveMusic>
 		<WorkUnit Name="Music" ID="{25784DDF-F959-48B4-A3A6-D457CF13E563}" PersistMode="Standalone">
 			<ChildrenList>
@@ -335,6 +335,15 @@
 									</SequenceList>
 								</MusicTrack>
 							</ChildrenList>
+							<StingerList>
+								<MusicStinger Name="" ID="{B3FB656C-97E4-4796-B0F4-C1E94E8785F0}">
+									<PropertyList>
+										<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+									</PropertyList>
+									<TriggerRef Name="Health_Cue" ID="{AD9FCDAE-3FCB-4CA7-9BC8-73F02509B710}" WorkUnitID="{C32BCDB8-0FFB-4DA4-8750-2CE2E80A8BD5}"/>
+									<SegmentRef Name="Stinger-ExploreCombatMain-Health_138bpm4-4_L1M_P0" ID="{DCC22B4E-E3BE-4E24-BDCB-81D76CD1C05A}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+								</MusicStinger>
+							</StingerList>
 							<CueList>
 								<MusicCue Name="Entry Cue" ID="{85B104E3-49CF-41BC-B00C-79431CC80934}">
 									<PropertyList>
@@ -433,6 +442,15 @@
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
+					<StingerList>
+						<MusicStinger Name="" ID="{93061B74-E564-4F26-BE2F-F48A524687B6}">
+							<PropertyList>
+								<Property Name="PlaySegmentAt" Type="int16" Value="2"/>
+							</PropertyList>
+							<TriggerRef Name="Cymbal_Swell" ID="{092E336C-9C0D-4935-B205-A1261E5AFE15}" WorkUnitID="{C32BCDB8-0FFB-4DA4-8750-2CE2E80A8BD5}"/>
+							<SegmentRef Name="Stinger-CymbalSwell_138bpm4-4_L0-P3B" ID="{9857A4A7-C0A0-43D4-A400-E5832E6FF2DE}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+						</MusicStinger>
+					</StingerList>
 					<Playlist>
 						<MusicPlaylistItem Name="" ID="{EBBCAEAC-79A8-4B53-9803-9364B95115F6}" ShortID="846641970">
 							<PropertyList>
@@ -941,7 +959,6 @@
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
-										<MusicTrackSequence Name="" ID="{B52A3F32-6FBC-4378-9FE8-5E6B63C691EB}"/>
 									</SequenceList>
 								</MusicTrack>
 								<MusicTrack Name="Combat-A-Bass1_138bpm4-4_L8M-P0" ID="{B1A85007-78E1-4A3F-B47C-AA1CD5B5ACF0}" ShortID="44880197">
@@ -1003,11 +1020,17 @@
 								<MusicTrack Name="Combat-A-Gtr1_138bpm4-4_L8M-P0" ID="{4F33766D-A5CF-400D-821A-18B0343CEB41}" ShortID="848632074">
 									<PropertyList>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="MusicTrackType" Type="int16" Value="2"/>
+										<Property Name="MusicTrackType" Type="int16" Value="3"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Healthy" ID="{61E17186-F028-43F8-9E78-7CF014BCFDC5}" WorkUnitID="{F50AE5D4-C5B5-4793-88B8-D25CB6D17E1B}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Health_Status" ID="{35DD3B88-C1B8-432D-9BD7-8DCB749E7F72}" WorkUnitID="{F50AE5D4-C5B5-4793-88B8-D25CB6D17E1B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1029,11 +1052,44 @@
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{405F2B14-EE37-41B8-8961-EEE8D02773AD}">
+													<PropertyList>
+														<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+														<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+													</PropertyList>
+													<TransitionInfo>
+														<SourceFadeOut>
+															<MusicFade Name="Source Fade-out" ID="{D6723031-B308-492C-B453-15668BFEE066}">
+																<PropertyList>
+																	<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+																	<Property Name="FadeType" Type="int16" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</SourceFadeOut>
+														<DestinationFadeIn>
+															<MusicFade Name="Destination Fade-in" ID="{1EA78586-7FC7-4EF4-A786-FD0E60AA56AD}">
+																<PropertyList>
+																	<Property Name="FadeOffset" Type="Real64" Value="-0.5"/>
+																	<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+																</PropertyList>
+															</MusicFade>
+														</DestinationFadeIn>
+													</TransitionInfo>
+												</MusicTransition>
+											</ChildrenList>
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
 									<SequenceList>
-										<MusicTrackSequence Name="" ID="{F99E4D8A-39FE-4CCA-B6D7-BD9329079F85}"/>
+										<MusicTrackSequence Name="" ID="{F99E4D8A-39FE-4CCA-B6D7-BD9329079F85}">
+											<ReferenceList>
+												<Reference Name="TrackSequenceSwitch">
+													<ObjectRef Name="Healthy" ID="{61E17186-F028-43F8-9E78-7CF014BCFDC5}" WorkUnitID="{F50AE5D4-C5B5-4793-88B8-D25CB6D17E1B}"/>
+												</Reference>
+											</ReferenceList>
+										</MusicTrackSequence>
 										<MusicTrackSequence Name="" ID="{C47907C7-9A42-41FC-A734-559569B7B784}">
 											<ClipList>
 												<MusicClip Name="Combat-A-Gtr1_138bpm4-4_L8M-P0" ID="{47A54AAB-AEFC-46EB-B93D-33970E8F45DB}">
@@ -1045,6 +1101,11 @@
 													<AudioSourceRef Name="Combat-A-Gtr1_138bpm4-4_L8M-P0" ID="{19A9B0B0-CEF9-4388-A429-01E53BFD6D13}"/>
 												</MusicClip>
 											</ClipList>
+											<ReferenceList>
+												<Reference Name="TrackSequenceSwitch">
+													<ObjectRef Name="Flesh_Wound" ID="{27684496-B56C-4118-B010-475435A0C535}" WorkUnitID="{F50AE5D4-C5B5-4793-88B8-D25CB6D17E1B}"/>
+												</Reference>
+											</ReferenceList>
 										</MusicTrackSequence>
 										<MusicTrackSequence Name="" ID="{3E64FEB8-7279-4468-BE0A-B70ABEEE2045}">
 											<ClipList>
@@ -1057,6 +1118,11 @@
 													<AudioSourceRef Name="Combat-A-Gtr2_138bpm4-4_L8M-P0" ID="{D215A951-09E6-4F22-A19A-AC59924C8AE7}"/>
 												</MusicClip>
 											</ClipList>
+											<ReferenceList>
+												<Reference Name="TrackSequenceSwitch">
+													<ObjectRef Name="Badly_Injured" ID="{D8F57CF0-86B4-4A9E-AB75-32DD8C6B722F}" WorkUnitID="{F50AE5D4-C5B5-4793-88B8-D25CB6D17E1B}"/>
+												</Reference>
+											</ReferenceList>
 										</MusicTrackSequence>
 										<MusicTrackSequence Name="" ID="{74B13E04-962C-4819-9AE7-6F5D7E6F7514}">
 											<ClipList>
@@ -1069,6 +1135,11 @@
 													<AudioSourceRef Name="Combat-A-Gtr3_138bpm4-4_L8M-P0" ID="{E98654FA-3F53-44C1-86C6-4987491B8D6B}"/>
 												</MusicClip>
 											</ClipList>
+											<ReferenceList>
+												<Reference Name="TrackSequenceSwitch">
+													<ObjectRef Name="Nearly_Death" ID="{53EB9DEC-26A5-4D38-BD01-27EC7AEA0C0F}" WorkUnitID="{F50AE5D4-C5B5-4793-88B8-D25CB6D17E1B}"/>
+												</Reference>
+											</ReferenceList>
 										</MusicTrackSequence>
 									</SequenceList>
 								</MusicTrack>
@@ -1656,6 +1727,27 @@
 									</SequenceList>
 								</MusicTrack>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo MusicSyncType="2">
+										<StateGroupRef Name="PlayerHasQuad" ID="{9BF1FC8F-1690-439E-AB8F-460634D9E61E}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Yes" ID="{0B88A8D2-2D65-4B5E-A92A-10DB34C07E8F}"/>
+										<State Name="" ID="{EC0DDE47-72C5-4949-BBD0-4F5724CB8A73}" ShortID="940437307"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="No" ID="{DE75061E-028A-4D05-8487-2B76CFA42B90}"/>
+										<State Name="" ID="{BEABB97E-9E1C-4EE5-80B3-D294AC8EB1BE}" ShortID="31655599">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<CueList>
 								<MusicCue Name="Entry Cue" ID="{FA7F11B6-9605-4C94-B481-C48BD81AEF67}"/>
 								<MusicCue Name="Exit Cue" ID="{C7526BB4-8AE6-4692-828D-4C3B374F9CD4}">
@@ -1697,6 +1789,27 @@
 											<AudioFile>Combat-B-Arpeggio_138bpm4-4_L8M-P0.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="PlayerHasQuad" ID="{9BF1FC8F-1690-439E-AB8F-460634D9E61E}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Yes" ID="{0B88A8D2-2D65-4B5E-A92A-10DB34C07E8F}"/>
+												<State Name="" ID="{939EA163-F503-473E-A4EC-1D09E0F76D86}" ShortID="843968878"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="No" ID="{DE75061E-028A-4D05-8487-2B76CFA42B90}"/>
+												<State Name="" ID="{80421F7C-9035-4F51-80E9-F7C714988799}" ShortID="115186356">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-96"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<TransitionList>
 										<MusicTransition Name="Root" ID="{A59BDD00-93BE-41DA-ACDD-E038AB15264C}">
 											<PropertyList>
@@ -2031,7 +2144,6 @@
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
-										<MusicTrackSequence Name="" ID="{6D45F3AA-58D1-4176-8D13-7EEC78971E6B}"/>
 									</SequenceList>
 								</MusicTrack>
 								<MusicTrack Name="Combat-B-Bass1_138bpm4-4_L8M-P0" ID="{6B0ED971-696E-4C89-BD9B-212142E8155A}" ShortID="673949735">
@@ -2093,11 +2205,17 @@
 								<MusicTrack Name="Combat-B-Gtr1_138bpm4-4_L8M-P0" ID="{DE4161C7-B043-4EBB-85CD-35A929CDEF1D}" ShortID="878170988">
 									<PropertyList>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="MusicTrackType" Type="int16" Value="2"/>
+										<Property Name="MusicTrackType" Type="int16" Value="3"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Healthy" ID="{61E17186-F028-43F8-9E78-7CF014BCFDC5}" WorkUnitID="{F50AE5D4-C5B5-4793-88B8-D25CB6D17E1B}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Health_Status" ID="{35DD3B88-C1B8-432D-9BD7-8DCB749E7F72}" WorkUnitID="{F50AE5D4-C5B5-4793-88B8-D25CB6D17E1B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2119,11 +2237,43 @@
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{829F9732-BCEA-416C-AFB1-0A4A129B93FD}">
+													<PropertyList>
+														<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo>
+														<SourceFadeOut>
+															<MusicFade Name="Source Fade-out" ID="{9A185FDE-5F44-4E6E-A26F-FEC21109D42A}">
+																<PropertyList>
+																	<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+																	<Property Name="FadeType" Type="int16" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</SourceFadeOut>
+														<DestinationFadeIn>
+															<MusicFade Name="Destination Fade-in" ID="{C492E848-91C4-4DDD-A25B-5A96AD2E5E28}">
+																<PropertyList>
+																	<Property Name="FadeOffset" Type="Real64" Value="-0.5"/>
+																	<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+																</PropertyList>
+															</MusicFade>
+														</DestinationFadeIn>
+													</TransitionInfo>
+												</MusicTransition>
+											</ChildrenList>
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
 									<SequenceList>
-										<MusicTrackSequence Name="" ID="{C6244D57-1E81-4BBC-AE13-77EDD65CC27A}"/>
+										<MusicTrackSequence Name="" ID="{C6244D57-1E81-4BBC-AE13-77EDD65CC27A}">
+											<ReferenceList>
+												<Reference Name="TrackSequenceSwitch">
+													<ObjectRef Name="Healthy" ID="{61E17186-F028-43F8-9E78-7CF014BCFDC5}" WorkUnitID="{F50AE5D4-C5B5-4793-88B8-D25CB6D17E1B}"/>
+												</Reference>
+											</ReferenceList>
+										</MusicTrackSequence>
 										<MusicTrackSequence Name="" ID="{85C57559-19C6-4EC7-BA1E-E633C7B4AFDE}">
 											<ClipList>
 												<MusicClip Name="Combat-B-Gtr1_138bpm4-4_L8M-P0" ID="{48BE1F53-DD30-4CE5-8267-D9C2B663D0DA}">
@@ -2135,6 +2285,11 @@
 													<AudioSourceRef Name="Combat-B-Gtr1_138bpm4-4_L8M-P0" ID="{1E70CB04-A97F-4361-804B-F479E060B4C6}"/>
 												</MusicClip>
 											</ClipList>
+											<ReferenceList>
+												<Reference Name="TrackSequenceSwitch">
+													<ObjectRef Name="Flesh_Wound" ID="{27684496-B56C-4118-B010-475435A0C535}" WorkUnitID="{F50AE5D4-C5B5-4793-88B8-D25CB6D17E1B}"/>
+												</Reference>
+											</ReferenceList>
 										</MusicTrackSequence>
 										<MusicTrackSequence Name="" ID="{35E62FC1-92D1-41CC-83F0-1C1E49FBF8B3}">
 											<ClipList>
@@ -2147,6 +2302,11 @@
 													<AudioSourceRef Name="Combat-B-Gtr2_138bpm4-4_L8M-P0" ID="{CDA28F3B-E071-4F28-AF95-38CA9CBD7AC0}"/>
 												</MusicClip>
 											</ClipList>
+											<ReferenceList>
+												<Reference Name="TrackSequenceSwitch">
+													<ObjectRef Name="Badly_Injured" ID="{D8F57CF0-86B4-4A9E-AB75-32DD8C6B722F}" WorkUnitID="{F50AE5D4-C5B5-4793-88B8-D25CB6D17E1B}"/>
+												</Reference>
+											</ReferenceList>
 										</MusicTrackSequence>
 										<MusicTrackSequence Name="" ID="{E49059C2-5478-4364-912B-54F0F00F8B9E}">
 											<ClipList>
@@ -2159,6 +2319,11 @@
 													<AudioSourceRef Name="Combat-B-Gtr3_138bpm4-4_L8M-P0" ID="{C74A81EB-C493-4EFE-9AB5-EC8EC447C119}"/>
 												</MusicClip>
 											</ClipList>
+											<ReferenceList>
+												<Reference Name="TrackSequenceSwitch">
+													<ObjectRef Name="Nearly_Death" ID="{53EB9DEC-26A5-4D38-BD01-27EC7AEA0C0F}" WorkUnitID="{F50AE5D4-C5B5-4793-88B8-D25CB6D17E1B}"/>
+												</Reference>
+											</ReferenceList>
 										</MusicTrackSequence>
 									</SequenceList>
 								</MusicTrack>
@@ -2755,6 +2920,27 @@
 									</SequenceList>
 								</MusicTrack>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo MusicSyncType="2">
+										<StateGroupRef Name="PlayerHasQuad" ID="{9BF1FC8F-1690-439E-AB8F-460634D9E61E}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Yes" ID="{0B88A8D2-2D65-4B5E-A92A-10DB34C07E8F}"/>
+										<State Name="" ID="{9D67AC47-DCE5-4C49-B18B-3672D92D59EC}" ShortID="632690516"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="No" ID="{DE75061E-028A-4D05-8487-2B76CFA42B90}"/>
+										<State Name="" ID="{C786DA93-2AF2-49E4-8427-A209A1CC402A}" ShortID="86212942">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<CueList>
 								<MusicCue Name="Entry Cue" ID="{0D099BBB-78F1-463E-8FBA-6EE970F5F835}"/>
 								<MusicCue Name="Exit Cue" ID="{505CA289-FE6E-4294-80A0-A62F63A9EB71}">
@@ -2782,11 +2968,17 @@
 								<MusicTrack Name="Combat-Bridge-Gtr1_138bpm4-4_L17M-P1B" ID="{DE98163C-42D3-4093-AC05-58DE3E827770}" ShortID="60554526">
 									<PropertyList>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="MusicTrackType" Type="int16" Value="2"/>
+										<Property Name="MusicTrackType" Type="int16" Value="3"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Healthy" ID="{61E17186-F028-43F8-9E78-7CF014BCFDC5}" WorkUnitID="{F50AE5D4-C5B5-4793-88B8-D25CB6D17E1B}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Health_Status" ID="{35DD3B88-C1B8-432D-9BD7-8DCB749E7F72}" WorkUnitID="{F50AE5D4-C5B5-4793-88B8-D25CB6D17E1B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2808,11 +3000,22 @@
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{04E1614D-81BE-44CC-BB84-65B2B7F424F2}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
 									<SequenceList>
-										<MusicTrackSequence Name="" ID="{757F3CE3-9A00-481A-8EF1-1F34D3D3CFB0}"/>
+										<MusicTrackSequence Name="" ID="{757F3CE3-9A00-481A-8EF1-1F34D3D3CFB0}">
+											<ReferenceList>
+												<Reference Name="TrackSequenceSwitch">
+													<ObjectRef Name="Healthy" ID="{61E17186-F028-43F8-9E78-7CF014BCFDC5}" WorkUnitID="{F50AE5D4-C5B5-4793-88B8-D25CB6D17E1B}"/>
+												</Reference>
+											</ReferenceList>
+										</MusicTrackSequence>
 										<MusicTrackSequence Name="" ID="{DA52C057-CD96-41EA-8486-8D24F1A66EF1}">
 											<ClipList>
 												<MusicClip Name="Combat-Bridge-Gtr1_138bpm4-4_L17M-P1B" ID="{E5E599BC-1D0C-4CAD-ACCA-0913EE10A070}">
@@ -2824,6 +3027,11 @@
 													<AudioSourceRef Name="Combat-Bridge-Gtr1_138bpm4-4_L17M-P1B" ID="{4F6153A5-2498-443F-8787-BBF42A6E79E9}"/>
 												</MusicClip>
 											</ClipList>
+											<ReferenceList>
+												<Reference Name="TrackSequenceSwitch">
+													<ObjectRef Name="Flesh_Wound" ID="{27684496-B56C-4118-B010-475435A0C535}" WorkUnitID="{F50AE5D4-C5B5-4793-88B8-D25CB6D17E1B}"/>
+												</Reference>
+											</ReferenceList>
 										</MusicTrackSequence>
 										<MusicTrackSequence Name="" ID="{8F33A3B9-96CE-4F8C-99D4-BACFDE441F02}">
 											<ClipList>
@@ -2836,6 +3044,11 @@
 													<AudioSourceRef Name="Combat-Bridge-Gtr2_138bpm4-4_L17M-P1B" ID="{1BFBDEDC-2D32-4B2A-AD69-F2F318775662}"/>
 												</MusicClip>
 											</ClipList>
+											<ReferenceList>
+												<Reference Name="TrackSequenceSwitch">
+													<ObjectRef Name="Badly_Injured" ID="{D8F57CF0-86B4-4A9E-AB75-32DD8C6B722F}" WorkUnitID="{F50AE5D4-C5B5-4793-88B8-D25CB6D17E1B}"/>
+												</Reference>
+											</ReferenceList>
 										</MusicTrackSequence>
 										<MusicTrackSequence Name="" ID="{B975F6C1-E40C-48C0-B980-6568CC911F45}">
 											<ClipList>
@@ -2848,6 +3061,11 @@
 													<AudioSourceRef Name="Combat-Bridge-Gtr3_138bpm4-4_L17M-P1B" ID="{2762843C-E7ED-4578-B833-1380EA8EE665}"/>
 												</MusicClip>
 											</ClipList>
+											<ReferenceList>
+												<Reference Name="TrackSequenceSwitch">
+													<ObjectRef Name="Nearly_Death" ID="{53EB9DEC-26A5-4D38-BD01-27EC7AEA0C0F}" WorkUnitID="{F50AE5D4-C5B5-4793-88B8-D25CB6D17E1B}"/>
+												</Reference>
+											</ReferenceList>
 										</MusicTrackSequence>
 									</SequenceList>
 								</MusicTrack>
@@ -2890,6 +3108,15 @@
 									</SequenceList>
 								</MusicTrack>
 							</ChildrenList>
+							<StingerList>
+								<MusicStinger Name="" ID="{50845DD4-B1E9-4A1B-AEDD-99B4C9B0C1B7}">
+									<PropertyList>
+										<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+									</PropertyList>
+									<TriggerRef Name="Health_Cue" ID="{AD9FCDAE-3FCB-4CA7-9BC8-73F02509B710}" WorkUnitID="{C32BCDB8-0FFB-4DA4-8750-2CE2E80A8BD5}"/>
+									<SegmentRef Name="Stinger-ExploreCombatBridge-Health_138bpm4-4_L1M_P0" ID="{E548E239-7876-4F4F-AF5D-36BD6020F8BC}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+								</MusicStinger>
+							</StingerList>
 							<CueList>
 								<MusicCue Name="Entry Cue" ID="{24BF4CC1-56E3-4236-A230-00891A6A8C22}">
 									<PropertyList>
@@ -2988,6 +3215,15 @@
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
+					<StingerList>
+						<MusicStinger Name="" ID="{5A90A927-8A09-489D-87D5-029EC6E826BA}">
+							<PropertyList>
+								<Property Name="PlaySegmentAt" Type="int16" Value="2"/>
+							</PropertyList>
+							<TriggerRef Name="Cymbal_Swell" ID="{092E336C-9C0D-4935-B205-A1261E5AFE15}" WorkUnitID="{C32BCDB8-0FFB-4DA4-8750-2CE2E80A8BD5}"/>
+							<SegmentRef Name="Stinger-CymbalSwell_138bpm4-4_L0-P3B" ID="{9857A4A7-C0A0-43D4-A400-E5832E6FF2DE}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+						</MusicStinger>
+					</StingerList>
 					<Playlist>
 						<MusicPlaylistItem Name="" ID="{30BDA7E5-74B2-4B78-A7C4-FF38ECDA7225}" ShortID="756569151">
 							<PropertyList>
@@ -3630,6 +3866,14 @@
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
+					<StingerList>
+						<MusicStinger Name="" ID="{D8320D87-272B-4B01-B207-61D6C3B48263}">
+							<PropertyList>
+								<Property Name="PlaySegmentAt" Type="int16" Value="2"/>
+							</PropertyList>
+							<TriggerRef Name="Cymbal_Swell" ID="{092E336C-9C0D-4935-B205-A1261E5AFE15}" WorkUnitID="{C32BCDB8-0FFB-4DA4-8750-2CE2E80A8BD5}"/>
+						</MusicStinger>
+					</StingerList>
 					<Playlist>
 						<MusicPlaylistItem Name="" ID="{67C3D8FF-4121-4BBB-8B3E-1BE1059F9DD2}" ShortID="338443724">
 							<ChildrenList>
@@ -3674,6 +3918,203 @@
 						</MusicPlaylistItem>
 					</Playlist>
 				</MusicPlaylistContainer>
+				<Folder Name="Stingers" ID="{8B5D5AFA-EF2A-4D2C-A7BC-71EB34BE30E2}" ShortID="544183944">
+					<ChildrenList>
+						<MusicSegment Name="Stinger-CymbalSwell_138bpm4-4_L0-P3B" ID="{9857A4A7-C0A0-43D4-A400-E5832E6FF2DE}" ShortID="883586921">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="10861.9629398076"/>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FAF928FC-2A2A-4F7A-8A7C-0010690433A5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Stinger-CymbalSwell_138bpm4-4_L0-P3B" ID="{C8F40525-DE5F-4143-BACF-1DFE3F17BDA6}" ShortID="110792008">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stinger-CymbalSwell_138bpm4-4_L0-P3B" ID="{40B6FEFE-DCBA-4D61-960F-0EFCD9FF3E19}" ShortID="270550710">
+											<Language>SFX</Language>
+											<AudioFile>Stinger-CymbalSwell_138bpm4-4_L0-P3B.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{038B83D0-3149-40FC-8AD4-F7094EF44F07}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{357C32C9-F8E3-4026-A3E2-5586DA783FA3}">
+											<ClipList>
+												<MusicClip Name="Stinger-CymbalSwell_138bpm4-4_L0-P3B" ID="{D54A0E23-6D3A-4047-9764-1B17CC105837}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="6086.96145124717"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stinger-CymbalSwell_138bpm4-4_L0-P3B" ID="{40B6FEFE-DCBA-4D61-960F-0EFCD9FF3E19}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{5D687184-93D4-4F53-8DE8-3E0CB2E78E0C}">
+									<PropertyList>
+										<Property Name="TimeMs" Type="Real64" Value="1311.95996268675"/>
+									</PropertyList>
+								</MusicCue>
+								<MusicCue Name="Exit Cue" ID="{C2B63472-B2B8-44A6-AC0F-C0BFAA2BA3BA}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="1311.95996268675"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Stinger-ExploreCombatBridge-Health_138bpm4-4_L1M_P0" ID="{E548E239-7876-4F4F-AF5D-36BD6020F8BC}" ShortID="894363305">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="4347.83333333333"/>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FAF928FC-2A2A-4F7A-8A7C-0010690433A5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Stinger-ExploreCombatBridge-Health_138bpm4-4_L1M_P0" ID="{23F49A1B-C85F-44BB-B2E7-436FC4FF348C}" ShortID="523713930">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stinger-ExploreCombatBridge-Health_138bpm4-4_L1M_P0" ID="{AF3CC112-9712-41F7-855A-5CDB1207EA97}" ShortID="1072364347">
+											<Language>SFX</Language>
+											<AudioFile>Stinger-ExploreCombatBridge-Health_138bpm4-4_L1M_P0.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{C03F2991-6D97-48DE-BDD8-BC5B96DCEC97}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{F0590AF5-148D-4884-8EC4-159AAEC48F9B}">
+											<ClipList>
+												<MusicClip Name="Stinger-ExploreCombatBridge-Health_138bpm4-4_L1M_P0" ID="{B8408A85-8E0F-4CAA-803D-2B5F509077F1}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="4347.83333333333"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stinger-ExploreCombatBridge-Health_138bpm4-4_L1M_P0" ID="{AF3CC112-9712-41F7-855A-5CDB1207EA97}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{A35D8697-13D1-4A19-BF89-1E08D48AC034}"/>
+								<MusicCue Name="Exit Cue" ID="{7F1F3A63-4D0F-4756-BEF9-58FFE357F717}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="4347.83333333333"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Stinger-ExploreCombatMain-Health_138bpm4-4_L1M_P0" ID="{DCC22B4E-E3BE-4E24-BDCB-81D76CD1C05A}" ShortID="1073502869">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="4347.83333333333"/>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FAF928FC-2A2A-4F7A-8A7C-0010690433A5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Stinger-ExploreCombatMain-Health_138bpm4-4_L1M_P0" ID="{53E7BE32-DDB3-4487-A0B0-12DE766439E2}" ShortID="484486503">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F10B222B-2801-430A-B717-538AC6BBF93D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stinger-ExploreCombatMain-Health_138bpm4-4_L1M_P0" ID="{98782BD3-4943-4D4C-BCB1-E7110F298E58}" ShortID="45795306">
+											<Language>SFX</Language>
+											<AudioFile>Stinger-ExploreCombatMain-Health_138bpm4-4_L1M_P0.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{3F220746-9368-44AB-806F-A40B449D4397}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{B8591F3D-E01B-4A1D-9C27-AD4E581C6496}">
+											<ClipList>
+												<MusicClip Name="Stinger-ExploreCombatMain-Health_138bpm4-4_L1M_P0" ID="{7CAEACBF-FBF6-4EEF-89B1-FA31F415084B}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="4347.83333333333"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stinger-ExploreCombatMain-Health_138bpm4-4_L1M_P0" ID="{98782BD3-4943-4D4C-BCB1-E7110F298E58}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{CC64A6D5-4251-4C26-B594-956F5C4FDC99}"/>
+								<MusicCue Name="Exit Cue" ID="{48B30D19-6D41-4ED7-A8DD-7B9134EFEFF8}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="4347.83333333333"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>

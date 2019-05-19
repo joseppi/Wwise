@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{27ACFC61-8688-482D-A1F6-F21654EA4BDE}" SchemaVersion="85">
+<WwiseDocument Type="WorkUnit" ID="{27ACFC61-8688-482D-A1F6-F21654EA4BDE}" SchemaVersion="89">
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{27ACFC61-8688-482D-A1F6-F21654EA4BDE}" PersistMode="Standalone">
 			<ChildrenList>
@@ -56,6 +56,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Itempick" ID="{06FAF0EA-B606-4FD0-9274-444C206948AB}" WorkUnitID="{8D65CABB-7643-4775-8C45-3B7F325D73EF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B8FD3613-ACD2-4F5D-8324-AF28EB6E8593}" ShortID="520907072">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Health_Cue" ID="{AD9FCDAE-3FCB-4CA7-9BC8-73F02509B710}" WorkUnitID="{C32BCDB8-0FFB-4DA4-8750-2CE2E80A8BD5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -240,6 +250,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Teleport" ID="{7E422F5C-D4D8-4B3F-B2CE-8E11467AC08C}" WorkUnitID="{8D65CABB-7643-4775-8C45-3B7F325D73EF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{913663D3-1F1E-4FD5-B441-0C3FE7C9A369}" ShortID="884859520">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cymbal_Swell" ID="{092E336C-9C0D-4935-B205-A1261E5AFE15}" WorkUnitID="{C32BCDB8-0FFB-4DA4-8750-2CE2E80A8BD5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1406,6 +1426,12 @@
 											<ObjectRef Name="Itempick" ID="{06FAF0EA-B606-4FD0-9274-444C206948AB}" WorkUnitID="{8D65CABB-7643-4775-8C45-3B7F325D73EF}"/>
 										</Reference>
 									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{BEE2FEE0-0960-4E58-8A7B-EACA05ED8E4C}" ShortID="888780578">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+									</PropertyList>
+									<ReferenceList/>
 								</Action>
 							</ChildrenList>
 						</Event>

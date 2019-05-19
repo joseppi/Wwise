@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{71247B77-226A-4405-93DB-95421DC96BEE}" SchemaVersion="85">
+<WwiseDocument Type="WorkUnit" ID="{71247B77-226A-4405-93DB-95421DC96BEE}" SchemaVersion="89">
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{71247B77-226A-4405-93DB-95421DC96BEE}" PersistMode="Standalone">
 			<ChildrenList>
@@ -32,6 +32,9 @@
 				</StateGroup>
 				<StateGroup Name="PlayerHasQuad" ID="{9BF1FC8F-1690-439E-AB8F-460634D9E61E}">
 					<Comment>Player is in quad damage mode.</Comment>
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{75CE2A16-06FA-4B7B-98DD-ED2B7332C4ED}"/>
 						<State Name="No" ID="{DE75061E-028A-4D05-8487-2B76CFA42B90}"/>
