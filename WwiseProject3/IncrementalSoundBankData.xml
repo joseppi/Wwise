@@ -8,7 +8,7 @@
 				<File Name="Combat" Hash="599961103" Timestamp="131955998746750980"/>
 				<File Name="Init" Hash="1901868597" Timestamp="132024198711151375"/>
 				<File Name="Punch" Hash="1680762432" Timestamp="131955963627862399"/>
-				<File Name="SFX" Hash="1615425534" Timestamp="132025907665798240"/>
+				<File Name="SFX" Hash="1183152332" Timestamp="132026838783855680"/>
 				<File Name="VO" Hash="4175280325" Timestamp="132020627534408478"/>
 			</Language>
 		</Banks>
@@ -20,7 +20,7 @@
 				<File Name="VO" Hash="1970747292" Timestamp="132020627534588414"/>
 			</Language>
 			<Language ID="-1">
-				<File Name="" Hash="1415764844" Timestamp="132025907665918070"/>
+				<File Name="" Hash="3857779179" Timestamp="132026838783965586"/>
 			</Language>
 		</XMLInfo>
 		<JSONInfo>
@@ -31,7 +31,7 @@
 				<File Name="VO" Hash="2732131451" Timestamp="132020627534788350"/>
 			</Language>
 			<Language ID="-1">
-				<File Name="" Hash="12324534" Timestamp="132025907665958058"/>
+				<File Name="" Hash="3147279938" Timestamp="132026838784005460"/>
 			</Language>
 		</JSONInfo>
 	</Platform>

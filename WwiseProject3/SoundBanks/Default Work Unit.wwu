@@ -31,6 +31,7 @@
 						<ObjectRef Name="Play_alita_air_efforts_kick_strong" ID="{BF525DD2-47B1-48D0-A926-17B8989BA9FB}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_alita_dash" ID="{C0AB94DC-DAFF-4913-895D-3256E7EA81EA}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_env_crickets" ID="{D96780BB-3278-4AA9-9312-21C3E5A9B58C}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_env_scrap" ID="{2A565643-F4B5-4ABD-8DE2-EDB1D13B4F29}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_env_club" ID="{0E32B0F2-880A-4B0B-8BC1-0AB7A2BAD1F7}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_alita_skill_punch" ID="{067B0CE0-4A56-4B90-BB42-48C30DC36889}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_env_mine_explosion" ID="{14F3E50C-AC8E-4C4B-A171-F47804134275}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>

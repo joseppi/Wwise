@@ -6450,6 +6450,50 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="env_scrap" ID="{C1B8EEB3-A62E-46F0-B621-90243278BB64}" ShortID="1023109021">
+							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{2F4D9BDC-EA88-44E6-AAAE-092F2522CC83}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="240"/>
+													<Property Name="Min" Type="Real64" Value="-240"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="env_scrap" ID="{581956ED-A694-41F8-823E-B0BAB60B026D}" ShortID="504996869">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.340341047133139"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.849718147675737"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>env_scrap.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="env_scrap" ID="{581956ED-A694-41F8-823E-B0BAB60B026D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<PositioningInfo>
 						<Panner Name="" ID="{9C226B5E-DA8C-4D28-B42F-270554E97B32}"/>

@@ -617,6 +617,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_env_scrap" ID="{2A565643-F4B5-4ABD-8DE2-EDB1D13B4F29}">
+							<ChildrenList>
+								<Action Name="" ID="{4215B847-FD67-48E5-B3A8-D75C286F4B9E}" ShortID="415459095">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="env_scrap" ID="{C1B8EEB3-A62E-46F0-B621-90243278BB64}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="VO" ID="{6EC26FA8-21CF-400C-A985-8DD2DC87D9C5}" ShortID="312859081">
