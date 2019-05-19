@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{F10B222B-2801-430A-B717-538AC6BBF93D}" SchemaVersion="85">
+<WwiseDocument Type="WorkUnit" ID="{F10B222B-2801-430A-B717-538AC6BBF93D}" SchemaVersion="89">
 	<Busses>
 		<WorkUnit Name="Default Work Unit" ID="{F10B222B-2801-430A-B717-538AC6BBF93D}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<PropertyList>
-						<Property Name="DivergenceCenter" Type="int32">
+						<Property Name="CenterPercentage" Type="int32">
 							<ValueList>
 								<Value>100</Value>
 							</ValueList>
@@ -31,7 +31,7 @@
 					<ChildrenList>
 						<Bus Name="Environmental" ID="{03FFB125-26D5-4A9C-8F9D-EB66ECB1B4F3}">
 							<PropertyList>
-								<Property Name="DivergenceCenter" Type="int32">
+								<Property Name="CenterPercentage" Type="int32">
 									<ValueList>
 										<Value>100</Value>
 									</ValueList>
@@ -40,7 +40,7 @@
 							<ChildrenList>
 								<Bus Name="SFX" ID="{151C0E6C-362D-488B-86D0-E49251035307}">
 									<PropertyList>
-										<Property Name="DivergenceCenter" Type="int32">
+										<Property Name="CenterPercentage" Type="int32">
 											<ValueList>
 												<Value>100</Value>
 											</ValueList>
@@ -49,7 +49,7 @@
 									<ChildrenList>
 										<Bus Name="Items" ID="{632196D3-C456-4A29-942A-6A96C15206D2}">
 											<PropertyList>
-												<Property Name="DivergenceCenter" Type="int32">
+												<Property Name="CenterPercentage" Type="int32">
 													<ValueList>
 														<Value>100</Value>
 													</ValueList>
@@ -58,7 +58,7 @@
 										</Bus>
 										<Bus Name="Main Character" ID="{A230C066-2EB7-4FE6-8DA6-026924387131}">
 											<PropertyList>
-												<Property Name="DivergenceCenter" Type="int32">
+												<Property Name="CenterPercentage" Type="int32">
 													<ValueList>
 														<Value>100</Value>
 													</ValueList>
@@ -67,7 +67,7 @@
 										</Bus>
 										<Bus Name="Monsters" ID="{3EFC0CA9-0C33-492B-9C5D-E366FB89A984}">
 											<PropertyList>
-												<Property Name="DivergenceCenter" Type="int32">
+												<Property Name="CenterPercentage" Type="int32">
 													<ValueList>
 														<Value>100</Value>
 													</ValueList>
@@ -76,7 +76,7 @@
 										</Bus>
 										<Bus Name="Weapons" ID="{A7397997-C1EC-4392-B8F0-81EB6CF8E5CA}">
 											<PropertyList>
-												<Property Name="DivergenceCenter" Type="int32">
+												<Property Name="CenterPercentage" Type="int32">
 													<ValueList>
 														<Value>100</Value>
 													</ValueList>
@@ -87,7 +87,7 @@
 								</Bus>
 								<Bus Name="Environments" ID="{9C50A51C-6C49-4F49-B1CC-C6A1F6E9B79C}">
 									<PropertyList>
-										<Property Name="DivergenceCenter" Type="int32">
+										<Property Name="CenterPercentage" Type="int32">
 											<ValueList>
 												<Value>100</Value>
 											</ValueList>
@@ -96,7 +96,7 @@
 									<ChildrenList>
 										<AuxBus Name="env_large_room" ID="{712E0CA9-025E-45C1-A217-23B7316DF1BD}">
 											<PropertyList>
-												<Property Name="DivergenceCenter" Type="int32">
+												<Property Name="CenterPercentage" Type="int32">
 													<ValueList>
 														<Value>100</Value>
 													</ValueList>
@@ -110,7 +110,7 @@
 										</AuxBus>
 										<AuxBus Name="env_medium_room" ID="{F42F9D93-403D-4AFB-A0A3-564F87E2875E}">
 											<PropertyList>
-												<Property Name="DivergenceCenter" Type="int32">
+												<Property Name="CenterPercentage" Type="int32">
 													<ValueList>
 														<Value>100</Value>
 													</ValueList>
@@ -124,7 +124,7 @@
 										</AuxBus>
 										<AuxBus Name="env_small_room" ID="{E34D2ADF-4E09-4EC4-B768-9F7D645B927D}">
 											<PropertyList>
-												<Property Name="DivergenceCenter" Type="int32">
+												<Property Name="CenterPercentage" Type="int32">
 													<ValueList>
 														<Value>100</Value>
 													</ValueList>
@@ -138,7 +138,7 @@
 										</AuxBus>
 										<AuxBus Name="env_corridor" ID="{65A82852-46E5-4CFF-A5D4-33D858E35BDA}">
 											<PropertyList>
-												<Property Name="DivergenceCenter" Type="int32">
+												<Property Name="CenterPercentage" Type="int32">
 													<ValueList>
 														<Value>100</Value>
 													</ValueList>
@@ -178,7 +178,7 @@
 						</Bus>
 						<Bus Name="Voice" ID="{10EB947A-090E-4C9D-B6C9-E364A8D72546}">
 							<PropertyList>
-								<Property Name="DivergenceCenter" Type="int32">
+								<Property Name="CenterPercentage" Type="int32">
 									<ValueList>
 										<Value>100</Value>
 									</ValueList>
@@ -200,7 +200,7 @@
 				</Bus>
 				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}">
 					<PropertyList>
-						<Property Name="DivergenceCenter" Type="int32">
+						<Property Name="CenterPercentage" Type="int32">
 							<ValueList>
 								<Value>100</Value>
 							</ValueList>

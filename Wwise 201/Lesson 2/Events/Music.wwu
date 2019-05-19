@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{9D817952-E870-489A-8C76-EA59827E974E}" SchemaVersion="85">
+<WwiseDocument Type="WorkUnit" ID="{9D817952-E870-489A-8C76-EA59827E974E}" SchemaVersion="89">
 	<Events>
 		<WorkUnit Name="Music" ID="{9D817952-E870-489A-8C76-EA59827E974E}" PersistMode="Standalone">
 			<ChildrenList>
 				<Event Name="Music" ID="{07A942E8-7510-485D-98CC-5546534EDA90}">
 					<ChildrenList>
-						<Action Name="" ID="{3B854C42-EA16-4A26-AED2-31B2E361E35B}" ShortID="99058170">
+						<Action Name="" ID="{84A1A3F8-5E81-4EE1-BFF3-172DFED8C299}" ShortID="974528924">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Explore" ID="{3F63E32B-58A0-41E8-88C4-F97166420561}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+									<ObjectRef Name="Combat" ID="{09C3FBCD-5B8C-45CC-8BE1-6DE5F09DFFA0}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
