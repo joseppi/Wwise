@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{F27E44B2-E6EC-49F8-BA39-38A5978868BF}" SchemaVersion="85">
+<WwiseDocument Type="WorkUnit" ID="{F27E44B2-E6EC-49F8-BA39-38A5978868BF}" SchemaVersion="89">
 	<Events>
 		<WorkUnit Name="Music" ID="{F27E44B2-E6EC-49F8-BA39-38A5978868BF}" PersistMode="Standalone">
 			<ChildrenList>
 				<Event Name="Music" ID="{07A942E8-7510-485D-98CC-5546534EDA90}">
 					<ChildrenList>
-						<Action Name="" ID="{3B854C42-EA16-4A26-AED2-31B2E361E35B}" ShortID="99058170">
+						<Action Name="" ID="{2DFCB427-6EBF-485D-80D1-159CB860C1D0}" ShortID="310987260">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
