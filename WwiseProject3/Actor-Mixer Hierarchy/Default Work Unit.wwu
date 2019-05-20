@@ -758,6 +758,7 @@
 						</Sound>
 						<Sound Name="mine_explosion" ID="{81299B2F-25E9-469A-82A0-A2FF872DB217}" ShortID="375894410">
 							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<RTPCList>
 										<RTPC Name="" ID="{26547A0D-074F-4D29-8554-0AEAF9DA29AE}" ShortID="542372721">
@@ -820,7 +821,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+									<ObjectRef Name="Environment" ID="{DE35AEC5-EEE9-4EFA-B103-580A69643B94}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -834,6 +835,21 @@
 							</ActiveSourceList>
 						</Sound>
 						<ActorMixer Name="Alita" ID="{7B1D54FE-D383-42D5-A633-87388B268A72}" ShortID="306615172">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9DB1009B-1B43-47B2-A278-157B93635BC4}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="120"/>
+													<Property Name="Min" Type="Real64" Value="-120"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
@@ -2236,6 +2252,11 @@
 									<PropertyList>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{9EEEF1FA-9607-4DF0-9D81-5556A74C88FB}"/>
+												</ModifierInfo>
+											</ModifierList>
 											<RTPCList>
 												<RTPC Name="" ID="{63A38EE9-4414-4A95-900D-06ADC8F9C48E}" ShortID="1005273582">
 													<ReferenceList>
@@ -2766,6 +2787,9 @@
 											</RTPCList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{B7FEF398-CAA5-40ED-8B25-0C4EB8AB6A8F}" ShortID="690503312">
 													<ReferenceList>
@@ -2932,6 +2956,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="punch_skill_1" ID="{DB135588-03AA-4CEF-93A0-B6D328625475}" ShortID="669600402">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
@@ -2951,13 +2982,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="punch_skill_2" ID="{06E01319-2B1B-48EA-9015-2CC07290E2C2}" ShortID="777596874">
-											<PropertyList>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value>False</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
@@ -2981,6 +3005,11 @@
 								<RandomSequenceContainer Name="Skill_Charge" ID="{3400BFAC-4B62-4FDA-9F12-FC30F06E5AF2}" ShortID="685027816">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2F5B87D4-00CA-4EEB-8B64-D9AA9E3F4794}"/>
+												</ModifierInfo>
+											</ModifierList>
 											<RTPCList>
 												<RTPC Name="" ID="{2CADE0F8-DFDB-48AF-B690-6AFA49BA6635}" ShortID="286567462">
 													<ReferenceList>
@@ -3010,6 +3039,9 @@
 										</Property>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{D8A5CDE5-E92C-44F5-91C1-F6BF68E59158}" ShortID="610629067">
 													<ReferenceList>
@@ -3091,6 +3123,17 @@
 									<PropertyList>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3972CBD5-521D-46F7-B0BB-4FDAA2BA3C94}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="240"/>
+															<Property Name="Min" Type="Real64" Value="-240"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 											<RTPCList>
 												<RTPC Name="" ID="{A84DB619-EE59-4E80-ABFE-2E29089A6E4A}" ShortID="745467592">
 													<ReferenceList>
@@ -3119,6 +3162,9 @@
 											</RTPCList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{D130973E-FF4E-4E1A-9215-3A4EBEB7BED5}" ShortID="1053702644">
 													<ReferenceList>
@@ -3244,6 +3290,7 @@
 								</Sound>
 								<Sound Name="air_efforts_punch_weak" ID="{F436F706-8BE2-414B-95B2-95E618150483}" ShortID="882997800">
 									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<RTPCList>
 												<RTPC Name="" ID="{6C73787D-DE70-4045-A0D1-6C999BB43C4E}" ShortID="265427951">
@@ -3306,7 +3353,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+											<ObjectRef Name="Environment" ID="{DE35AEC5-EEE9-4EFA-B103-580A69643B94}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3323,6 +3370,19 @@
 									<PropertyList>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>120</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{865B4DA0-42F3-4300-BE5E-1BD560DCFEB8}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="120"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 											<RTPCList>
 												<RTPC Name="" ID="{42DCF79D-521C-4536-8991-50E1B592786E}" ShortID="323219738">
 													<ReferenceList>
@@ -3400,6 +3460,17 @@
 								<RandomSequenceContainer Name="Efforts_Kick_Strong" ID="{1C7DC147-995F-4BC2-8128-450187FE4BA5}" ShortID="742634557">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CF154E70-DDC1-4B6D-8F60-EE3AA18F9562}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="240"/>
+															<Property Name="Min" Type="Real64" Value="-240"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 											<RTPCList>
 												<RTPC Name="" ID="{2EBFAFEE-6AC9-486D-8ABF-98DBA3994273}" ShortID="655770454">
 													<ReferenceList>
@@ -3514,6 +3585,17 @@
 								<RandomSequenceContainer Name="Efforts_Punch_Strong" ID="{1BFAAA0D-C32C-4F02-AC1C-8631C5E2B74B}" ShortID="16254913">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{14155725-FD16-48A6-926A-DB4E49AB3946}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="240"/>
+															<Property Name="Min" Type="Real64" Value="-240"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 											<RTPCList>
 												<RTPC Name="" ID="{85F14F1B-F600-4F03-B1F8-DFBDAC74D7F3}" ShortID="804342730">
 													<ReferenceList>
@@ -3628,6 +3710,17 @@
 								<RandomSequenceContainer Name="Death_Grunt" ID="{D1014119-B6D1-4DDE-B25A-2F1604A4B2F8}" ShortID="780351772">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C3151A7A-FA2F-4A47-895B-05696A767A54}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="120"/>
+															<Property Name="Min" Type="Real64" Value="-240"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 											<RTPCList>
 												<RTPC Name="" ID="{BB541352-8530-405B-AA3D-770716DC3710}" ShortID="424946551">
 													<ReferenceList>
@@ -3870,6 +3963,17 @@
 									<PropertyList>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C467E512-981C-4F3E-B523-5FF612DF6CEC}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="240"/>
+															<Property Name="Min" Type="Real64" Value="-240"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 											<RTPCList>
 												<RTPC Name="" ID="{3633257E-84C8-4EF1-9AF1-7A7FC73431D7}" ShortID="931913481">
 													<ReferenceList>
@@ -3947,6 +4051,17 @@
 								<Sound Name="kick_air_weak" ID="{BF097799-BFEC-4912-80C6-B87019D433A3}" ShortID="119584066">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E3796ACA-8E1E-4630-BC86-9A78D38884E0}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="240"/>
+															<Property Name="Min" Type="Real64" Value="-240"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 											<RTPCList>
 												<RTPC Name="" ID="{C37EC02E-582E-4B53-B119-49F9F0422BD5}" ShortID="865567213">
 													<ReferenceList>
@@ -4024,6 +4139,17 @@
 								<Sound Name="punch_air_strong" ID="{6AE20688-F7B2-4D34-BEBD-54ED9E5CF7C0}" ShortID="848954021">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{54A7332A-F59B-40A9-AC22-BF2EF983B87F}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="240"/>
+															<Property Name="Min" Type="Real64" Value="-240"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 											<RTPCList>
 												<RTPC Name="" ID="{36DEF0A4-CA6D-458E-A1AA-264851CFE838}" ShortID="324248466">
 													<ReferenceList>
@@ -4101,6 +4227,17 @@
 								<Sound Name="punch_air_weak" ID="{961B6F97-83AE-4AB6-BCC3-5848A0EF4FF3}" ShortID="469649085">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{04C1C38A-216F-4A68-8E71-213825812E49}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="240"/>
+															<Property Name="Min" Type="Real64" Value="-240"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 											<RTPCList>
 												<RTPC Name="" ID="{9F0FAED3-E163-448D-9C39-7E69E782C84A}" ShortID="325512668">
 													<ReferenceList>
@@ -4984,6 +5121,11 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -5215,6 +5357,19 @@
 						<ActorMixer Name="GUI" ID="{D0B4CC55-075E-44A4-B8D9-D68DD7E29F9C}" ShortID="626802653">
 							<PropertyList>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{54989294-365D-4C89-A0CC-3AE7B218D1D0}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="240"/>
+													<Property Name="Min" Type="Real64" Value="-240"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -5282,6 +5437,13 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<Sound Name="gui_hover_1" ID="{E9870E78-E82F-4BDA-AA99-0BECC5D91C33}" ShortID="167490438">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
@@ -5292,6 +5454,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="gui_hover_1" ID="{D04443C5-08DC-4CFB-8CDF-9121BAB71735}" ShortID="625714071">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.283430687313988"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.350247047061012"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>gui_hover_1.wav</AudioFile>
 										</AudioFileSource>
@@ -5301,6 +5467,21 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="gui_open_menu" ID="{88539C4C-E7BA-4302-811C-C299C1F0B50C}" ShortID="753214930">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2B05F830-7AE5-489F-96D5-61270FB19E13}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="240"/>
+															<Property Name="Min" Type="Real64" Value="-240"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
@@ -5320,6 +5501,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="gui_skillpoint" ID="{69325D75-0212-412C-A842-46EB76E49283}" ShortID="188410582">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
