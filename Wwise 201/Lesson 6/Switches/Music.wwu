@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{A01BCC9B-A3A4-4A4C-B34C-C5D90F29DFD7}" SchemaVersion="85">
+<WwiseDocument Type="WorkUnit" ID="{A01BCC9B-A3A4-4A4C-B34C-C5D90F29DFD7}" SchemaVersion="89">
 	<Switches>
 		<WorkUnit Name="Music" ID="{A01BCC9B-A3A4-4A4C-B34C-C5D90F29DFD7}" PersistMode="Standalone">
 			<ChildrenList>

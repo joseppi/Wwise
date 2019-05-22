@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{88514F4A-3BF5-4935-99B9-7BF984E66186}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="BGM" ID="{FCB5CC5E-581A-4F29-A7D3-6D7742D507E7}" ShortID="615031030">
+					<PropertyList>
+						<Property Name="EnablePositioning" Type="bool" Value="False"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Music" ID="{6D19388D-0C2B-4690-BFCD-79A2E51206C0}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
@@ -90,7 +93,10 @@
 						</Sound>
 						<Sound Name="combat_music" ID="{0C5FC0B4-30A2-494B-93EF-0A733D51BC43}" ShortID="93288745">
 							<PropertyList>
+								<Property Name="EnablePositioning" Type="bool" Value="False"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<RTPCList>
 										<RTPC Name="" ID="{7DDA7849-D1F5-48D5-8F4A-BB183DECDA70}" ShortID="327303610">
@@ -408,7 +414,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>12</Value>
+								<Value>-3</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -5356,7 +5362,9 @@
 						</ActorMixer>
 						<ActorMixer Name="GUI" ID="{D0B4CC55-075E-44A4-B8D9-D68DD7E29F9C}" ShortID="626802653">
 							<PropertyList>
+								<Property Name="EnablePositioning" Type="bool" Value="False"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -5713,6 +5721,690 @@
 								<ActiveSource Name="Alita_Dialogue" ID="{4B740149-5C66-42F9-8EE5-D4A8E5FA6844}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="zdialog_1_1_1_Malita" ID="{8E105D2A-9F60-427A-B5BA-69EA4A108E9F}" ShortID="358058314">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_1_1_Malita" ID="{64838328-1682-428E-A74F-7D77D8E4D154}" ShortID="564845234">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_1_1_Malita.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_1_1_Malita" ID="{64838328-1682-428E-A74F-7D77D8E4D154}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_1_2_Malita" ID="{2A201542-6E9C-4D66-9BC9-4A9086F5EDE7}" ShortID="283116893">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_1_2_Malita" ID="{FBEE9375-E307-4CDE-82DF-0C4AF5EB6D76}" ShortID="610681665">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_1_2_Malita.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_1_2_Malita" ID="{FBEE9375-E307-4CDE-82DF-0C4AF5EB6D76}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_1_3_Malita" ID="{D972C244-9B96-4DFC-8448-4D3C1545E2F9}" ShortID="175842470">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_1_3_Malita" ID="{39E34AC1-492A-402F-A849-CDCE35C7A06D}" ShortID="553851700">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_1_3_Malita.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_1_3_Malita" ID="{39E34AC1-492A-402F-A849-CDCE35C7A06D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_2_1_Marauder" ID="{E04D3C70-63B6-4C55-B323-EC215A0871CD}" ShortID="669320085">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_2_1_Marauder" ID="{BD21A733-6BD6-4190-A8CA-B2A3810A2F9E}" ShortID="255273107">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_2_1_Marauder.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_2_1_Marauder" ID="{BD21A733-6BD6-4190-A8CA-B2A3810A2F9E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_2_2_Malita" ID="{53380F5B-A7E2-47AD-9E75-9DE404D1927E}" ShortID="625837367">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_2_2_Malita" ID="{12ECFC4E-8375-4475-9AFA-343C1FB3914A}" ShortID="51557865">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_2_2_Malita.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_2_2_Malita" ID="{12ECFC4E-8375-4475-9AFA-343C1FB3914A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_2_3_Malita" ID="{C7CDC1BE-3ED1-4ECD-AB5B-7CF959B112E7}" ShortID="499561887">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_2_3_Malita" ID="{69DB8FB9-7ABF-4C89-B643-AE7D1F69E3CE}" ShortID="958673273">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_2_3_Malita.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_2_3_Malita" ID="{69DB8FB9-7ABF-4C89-B643-AE7D1F69E3CE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_3_1_Malita" ID="{A85418CD-11FD-4B8C-82F0-219AABA1D05E}" ShortID="884816934">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_3_1_Malita" ID="{0755A42C-137C-4EBC-A6E4-FE3440EA983F}" ShortID="826465233">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_3_1_Malita.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_3_1_Malita" ID="{0755A42C-137C-4EBC-A6E4-FE3440EA983F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_3_2_Malita" ID="{5A051E6F-1EEA-461D-B3FF-646988C5E1C2}" ShortID="739622120">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_3_2_Malita" ID="{045E64A3-EA15-4CA0-8E9C-9DE703B8FEDB}" ShortID="649986053">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_3_2_Malita.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_3_2_Malita" ID="{045E64A3-EA15-4CA0-8E9C-9DE703B8FEDB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_4_1_Malita" ID="{FEE114ED-702E-4265-8E0F-E41386D88DFD}" ShortID="872596694">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_4_1_Malita" ID="{3524A24F-A77B-4B8C-9E24-9EE758D4EDF0}" ShortID="192529394">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_4_1_Malita.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_4_1_Malita" ID="{3524A24F-A77B-4B8C-9E24-9EE758D4EDF0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_4_2_Marauder" ID="{C996B852-8A4E-4C2B-9418-BADA75807219}" ShortID="711482349">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_4_2_Marauder" ID="{1AA3AE5B-3286-49FF-BA43-15AE712A7C8C}" ShortID="978330131">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_4_2_Marauder.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_4_2_Marauder" ID="{1AA3AE5B-3286-49FF-BA43-15AE712A7C8C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_4_3_Malita" ID="{C86CED78-8608-4BE7-AF46-44C0FF30DB52}" ShortID="803246681">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_4_3_Malita" ID="{9893D366-D2E0-4FB5-8BC4-65FE844ED155}" ShortID="781279039">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_4_3_Malita.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_4_3_Malita" ID="{9893D366-D2E0-4FB5-8BC4-65FE844ED155}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_4_4_Malita" ID="{5819A097-460D-40BC-A0A9-4A2F704FA486}" ShortID="556216846">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_4_4_Malita" ID="{D490C7A8-F879-4F3B-81BA-69B5DBEC88F5}" ShortID="796313255">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_4_4_Malita.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_4_4_Malita" ID="{D490C7A8-F879-4F3B-81BA-69B5DBEC88F5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_5_1_Malita" ID="{2E17115E-4A26-41F9-8C47-4EE4373C2F8D}" ShortID="229555266">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_5_1_Malita" ID="{55A2CAF9-8802-4A20-AB1A-8D7F6F39CC99}" ShortID="986934766">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_5_1_Malita.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_5_1_Malita" ID="{55A2CAF9-8802-4A20-AB1A-8D7F6F39CC99}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_5_2_Malita" ID="{0F267B2F-FB18-4BA6-B75B-B8AD15F2B492}" ShortID="683446308">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_5_2_Malita" ID="{0A521C5D-5EF4-4B41-8276-EEDFA5DC8079}" ShortID="217285614">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_5_2_Malita.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_5_2_Malita" ID="{0A521C5D-5EF4-4B41-8276-EEDFA5DC8079}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_5_3_Vuelto" ID="{BE582E60-6CB5-440A-8A17-A5F9564DAF29}" ShortID="716767869">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_5_3_Vuelto" ID="{755199AC-0CE1-43F5-AEFD-EDE8A367704F}" ShortID="404491717">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_5_3_Vuelto.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_5_3_Vuelto" ID="{755199AC-0CE1-43F5-AEFD-EDE8A367704F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_5_4_Malita" ID="{0924262E-EB22-4A72-8612-750565B5C691}" ShortID="649210985">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_5_4_Malita" ID="{30C387CD-903F-406B-996F-3C7791C3E224}" ShortID="231729197">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_5_4_Malita.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_5_4_Malita" ID="{30C387CD-903F-406B-996F-3C7791C3E224}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_5_5_Vuelto" ID="{8BA229AD-EFE4-4FCC-A9F9-3687A6934027}" ShortID="774804511">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_5_5_Vuelto" ID="{02D2FECC-85CC-4898-96CF-A57B64D06226}" ShortID="919152549">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_5_5_Vuelto.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_5_5_Vuelto" ID="{02D2FECC-85CC-4898-96CF-A57B64D06226}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_5_6_Vuelto" ID="{29F8D314-F428-4FD7-BF63-7E84D92529F2}" ShortID="1024199134">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_5_6_Vuelto" ID="{C7488D5B-DB68-4E3D-85AF-7E649B8D68CE}" ShortID="963518017">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_5_6_Vuelto.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_5_6_Vuelto" ID="{C7488D5B-DB68-4E3D-85AF-7E649B8D68CE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_5_7_Malita" ID="{218C9E09-B4B8-40CB-9DD1-DE5E1961BAAF}" ShortID="168284115">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_5_7_Malita" ID="{E280B598-75ED-49CC-B439-DDA7A0C47E7C}" ShortID="178581381">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_5_7_Malita.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_5_7_Malita" ID="{E280B598-75ED-49CC-B439-DDA7A0C47E7C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_5_8_Vuelto" ID="{06B1A5B5-7240-4337-9AB9-CE235BEEB283}" ShortID="971996645">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_5_8_Vuelto" ID="{894EEFB7-74F6-4AA3-A321-3C3F06253C7A}" ShortID="579664130">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_5_8_Vuelto.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_5_8_Vuelto" ID="{894EEFB7-74F6-4AA3-A321-3C3F06253C7A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_5_9_Vuelto" ID="{26734811-8FB2-4B29-A5B9-4F9B6E38FFE5}" ShortID="287455214">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_5_9_Vuelto" ID="{A6C0AF5E-FD65-4E81-8C2A-8AC054A8076F}" ShortID="366493217">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_5_9_Vuelto.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_5_9_Vuelto" ID="{A6C0AF5E-FD65-4E81-8C2A-8AC054A8076F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_5_10_Vuelto" ID="{EAB349B5-713B-4B00-A18A-2ABBE9E3599D}" ShortID="560374627">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_5_10_Vuelto" ID="{593E1DC6-67D1-484D-ADE3-437147B8E8C1}" ShortID="757740219">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_5_10_Vuelto.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_5_10_Vuelto" ID="{593E1DC6-67D1-484D-ADE3-437147B8E8C1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_5_11_Vuelto" ID="{9333BA8C-329A-4632-AA61-7977388CF276}" ShortID="866575014">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_5_11_Vuelto" ID="{F91C42CE-C672-4086-A1A5-35C2121CC8F9}" ShortID="1016657959">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_5_11_Vuelto.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_5_11_Vuelto" ID="{F91C42CE-C672-4086-A1A5-35C2121CC8F9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_5_12_Malita" ID="{9F222A80-2A98-4808-B800-9EB174CE14EA}" ShortID="1001787471">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_5_12_Malita" ID="{CF56431B-53F5-4D56-AAA1-5F545027DE78}" ShortID="822084848">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_5_12_Malita.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_5_12_Malita" ID="{CF56431B-53F5-4D56-AAA1-5F545027DE78}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_6_1_Vuelto" ID="{A249F2C8-5998-473C-A666-5244F7F9416F}" ShortID="639468689">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_6_1_Vuelto" ID="{0943B228-E356-4B57-B450-3C8FA97F62D3}" ShortID="553820172">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_6_1_Vuelto.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_6_1_Vuelto" ID="{0943B228-E356-4B57-B450-3C8FA97F62D3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_6_2_Vuelto" ID="{0243F4F2-8731-442A-8B6D-7037FB311F1D}" ShortID="389365662">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_6_2_Vuelto" ID="{BE558196-01B5-4050-93DC-350DFD40A3D5}" ShortID="228959539">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_6_2_Vuelto.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_6_2_Vuelto" ID="{BE558196-01B5-4050-93DC-350DFD40A3D5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_6_3_Vuelto" ID="{657B666D-2F02-4C44-A3CF-4AF581DE645C}" ShortID="490473435">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_6_3_Vuelto" ID="{D614376A-F184-414D-9104-C033A0815444}" ShortID="466697928">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_6_3_Vuelto.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_6_3_Vuelto" ID="{D614376A-F184-414D-9104-C033A0815444}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_6_4_Vuelto" ID="{C42C6232-EF1C-4157-9359-48CF58406B88}" ShortID="492855854">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_6_4_Vuelto" ID="{5BACD052-FF54-4DB0-A987-94781E825E90}" ShortID="672114186">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_6_4_Vuelto.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_6_4_Vuelto" ID="{5BACD052-FF54-4DB0-A987-94781E825E90}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_7_1_Vuelto" ID="{A314D162-7ACB-4E14-B526-DD533B0B1CFE}" ShortID="145446233">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_7_1_Vuelto" ID="{7E3CB677-1535-4803-90F9-EFE549D9BD20}" ShortID="637489934">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_7_1_Vuelto.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_7_1_Vuelto" ID="{7E3CB677-1535-4803-90F9-EFE549D9BD20}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_7_2_Vuelto" ID="{457606F0-6CFB-486E-A3CF-A228C3FB74A8}" ShortID="636036592">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_7_2_Vuelto" ID="{39B52213-20C8-4AD2-96F9-92540D9B65C1}" ShortID="641001229">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_7_2_Vuelto.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_7_2_Vuelto" ID="{39B52213-20C8-4AD2-96F9-92540D9B65C1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_7_3_Malita" ID="{39B95F44-E78C-4186-B799-109DDEFB155F}" ShortID="197667761">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_7_3_Malita" ID="{232793A8-42FD-408F-A5EF-58F8A57A51D0}" ShortID="137519806">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_7_3_Malita.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_7_3_Malita" ID="{232793A8-42FD-408F-A5EF-58F8A57A51D0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_8_1_Malita" ID="{E9FCA665-7772-454E-9281-D9AF5B006389}" ShortID="69727666">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_8_1_Malita" ID="{C8775E00-8876-42B9-803F-A1416545AC33}" ShortID="348834383">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_8_1_Malita.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_8_1_Malita" ID="{C8775E00-8876-42B9-803F-A1416545AC33}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_8_2_Vuelto" ID="{3266223D-CC83-4814-84E3-6DAF3F452046}" ShortID="923858638">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_8_2_Vuelto" ID="{71E20A61-3509-4AFC-96B0-C0224FF06317}" ShortID="75575034">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_8_2_Vuelto.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_8_2_Vuelto" ID="{71E20A61-3509-4AFC-96B0-C0224FF06317}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_9_1_Malita" ID="{0C4F5CA9-3B1C-4B64-8568-4723274FDB5B}" ShortID="378826061">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_9_1_Malita" ID="{69BB4EF8-83B1-45E9-BC12-94CACAD449A4}" ShortID="180065105">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_9_1_Malita.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_9_1_Malita" ID="{69BB4EF8-83B1-45E9-BC12-94CACAD449A4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_9_2_Vuelto" ID="{AE5E75A3-8FF5-4301-856F-46550EEF69CC}" ShortID="985152206">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_9_2_Vuelto" ID="{35351F34-A5B8-4777-9AE1-80C8946EBA01}" ShortID="461438211">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_9_2_Vuelto.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_9_2_Vuelto" ID="{35351F34-A5B8-4777-9AE1-80C8946EBA01}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zdialog_1_9_3_Vuelto" ID="{18D64252-4854-41B7-A3FA-E9AB2DC42C83}" ShortID="364398078">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7D314A57-6022-4648-8386-F6657CA97EF8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06B7E3E7-D441-4595-8F39-8C3E49AFC8F0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Audio_1_9_3_Vuelto" ID="{13C1EDE8-AEB5-46E3-8FD4-02AFD7370C37}" ShortID="324783163">
+									<Language>SFX</Language>
+									<AudioFile>Audio_1_9_3_Vuelto.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Audio_1_9_3_Vuelto" ID="{13C1EDE8-AEB5-46E3-8FD4-02AFD7370C37}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="ENV" ID="{10083CF1-5B08-4A18-BD64-F2AAEEA856B3}" ShortID="708300075">
@@ -6012,7 +6704,7 @@
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>10</Value>
+										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -6182,6 +6874,7 @@
 						<BlendContainer Name="env_rats_event" ID="{F219AA80-DE8C-40FB-A94B-4D174A57128D}" ShortID="691175633">
 							<PropertyList>
 								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -6433,6 +7126,7 @@
 								</RandomSequenceContainer>
 								<Sound Name="env_rats_moving" ID="{E1B8BBD1-30A2-4E9E-A21F-F2B4409A0A64}" ShortID="365845282">
 									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-21</Value>

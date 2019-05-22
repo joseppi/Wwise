@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{9D443419-4C0F-4177-9A8C-5AE9164B1D27}" SchemaVersion="85">
+<WwiseDocument Type="WorkUnit" ID="{9D443419-4C0F-4177-9A8C-5AE9164B1D27}" SchemaVersion="89">
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{9D443419-4C0F-4177-9A8C-5AE9164B1D27}" PersistMode="Standalone">
 			<ChildrenList>
@@ -136,6 +136,8 @@
 				</SoundBank>
 				<SoundBank Name="Music" ID="{BF56A530-259F-4F13-B4EE-461FCC15856C}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Boss_Start" ID="{6A1407C9-6645-400C-9B27-91F28828BB4A}" WorkUnitID="{2D8BE14E-9F98-4828-BA8E-FE6B89928F7D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Map_Loaded" ID="{E464FAB2-284E-4319-8B62-539998239556}" WorkUnitID="{27ACFC61-8688-482D-A1F6-F21654EA4BDE}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Music" ID="{07A942E8-7510-485D-98CC-5546534EDA90}" WorkUnitID="{2D8BE14E-9F98-4828-BA8E-FE6B89928F7D}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

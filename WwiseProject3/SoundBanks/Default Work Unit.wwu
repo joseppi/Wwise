@@ -23,6 +23,7 @@
 						<ObjectRef Name="Play_marauder_takle" ID="{1A3CF31F-A68A-4678-B63F-F453476640F4}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_alita_punch_air_strong" ID="{6DA08CE6-DB59-46FD-A03D-023F2EC39229}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_marauder_detected" ID="{FDD715F3-074B-4762-B336-8BAD42D4EE6C}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_env_drone" ID="{B156DC1E-C5EB-4789-B801-05D06C82399D}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_alita_death_grunt" ID="{BB51E42E-6BE8-478A-B349-7C1EF30695B6}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_env_rats_undisturbed" ID="{A1B1B0B2-0B22-4798-AE95-D84A90D1A2F3}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_alita_skill_gun" ID="{A2661B41-2C06-47A1-A6E3-71E81B328348}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
@@ -63,8 +64,42 @@
 				</SoundBank>
 				<SoundBank Name="VO" ID="{C642D5BE-A076-4657-B210-DC5228B236BA}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_Enemy_Dialogue" ID="{3EB8522B-AF8B-4A05-B83D-2122FD96F211}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_Alita_Dialogue" ID="{11D56476-5CD1-4F9B-8872-4C0942DBDB64}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_5_2_Malita" ID="{8A8EE1A5-5DA5-4076-8597-2F9F1013F52D}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_5_11_Vuelto" ID="{527014A0-3655-4152-8BAF-40D522ED40B3}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_6_4_Vuelto" ID="{54CD6570-4817-42CD-99E3-AC2AAADF142A}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_5_8_Vuelto" ID="{F04A450D-0B16-431D-B74F-2B67D8A89B18}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_7_3_Malita" ID="{F5ABE531-03D2-43D8-838C-E7006C0FA066}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_7_2_Vuelto" ID="{A9771F16-BF78-43ED-8585-CD93BD0A845F}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_5_10_Vuelto" ID="{DED3A4EF-7B3F-440A-824D-52610DE495B8}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_5_6_Vuelto" ID="{70FD6869-F804-4426-A153-36381E88B1F0}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_5_5_Vuelto" ID="{ACCE3D39-6FA5-4450-899A-20002B661A55}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_4_3_Malita" ID="{E49069B9-0EDD-447B-8793-47FB52128351}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_5_3_Vuelto" ID="{70B19598-6C43-4482-AE7A-7B39ED8820F9}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_2_2_Malita" ID="{734F7950-8C19-44A9-9D6E-D5E68844156F}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_8_2_Vuelto" ID="{653EB8CB-F3CE-44B0-8B4F-CBD257C7D3AF}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_9_1_Malita" ID="{3B0B5582-F5E6-44DF-BE62-AA65915D1CC0}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_3_2_Malita" ID="{D15636EE-0C80-4508-8995-AA748CB60B9B}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_4_1_Malita" ID="{3687449F-A3B4-458B-AB07-792438C90AA6}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_1_2_Malita" ID="{B56F0187-80AF-45A8-B807-0B16F49FFC4C}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_9_3_Vuelto" ID="{FDEA4BEB-3015-46F2-AD0F-C72A7B1A564F}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_2_3_Malita" ID="{7DE7CE2D-991F-4700-8982-D89BC51CB332}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_1_1_Malita" ID="{83D6B9AB-EE30-47DC-B8F5-6C7C6810E816}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_5_1_Malita" ID="{9A69EC82-A3A9-486C-A0DE-2B9F83679808}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_9_2_Vuelto" ID="{7A079C23-B8EA-4989-90EB-677B03BC8AB8}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_5_9_Vuelto" ID="{D3FC6C81-DD1E-4992-B3ED-166B0C8CD223}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_1_3_Malita" ID="{C2FD6CFF-7FE3-4A34-9C41-E59C877115F0}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_6_1_Vuelto" ID="{C55F3DC4-A5C5-4A50-9F7E-6E622B46EDF2}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_2_1_Marauder" ID="{AF31B969-4EE6-4B59-AC95-A31CA791ECBC}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_5_4_Malita" ID="{1E6279D5-F746-4BC9-B98D-558904400E3E}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_6_2_Vuelto" ID="{1BCABDC9-EA48-4C47-B524-360D47A555AD}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_5_7_Malita" ID="{78A4B870-771A-4C71-922E-9826A54B5AEC}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_5_12_Malita" ID="{32B09FEE-C5A2-4CD7-93F0-D7B17FDCA2EF}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_7_1_Vuelto" ID="{E88B11DB-AB9B-4CF0-8B6E-5E916ED56316}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_3_1_Malita" ID="{BD3F042D-FDBF-4D88-BC4B-B872B8B054D2}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_8_1_Malita" ID="{2B751D4C-643C-4D94-8F7D-F3B462A5A91F}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_6_3_Vuelto" ID="{18CDF008-C42C-4DBA-80F1-FF3422D1CD17}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_4_2_Marauder" ID="{E850C7A8-CB30-4E15-B036-B17CFBAC6866}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_zdialog_1_4_4_Malita" ID="{D1EA615D-08C5-4EDB-9DC8-FC456323196A}" WorkUnitID="{2EC1A80A-027C-4C08-ADD1-DD3F54043A5A}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
