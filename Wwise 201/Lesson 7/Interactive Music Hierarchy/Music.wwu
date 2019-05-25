@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{25784DDF-F959-48B4-A3A6-D457CF13E563}" SchemaVersion="85">
+<WwiseDocument Type="WorkUnit" ID="{25784DDF-F959-48B4-A3A6-D457CF13E563}" SchemaVersion="89">
 	<InteractiveMusic>
 		<WorkUnit Name="Music" ID="{25784DDF-F959-48B4-A3A6-D457CF13E563}" PersistMode="Standalone">
 			<ChildrenList>
@@ -4779,6 +4779,36 @@
 									</PropertyList>
 									<TransitionInfo/>
 								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{853D26F2-B213-45CA-ABC6-699381D80E21}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Story" ID="{C20D348E-89C6-4C21-BAAF-44DD82341706}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="Stinger-CymbalSwell_138bpm4-4_L0-P3B" ID="{1CA777C5-21F7-4B08-8477-A00DABE86F5F}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{2AC2DF77-4A90-4C5A-A54B-056B59D2CD2B}">
+									<PropertyList>
+										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Story" ID="{C20D348E-89C6-4C21-BAAF-44DD82341706}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="Stinger-CymbalSwell_138bpm4-4_L0-P3B" ID="{1CA777C5-21F7-4B08-8477-A00DABE86F5F}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+									</TransitionInfo>
+								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{31845DEE-BA55-441D-8B28-D8F7DD092CD9}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
@@ -4802,6 +4832,192 @@
 									</ReferenceList>
 									<TransitionInfo/>
 								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{9FB4B741-61E9-44B4-91FB-062BCB09CD4B}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Combat" ID="{4FD7E5C0-BB77-4FB1-A4B2-2CCAF8E77293}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Explore" ID="{3F63E32B-58A0-41E8-88C4-F97166420561}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{F557BE9E-D704-4A62-B1C2-BEBA56F3195D}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="0.5"/>
+													<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{9206319C-7444-46E7-AD13-99877E580135}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Explore" ID="{3F63E32B-58A0-41E8-88C4-F97166420561}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Combat" ID="{4FD7E5C0-BB77-4FB1-A4B2-2CCAF8E77293}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{A9456F99-7D8E-4D0F-AD21-AA3307F67F6B}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="0.5"/>
+													<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{DF6124B7-A3C8-41CC-99ED-56617891B5C5}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Explore" ID="{3F63E32B-58A0-41E8-88C4-F97166420561}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Combat-Bridge" ID="{F74FA8EE-DCA8-49CF-89F8-33E306879FAA}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<JumpToPlaylistItemRef Name="" ID="{7650C95F-7CC6-45D5-BC38-2A5B82913241}"/>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{ABC421C8-B475-408A-A532-DA86C2DEF769}">
+												<PropertyList>
+													<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{0770DA14-C7BB-4DA8-8343-4E10A8159945}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Explore" ID="{3F63E32B-58A0-41E8-88C4-F97166420561}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Combat-TransToBridge_138bpm3-4_L3M-P1M" ID="{AA0D9828-754E-4E09-8B88-80C0949B63CC}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{19273D48-1BA6-4C83-8510-12FB463F9520}"/>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{1285C5F2-4EEB-4522-BDC8-6554A3B6B216}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Combat" ID="{4FD7E5C0-BB77-4FB1-A4B2-2CCAF8E77293}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Explore-Bridge_138bpm4-4_L17M-P0" ID="{51F9DC14-E109-4F44-A9DA-AE2ADCE5FC0D}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{15ECCF56-99C0-44E0-848F-C006DB46FDA0}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Combat" ID="{4FD7E5C0-BB77-4FB1-A4B2-2CCAF8E77293}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Explore-TransToBridge_138bpm3-4_L3M-P1M" ID="{C287E9F2-422E-49BB-9FD1-50B76E98E128}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{41321A22-5648-4911-8DF3-9A5F59A57877}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Story" ID="{C20D348E-89C6-4C21-BAAF-44DD82341706}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Explore" ID="{3F63E32B-58A0-41E8-88C4-F97166420561}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="Story-TransToStory_90bpm4-4_L4M-P1B" ID="{1EDBBF27-6D5B-48DD-BE7B-DF8083BBAA7D}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{F196B5F2-BF8E-4AAF-9ABA-B80F88133C45}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="0.6"/>
+													<Property Name="FadeTime" Type="Real64" Value="1"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{A287507E-124E-4405-801F-0A3E49E08F0E}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Explore" ID="{3F63E32B-58A0-41E8-88C4-F97166420561}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Story" ID="{C20D348E-89C6-4C21-BAAF-44DD82341706}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="Story-TransToStory_90bpm4-4_L4M-P1B" ID="{1EDBBF27-6D5B-48DD-BE7B-DF8083BBAA7D}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}"/>
+									</TransitionInfo>
+								</MusicTransition>
 							</ChildrenList>
 							<TransitionInfo/>
 						</MusicTransition>
@@ -4809,12 +5025,14 @@
 					<ArgumentList>
 						<ArgumentRef Name="PlayerLife" ID="{B35C859F-4841-49E0-8B98-85DFAC37BFF5}"/>
 						<ArgumentRef Name="Music_State" ID="{5ABE43F7-5E44-4F37-AE07-BC265DDCC34E}"/>
+						<ArgumentRef Name="Gameplay_Switch" ID="{64F821B6-4A1B-490A-9CE6-FC87C0FDD1A1}"/>
 					</ArgumentList>
 					<EntryList>
 						<Entry>
 							<Path>
 								<PathElementRef Name="Alive" ID="{9C5D7F20-92FC-4387-9BCC-F6F4D27F9B34}"/>
 								<PathElementRef Name="Music_State" ID="{5ABE43F7-5E44-4F37-AE07-BC265DDCC34E}"/>
+								<PathElementRef Name="Gameplay_Switch" ID="{64F821B6-4A1B-490A-9CE6-FC87C0FDD1A1}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Combat" ID="{4FD7E5C0-BB77-4FB1-A4B2-2CCAF8E77293}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}" Platform="Linked"/>
@@ -4824,6 +5042,7 @@
 							<Path>
 								<PathElementRef Name="Dead" ID="{88957439-75EF-4388-B7D5-C80FBE8EE054}"/>
 								<PathElementRef Name="Music_State" ID="{5ABE43F7-5E44-4F37-AE07-BC265DDCC34E}"/>
+								<PathElementRef Name="Gameplay_Switch" ID="{64F821B6-4A1B-490A-9CE6-FC87C0FDD1A1}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Death" ID="{CF2C4288-742D-40D5-A525-565CC3CE2041}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}" Platform="Linked"/>
@@ -4833,6 +5052,7 @@
 							<Path>
 								<PathElementRef Name="Alive" ID="{9C5D7F20-92FC-4387-9BCC-F6F4D27F9B34}"/>
 								<PathElementRef Name="Boss" ID="{4479A128-6B80-4063-84A3-AC9E91D1F0A5}"/>
+								<PathElementRef Name="Gameplay_Switch" ID="{64F821B6-4A1B-490A-9CE6-FC87C0FDD1A1}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Boss" ID="{895109B2-DB46-4727-9813-CAD194566072}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}" Platform="Linked"/>
@@ -4842,6 +5062,7 @@
 							<Path>
 								<PathElementRef Name="Alive" ID="{9C5D7F20-92FC-4387-9BCC-F6F4D27F9B34}"/>
 								<PathElementRef Name="Victory" ID="{CD350719-7205-45AC-B57A-2FB2E1E492AD}"/>
+								<PathElementRef Name="Gameplay_Switch" ID="{64F821B6-4A1B-490A-9CE6-FC87C0FDD1A1}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Victory" ID="{F88E64EA-73A7-4E5E-9DDC-016A5BA20F56}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}" Platform="Linked"/>
@@ -4851,6 +5072,7 @@
 							<Path>
 								<PathElementRef Name="Alive" ID="{9C5D7F20-92FC-4387-9BCC-F6F4D27F9B34}"/>
 								<PathElementRef Name="Story" ID="{9C7E1D55-0381-41F2-A71F-F30BACE8101E}"/>
+								<PathElementRef Name="Gameplay_Switch" ID="{64F821B6-4A1B-490A-9CE6-FC87C0FDD1A1}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Story" ID="{C20D348E-89C6-4C21-BAAF-44DD82341706}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}" Platform="Linked"/>
@@ -4860,9 +5082,20 @@
 							<Path>
 								<PathElementRef Name="Alive" ID="{9C5D7F20-92FC-4387-9BCC-F6F4D27F9B34}"/>
 								<PathElementRef Name="GamePlay" ID="{C6F8D3B8-33CE-4A60-BB56-24F07BB2FD56}"/>
+								<PathElementRef Name="Combat" ID="{4FBDD060-04EC-4F3A-B15F-7EC14DE7652C}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Combat" ID="{4FD7E5C0-BB77-4FB1-A4B2-2CCAF8E77293}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Alive" ID="{9C5D7F20-92FC-4387-9BCC-F6F4D27F9B34}"/>
+								<PathElementRef Name="GamePlay" ID="{C6F8D3B8-33CE-4A60-BB56-24F07BB2FD56}"/>
+								<PathElementRef Name="Explore" ID="{B85C7C2E-E1D9-41B7-B07A-779557614484}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Explore" ID="{3F63E32B-58A0-41E8-88C4-F97166420561}" WorkUnitID="{25784DDF-F959-48B4-A3A6-D457CF13E563}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>
