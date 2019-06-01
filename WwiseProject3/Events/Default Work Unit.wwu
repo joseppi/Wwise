@@ -645,6 +645,48 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_env_train" ID="{924C3A9F-45E0-4167-8B1C-625CD1542667}">
+							<ChildrenList>
+								<Action Name="" ID="{0A6DF0EE-9EF0-4CAD-9EE5-DB2CB60968E5}" ShortID="480758629">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="env_train" ID="{E64A19B8-8A28-4C3B-B9BD-EBAF233DE5B9}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_env_dogs" ID="{4D406A4E-4E0F-4951-AB1D-E4D1032758ED}">
+							<ChildrenList>
+								<Action Name="" ID="{A4A3AD51-6FDA-4B12-BFBA-C02BBFCF0E53}" ShortID="889367649">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="env_dogs" ID="{E8C91B37-C232-4DB3-A79D-5E6EFEF59D3B}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_alita_skill_gun_collision" ID="{CBCB8854-176A-4DED-8707-E4B98E3F518A}">
+							<ChildrenList>
+								<Action Name="" ID="{40617BCB-6803-48D6-8B09-BB8F9E65FA2C}" ShortID="85405541">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="skill_gun_collision" ID="{EA5F1A5C-A529-4C1C-B479-1C783AA458C3}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="VO" ID="{6EC26FA8-21CF-400C-A985-8DD2DC87D9C5}" ShortID="312859081">
@@ -685,7 +727,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="zdialog_1_5_9_Vuelto" ID="{26734811-8FB2-4B29-A5B9-4F9B6E38FFE5}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+											<ObjectRef Name="zdialog_1_5_9_Malita" ID="{26734811-8FB2-4B29-A5B9-4F9B6E38FFE5}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1204,7 +1246,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="combat_music" ID="{0C5FC0B4-30A2-494B-93EF-0A733D51BC43}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+											<ObjectRef Name="music_combat" ID="{0C5FC0B4-30A2-494B-93EF-0A733D51BC43}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1220,7 +1262,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="exploration_music" ID="{88404ABF-D2C3-4C76-892A-805692BBA485}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+											<ObjectRef Name="music_exploration" ID="{88404ABF-D2C3-4C76-892A-805692BBA485}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1235,6 +1277,34 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="music_tavern" ID="{0089F65F-F7D6-43A5-8977-0CADC71EBD65}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_music_combat" ID="{242E6661-48F4-4277-B2F6-230BC99856AC}">
+							<ChildrenList>
+								<Action Name="" ID="{68C4BF5F-EFC6-4EA5-B555-06006CA07391}" ShortID="893753874">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="music_combat" ID="{0C5FC0B4-30A2-494B-93EF-0A733D51BC43}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_music_exploration" ID="{E7E08B17-729A-4C25-803A-54548F17B8EC}">
+							<ChildrenList>
+								<Action Name="" ID="{1C85289F-1BC5-4F77-BB1A-64C2C7422EB7}" ShortID="229646891">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="music_exploration" ID="{88404ABF-D2C3-4C76-892A-805692BBA485}" WorkUnitID="{88514F4A-3BF5-4935-99B9-7BF984E66186}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
